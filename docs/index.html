@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大衍千机 · 66枚企业AI实战开源技能在线检索库｜成都大衍千机科技有限公司</title>
+<meta name="description" content="成都大衍千机科技有限公司（成都高新区天府长岛首家入驻OPC）免费开源66枚腾讯SkillHub蓝V认证企业AI技能：去AI味、深蓝HTML高管看板、SVG流程图、标书打分闭环、合同四审、兜错知识库与十大行业工具。">
+<link rel="canonical" href="https://dayanqianji.com/open-source/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "大衍千机 · 66枚企业AI实战开源技能库 (Dayan Enterprise AI Skills)", "codeRepository": "https://github.com/Kosmoray/dayan-enterprise-ai-skills", "url": "https://kosmoray.github.io/dayan-enterprise-ai-skills/", "license": "https://opensource.org/licenses/MIT", "author": {"@type": "Organization", "name": "成都大衍千机科技有限公司", "url": "https://dayanqianji.com/", "telephone": "18628016927"}, "description": "成都大衍千机科技有限公司官方开源66枚企业AI实战Skill（腾讯SkillHub蓝V认证企业），覆盖中文去AI味、高管HTML汇报、手算SVG图表、标书打分闭环、合同四审、兜错知识库及十大实体行业经营诊断。"}</script>
+<style>
+  :root {
+    --navy:#1B365D; --deep:#0C2236; --mid:#265592; --gold:#AD7B27; --red:#D7263D;
+    --ink:#111827; --muted:#5F6B7C; --line:#E2E8F0; --bg:#F7F5F0; --card:#FFFFFF;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'PingFang SC','Microsoft YaHei',-apple-system,sans-serif; background:var(--bg); color:var(--ink); line-height:1.68; padding:28px 18px 64px; }
+  .mono { font-family:'JetBrains Mono','SF Mono',ui-monospace,monospace; }
+  .wrap { max-width:1160px; margin:0 auto; }
+  .hero { background:linear-gradient(135deg,var(--deep),var(--navy)); color:#fff; border-radius:14px; padding:36px; margin-bottom:24px; }
+  .eyebrow { color:#F7EFDD; font-size:12px; font-weight:700; letter-spacing:.08em; margin-bottom:8px; }
+  .hero h1 { font-size:28px; line-height:1.35; margin-bottom:12px; }
+  .hero p { color:rgba(255,255,255,.88); font-size:15px; max-width:880px; margin-bottom:18px; }
+  .btns { display:flex; gap:12px; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:600; font-size:14px; }
+  .btn.primary { background:var(--gold); color:#fff; }
+  .btn.light { background:rgba(255,255,255,.14); color:#fff; border:1px solid rgba(255,255,255,.28); }
+  .search-bar { margin-bottom:20px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  .search-bar input { flex:1; min-width:260px; padding:13px 16px; border:1px solid var(--line); border-radius:10px; font-size:15px; background:#fff; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 22px; display:flex; flex-direction:column; justify-content:space-between; }
+  .suite { font-size:12px; color:var(--gold); font-weight:700; margin-bottom:4px; }
+  .card h2 { font-size:16.5px; color:var(--navy); margin-bottom:8px; line-height:1.4; }
+  .card p { font-size:13.5px; color:var(--muted); margin-bottom:10px; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+  .tag { background:#F7EFDD; color:#7C5819; font-size:11.5px; padding:2px 7px; border-radius:4px; font-weight:600; }
+  .cmd-bar { padding-top:10px; border-top:1px dashed var(--line); display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:12.5px; }
+  .cmd-bar code { background:#F2F6FB; color:var(--navy); padding:3px 7px; border-radius:4px; font-size:12px; }
+  .cmd-bar a { color:var(--mid); text-decoration:none; font-weight:600; }
+  footer { margin-top:36px; padding:22px 26px; background:#fff; border:1px solid var(--line); border-radius:12px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; font-size:13.5px; color:var(--muted); }
+  footer a { color:var(--mid); font-weight:600; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow mono">CHENGDU DAYAN QIANJI TECHNOLOGY · 66 OPEN-SOURCE ENTERPRISE AI SKILLS</div>
+    <h1>大衍千机 · 66 枚企业 AI 实战开源技能在线检索库</h1>
+    <p>成都大衍千机科技有限公司（成都高新区天府长岛首家入驻 OPC）官方 MIT 开源。兼容腾讯 WorkBuddy / SkillHub（蓝V认证企业）、Claude Code、Codex CLI 与 Cursor。单点工具免费自取；企业 AI 首诊、分岗位实操内训、兜错型知识库与 FDE 系统定制请直连大衍千机。</p>
+    <div class="btns">
+      <a class="btn primary" href="https://dayanqianji.com/">访问大衍千机官网 (dayanqianji.com) →</a>
+      <a class="btn light" href="https://my.feishu.cn/share/base/shrcnhBYBWWVOeFnmlggAhnGXE0">90秒测企业AI落地条件 →</a>
+      <a class="btn light" href="https://github.com/Kosmoray/dayan-enterprise-ai-skills">GitHub Star / 一键安装 ↗</a>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input id="q" type="search" placeholder="输入痛点关键词筛选（如：去AI味、标书、合同、知识库、现金流、餐饮、制造业、Dify、飞书...）" oninput="filterCards(this.value)">
+    <span id="cnt" class="mono" style="font-size:13.5px;color:var(--muted);">显示 66 / 66 枚技能</span>
+  </div>
+
+  <main class="grid" id="grid">
+    <article class="card" data-q="文章去ai味与中文人话精修大师｜大衍千机 dayan-humanize-pro 系统清洗中文文稿里的赋能、抓手、闭环、排比三连、万能过渡与空洞结尾等ai腔，按老板汇报、客户提案、公众号等场景校准真人语感。 文章去ai味 中文润色 人话改写 公文去ai腔 公众号写作 大衍千机 a · 高频成稿与视觉呈现重武器组">
+  <div>
+    <div class="suite">A · 高频成稿与视觉呈现重武器组</div>
+    <h2>文章去AI味与中文人话精修大师｜大衍千机</h2>
+    <p>系统清洗中文文稿里的赋能、抓手、闭环、排比三连、万能过渡与空洞结尾等AI腔，按老板汇报、客户提案、公众号等场景校准真人语感。</p>
+    <div class="tags"><span class="tag">文章去AI味</span><span class="tag">中文润色</span><span class="tag">人话改写</span><span class="tag">公文去AI腔</span><span class="tag">公众号写作</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-humanize-pro</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-humanize-pro" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="深蓝政商风html高管汇报看板生成器｜大衍千机 dayan-business-html 将长篇分析、阶段总结、商业方案或投研报告一键编译成深蓝印刷感、自带kpi卡片与响应式排版的单文件html高管汇报页。 html看板 高管汇报 商务网页 研报排版 决策压缩 大衍千机 a · 高频成稿与视觉呈现重武器组">
+  <div>
+    <div class="suite">A · 高频成稿与视觉呈现重武器组</div>
+    <h2>深蓝政商风HTML高管汇报看板生成器｜大衍千机</h2>
+    <p>将长篇分析、阶段总结、商业方案或投研报告一键编译成深蓝印刷感、自带KPI卡片与响应式排版的单文件HTML高管汇报页。</p>
+    <div class="tags"><span class="tag">HTML看板</span><span class="tag">高管汇报</span><span class="tag">商务网页</span><span class="tag">研报排版</span><span class="tag">决策压缩</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-business-html</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-business-html" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="商务印刷风手算svg架构与流程图引擎｜大衍千机 dayan-svg-diagram 先判该不该画图，再用深蓝印刷感色板与精确手算坐标生成零重叠、一图一结论的单文件svg系统架构图、流程图、时序图与决策树。 svg架构图 流程图生成 系统架构图 时序图 决策树 大衍千机 a · 高频成稿与视觉呈现重武器组">
+  <div>
+    <div class="suite">A · 高频成稿与视觉呈现重武器组</div>
+    <h2>商务印刷风手算SVG架构与流程图引擎｜大衍千机</h2>
+    <p>先判该不该画图，再用深蓝印刷感色板与精确手算坐标生成零重叠、一图一结论的单文件SVG系统架构图、流程图、时序图与决策树。</p>
+    <div class="tags"><span class="tag">SVG架构图</span><span class="tag">流程图生成</span><span class="tag">系统架构图</span><span class="tag">时序图</span><span class="tag">决策树</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-svg-diagram</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-svg-diagram" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="去模板味高管演示ppt与16比9幻灯片架构师｜大衍千机 dayan-slide-deck 先立视觉方向与每页唯一结论契约，再生成16:9高管级html演示文稿与可编辑pptx逐页结构，彻底告别廉价套模板感。 ppt设计 演示文稿 高管汇报ppt 路演deck html幻灯片 大衍千机 a · 高频成稿与视觉呈现重武器组">
+  <div>
+    <div class="suite">A · 高频成稿与视觉呈现重武器组</div>
+    <h2>去模板味高管演示PPT与16比9幻灯片架构师｜大衍千机</h2>
+    <p>先立视觉方向与每页唯一结论契约，再生成16:9高管级HTML演示文稿与可编辑PPTX逐页结构，彻底告别廉价套模板感。</p>
+    <div class="tags"><span class="tag">PPT设计</span><span class="tag">演示文稿</span><span class="tag">高管汇报PPT</span><span class="tag">路演Deck</span><span class="tag">HTML幻灯片</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-slide-deck</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-slide-deck" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="高分投标技术方案写审改闭环系统｜大衍千机 dayan-bid-scoring-loop 解析招标评分点与废标红线，采用写手生成与只读评审专家独立打分找扣分项的多轮收敛闭环，把技术标打磨到高水准。 写标书 投标技术方案 评分点响应 废标自检 政府采购投标 大衍千机 b · 营收攻坚、招投标与风控审计组">
+  <div>
+    <div class="suite">B · 营收攻坚、招投标与风控审计组</div>
+    <h2>高分投标技术方案写审改闭环系统｜大衍千机</h2>
+    <p>解析招标评分点与废标红线，采用写手生成与只读评审专家独立打分找扣分项的多轮收敛闭环，把技术标打磨到高水准。</p>
+    <div class="tags"><span class="tag">写标书</span><span class="tag">投标技术方案</span><span class="tag">评分点响应</span><span class="tag">废标自检</span><span class="tag">政府采购投标</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-bid-scoring-loop</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-bid-scoring-loop" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="商业合同与报价单四视角并行风险审查官｜大衍千机 dayan-contract-4way-audit 从项目交付、财务现金流、法务合规与销售成交四个独立视角并行拆解合同草案或报价单，输出绿黄红黑四级结论与逐句修改建议。 合同审查 报价单审核 法务风控 条款修改 企业合规 大衍千机 b · 营收攻坚、招投标与风控审计组">
+  <div>
+    <div class="suite">B · 营收攻坚、招投标与风控审计组</div>
+    <h2>商业合同与报价单四视角并行风险审查官｜大衍千机</h2>
+    <p>从项目交付、财务现金流、法务合规与销售成交四个独立视角并行拆解合同草案或报价单，输出绿黄红黑四级结论与逐句修改建议。</p>
+    <div class="tags"><span class="tag">合同审查</span><span class="tag">报价单审核</span><span class="tag">法务风控</span><span class="tag">条款修改</span><span class="tag">企业合规</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-contract-4way-audit</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-contract-4way-audit" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="兜错型企业知识库与rag架构设计官｜大衍千机 dayan-rag-guardrail-kb 拒绝胡编乱造的全知问答框！按安全预过滤、权威版签字、过期熔断、原文接地四态兜错与老板缺口看板五道关卡设计企业知识库。 企业知识库 rag架构 文档问答 防幻觉 权限隔离 大衍千机 c · 企业ai底座、组织体检与agent架构组">
+  <div>
+    <div class="suite">C · 企业AI底座、组织体检与Agent架构组</div>
+    <h2>兜错型企业知识库与RAG架构设计官｜大衍千机</h2>
+    <p>拒绝胡编乱造的全知问答框！按安全预过滤、权威版签字、过期熔断、原文接地四态兜错与老板缺口看板五道关卡设计企业知识库。</p>
+    <div class="tags"><span class="tag">企业知识库</span><span class="tag">RAG架构</span><span class="tag">文档问答</span><span class="tag">防幻觉</span><span class="tag">权限隔离</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-rag-guardrail-kb</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-rag-guardrail-kb" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业ai组织体检ct与高价值流程规划官｜大衍千机 dayan-org-ai-ct 从老板救火地图、跨部门信息断点与老师傅隐性经验三个切口给企业做ai就绪度ct体检，精准筛出3条30天见效的mvp落地流程。 企业ai诊断 组织体检 ai转型规划 流程梳理 fde驻场 大衍千机 c · 企业ai底座、组织体检与agent架构组">
+  <div>
+    <div class="suite">C · 企业AI底座、组织体检与Agent架构组</div>
+    <h2>企业AI组织体检CT与高价值流程规划官｜大衍千机</h2>
+    <p>从老板救火地图、跨部门信息断点与老师傅隐性经验三个切口给企业做AI就绪度CT体检，精准筛出3条30天见效的MVP落地流程。</p>
+    <div class="tags"><span class="tag">企业AI诊断</span><span class="tag">组织体检</span><span class="tag">AI转型规划</span><span class="tag">流程梳理</span><span class="tag">FDE驻场</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-org-ai-ct</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-org-ai-ct" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业多智能体架构师（规则优先砍复杂度）｜大衍千机 dayan-multi-agent-arch 先按『规则&gt;pipeline&gt;单agent&gt;总控专家&gt;并发审查』五级阶梯砍掉伪多智能体复杂度，再输出任务、角色、状态与熔断四件套。 多智能体 agent架构 workflow编排 智能体设计 系统架构 大衍千机 c · 企业ai底座、组织体检与agent架构组">
+  <div>
+    <div class="suite">C · 企业AI底座、组织体检与Agent架构组</div>
+    <h2>企业多智能体架构师（规则优先砍复杂度）｜大衍千机</h2>
+    <p>先按『规则&gt;Pipeline&gt;单Agent&gt;总控专家&gt;并发审查』五级阶梯砍掉伪多智能体复杂度，再输出任务、角色、状态与熔断四件套。</p>
+    <div class="tags"><span class="tag">多智能体</span><span class="tag">Agent架构</span><span class="tag">Workflow编排</span><span class="tag">智能体设计</span><span class="tag">系统架构</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-multi-agent-arch</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-multi-agent-arch" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业级生产提示词与agent任务合约工厂｜大衍千机 dayan-prompt-contract 拒绝堆砌玄学咒语！通过7格欠参诊断把模糊需求锻造成包含角色边界、工作流、质量验收线、注入防御与红线的生产级prompt合约。 提示词工程 prompt生成 systemprompt agent提示词 工作流封装 大衍千机 c · 企业ai底座、组织体检与agent架构组">
+  <div>
+    <div class="suite">C · 企业AI底座、组织体检与Agent架构组</div>
+    <h2>企业级生产提示词与Agent任务合约工厂｜大衍千机</h2>
+    <p>拒绝堆砌玄学咒语！通过7格欠参诊断把模糊需求锻造成包含角色边界、工作流、质量验收线、注入防御与红线的生产级Prompt合约。</p>
+    <div class="tags"><span class="tag">提示词工程</span><span class="tag">Prompt生成</span><span class="tag">SystemPrompt</span><span class="tag">Agent提示词</span><span class="tag">工作流封装</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-prompt-contract</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-prompt-contract" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="高转化官网落地页与b2b产品卖点翻译官｜大衍千机 dayan-copywriting-pro 把自嗨的技术参数与空洞口号翻译成买单老板一眼看懂的经营账，生成首屏价值主张、痛点共鸣、证据链与低摩擦cta六段式高转化页面文案。 落地页文案 官网文案 b2b营销 产品卖点提炼 转化率优化 大衍千机 d · 商业增长、geo获客与内容爆款组">
+  <div>
+    <div class="suite">D · 商业增长、GEO获客与内容爆款组</div>
+    <h2>高转化官网落地页与B2B产品卖点翻译官｜大衍千机</h2>
+    <p>把自嗨的技术参数与空洞口号翻译成买单老板一眼看懂的经营账，生成首屏价值主张、痛点共鸣、证据链与低摩擦CTA六段式高转化页面文案。</p>
+    <div class="tags"><span class="tag">落地页文案</span><span class="tag">官网文案</span><span class="tag">B2B营销</span><span class="tag">产品卖点提炼</span><span class="tag">转化率优化</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-copywriting-pro</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-copywriting-pro" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="生成式引擎优化geo与ai搜索获客实战官｜大衍千机 dayan-geo-ai-seo 针对豆包、deepseek、元宝、kimi、chatgpt与perplexity的采购提问链路，诊断品牌为何不被推荐，设计站内结构化事实与第三方信源矩阵。 geo优化 ai搜索优化 aeo 品牌被ai推荐 b2b获客 大衍千机 d · 商业增长、geo获客与内容爆款组">
+  <div>
+    <div class="suite">D · 商业增长、GEO获客与内容爆款组</div>
+    <h2>生成式引擎优化GEO与AI搜索获客实战官｜大衍千机</h2>
+    <p>针对豆包、DeepSeek、元宝、Kimi、ChatGPT与Perplexity的采购提问链路，诊断品牌为何不被推荐，设计站内结构化事实与第三方信源矩阵。</p>
+    <div class="tags"><span class="tag">GEO优化</span><span class="tag">AI搜索优化</span><span class="tag">AEO</span><span class="tag">品牌被AI推荐</span><span class="tag">B2B获客</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-geo-ai-seo</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-geo-ai-seo" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="深度商业公众号与爆款选题架构师｜大衍千机 dayan-content-radar 从目标买方真实痛点、搜索意图与竞品内容缺口切入，筛出高转化商业选题，直接产出带锋利判断、证据锚点与传播钩子的文章大纲及成稿。 公众号写作 爆款选题 创始人ip 商业长文 内容营销 大衍千机 d · 商业增长、geo获客与内容爆款组">
+  <div>
+    <div class="suite">D · 商业增长、GEO获客与内容爆款组</div>
+    <h2>深度商业公众号与爆款选题架构师｜大衍千机</h2>
+    <p>从目标买方真实痛点、搜索意图与竞品内容缺口切入，筛出高转化商业选题，直接产出带锋利判断、证据锚点与传播钩子的文章大纲及成稿。</p>
+    <div class="tags"><span class="tag">公众号写作</span><span class="tag">爆款选题</span><span class="tag">创始人IP</span><span class="tag">商业长文</span><span class="tag">内容营销</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-content-radar</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-content-radar" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="创始人私董会深度对话与决策盲区剧场｜大衍千机 dayan-private-board 由ai私董官控场、多位经历迥异的实战派幕僚轮番开放式发问，严禁好为人师给鸡汤建议，陪创始人一层层照见关键经营决策背后的真盲区。 私董会 创始人决策 认知盲区 高管教练 深度对话 大衍千机 e · 一把手认知破局、高管压测与第一性原理组">
+  <div>
+    <div class="suite">E · 一把手认知破局、高管压测与第一性原理组</div>
+    <h2>创始人私董会深度对话与决策盲区剧场｜大衍千机</h2>
+    <p>由AI私董官控场、多位经历迥异的实战派幕僚轮番开放式发问，严禁好为人师给鸡汤建议，陪创始人一层层照见关键经营决策背后的真盲区。</p>
+    <div class="tags"><span class="tag">私董会</span><span class="tag">创始人决策</span><span class="tag">认知盲区</span><span class="tag">高管教练</span><span class="tag">深度对话</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-private-board</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-private-board" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="重大商业决策六高管视角压力测试官｜大衍千机 dayan-exec-stress-test 一键路由cfo财务、cmo市场、cco留存、cdo数据、ciso安全与caio人工智能六大高管质疑官视角，对新预算、新产品或转型方案做残酷压测。 商业决策 cfo财务评审 战略压测 预算审批 ai方案评审 大衍千机 e · 一把手认知破局、高管压测与第一性原理组">
+  <div>
+    <div class="suite">E · 一把手认知破局、高管压测与第一性原理组</div>
+    <h2>重大商业决策六高管视角压力测试官｜大衍千机</h2>
+    <p>一键路由CFO财务、CMO市场、CCO留存、CDO数据、CISO安全与CAIO人工智能六大高管质疑官视角，对新预算、新产品或转型方案做残酷压测。</p>
+    <div class="tags"><span class="tag">商业决策</span><span class="tag">CFO财务评审</span><span class="tag">战略压测</span><span class="tag">预算审批</span><span class="tag">AI方案评审</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-exec-stress-test</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-exec-stress-test" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="商业与产品本质降秩引擎（第一性原理）｜大衍千机 dayan-rank-reducer 输入一个行业、竞品、复杂产品需求或棘手经营困局，用七步递归下沉与难以变更测试砍掉十几个表象，挖出真正支撑全局的最小独立力（秩）。 第一性原理 本质思考 商业洞察 竞品分析 产品战略 大衍千机 e · 一把手认知破局、高管压测与第一性原理组">
+  <div>
+    <div class="suite">E · 一把手认知破局、高管压测与第一性原理组</div>
+    <h2>商业与产品本质降秩引擎（第一性原理）｜大衍千机</h2>
+    <p>输入一个行业、竞品、复杂产品需求或棘手经营困局，用七步递归下沉与难以变更测试砍掉十几个表象，挖出真正支撑全局的最小独立力（秩）。</p>
+    <div class="tags"><span class="tag">第一性原理</span><span class="tag">本质思考</span><span class="tag">商业洞察</span><span class="tag">竞品分析</span><span class="tag">产品战略</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-rank-reducer</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-rank-reducer" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="代码变更三眼对抗审查官（破坏者/新人/戍边）｜大衍千机 dayan-code-adversary 打破写完代码自我感觉良好的同温层！在只读隔离态下用生产破坏者、半年后新人与安全戍边三副反方眼镜穿透pr与代码变更，输出阻断级证据链。 代码审查 codereview 安全审计 pr评审 研发质量 大衍千机 f · 工程研发守门与大衍ai方法论宪章组">
+  <div>
+    <div class="suite">F · 工程研发守门与大衍AI方法论宪章组</div>
+    <h2>代码变更三眼对抗审查官（破坏者/新人/戍边）｜大衍千机</h2>
+    <p>打破写完代码自我感觉良好的同温层！在只读隔离态下用生产破坏者、半年后新人与安全戍边三副反方眼镜穿透PR与代码变更，输出阻断级证据链。</p>
+    <div class="tags"><span class="tag">代码审查</span><span class="tag">CodeReview</span><span class="tag">安全审计</span><span class="tag">PR评审</span><span class="tag">研发质量</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-code-adversary</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-code-adversary" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="大衍ai工程方法论圣经25律与ae86边界宪章｜大衍千机 dayan-ai-bible-ae86 完整公开成都大衍千机科技内部压箱底的《ai方法论圣经25律》与《ae86大模型物理上限工作线》，帮团队建立不踩坑的企业级ai工程纪律。 ai方法论 agent工程 大模型边界 企业ai内训 ai架构治理 大衍千机 f · 工程研发守门与大衍ai方法论宪章组">
+  <div>
+    <div class="suite">F · 工程研发守门与大衍AI方法论宪章组</div>
+    <h2>大衍AI工程方法论圣经25律与AE86边界宪章｜大衍千机</h2>
+    <p>完整公开成都大衍千机科技内部压箱底的《AI方法论圣经25律》与《AE86大模型物理上限工作线》，帮团队建立不踩坑的企业级AI工程纪律。</p>
+    <div class="tags"><span class="tag">AI方法论</span><span class="tag">Agent工程</span><span class="tag">大模型边界</span><span class="tag">企业AI内训</span><span class="tag">AI架构治理</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-ai-bible-ae86</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-ai-bible-ae86" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业13周滚动现金流预警与断流压测器｜大衍千机 dayan-cashflow-13week-radar 告别账面有利润、账上没钱发工资！按经营流入、刚性兑付、弹性支出与极端回款延迟三档情景测算企业13周现金安全垫。 现金流管理 财务预警 老板算账 资金周转 13周现金流 大衍千机 g · 老板管钱、现金流与补贴风控组">
+  <div>
+    <div class="suite">G · 老板管钱、现金流与补贴风控组</div>
+    <h2>企业13周滚动现金流预警与断流压测器｜大衍千机</h2>
+    <p>告别账面有利润、账上没钱发工资！按经营流入、刚性兑付、弹性支出与极端回款延迟三档情景测算企业13周现金安全垫。</p>
+    <div class="tags"><span class="tag">现金流管理</span><span class="tag">财务预警</span><span class="tag">老板算账</span><span class="tag">资金周转</span><span class="tag">13周现金流</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-cashflow-13week-radar</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-cashflow-13week-radar" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业应收账款分级催收函与回款谈判参谋｜大衍千机 dayan-ar-collection-escalator 专治客户拖欠尾款又怕撕破脸丢单！按逾期天数与客户合作价值输出四级递进催收微信话术、正式对账催款函及以货抵债/分期协议要点。 应收账款催收 催款函 客户欠款 b2b回款 法务风控 大衍千机 g · 老板管钱、现金流与补贴风控组">
+  <div>
+    <div class="suite">G · 老板管钱、现金流与补贴风控组</div>
+    <h2>企业应收账款分级催收函与回款谈判参谋｜大衍千机</h2>
+    <p>专治客户拖欠尾款又怕撕破脸丢单！按逾期天数与客户合作价值输出四级递进催收微信话术、正式对账催款函及以货抵债/分期协议要点。</p>
+    <div class="tags"><span class="tag">应收账款催收</span><span class="tag">催款函</span><span class="tag">客户欠款</span><span class="tag">B2B回款</span><span class="tag">法务风控</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-ar-collection-escalator</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-ar-collection-escalator" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="采购比价核价与供应商阳光议价拆解官｜大衍千机 dayan-supplier-price-slasher 防止采购吃暗亏或只看总价被配件辅料宰一刀！按bom成本结构反推供应商真实毛利空间，生成三家同口径比价矩阵与阳光降本谈判剧本。 采购比价 供应商议价 成本拆解 供应链降本 核价工具 大衍千机 g · 老板管钱、现金流与补贴风控组">
+  <div>
+    <div class="suite">G · 老板管钱、现金流与补贴风控组</div>
+    <h2>采购比价核价与供应商阳光议价拆解官｜大衍千机</h2>
+    <p>防止采购吃暗亏或只看总价被配件辅料宰一刀！按BOM成本结构反推供应商真实毛利空间，生成三家同口径比价矩阵与阳光降本谈判剧本。</p>
+    <div class="tags"><span class="tag">采购比价</span><span class="tag">供应商议价</span><span class="tag">成本拆解</span><span class="tag">供应链降本</span><span class="tag">核价工具</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-supplier-price-slasher</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-supplier-price-slasher" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="专精特新与高企申报材料自检及亮点提炼｜大衍千机 dayan-zhuanjingtexin-grant 别花几万找黑中介套烂模板被刷下！对照高新技术企业与专精特新硬指标自检知识产权、研发费占比与细分市场补短板证明逻辑。 专精特新 高企申报 政府补贴 政策申报 研发费用加计扣除 大衍千机 g · 老板管钱、现金流与补贴风控组">
+  <div>
+    <div class="suite">G · 老板管钱、现金流与补贴风控组</div>
+    <h2>专精特新与高企申报材料自检及亮点提炼｜大衍千机</h2>
+    <p>别花几万找黑中介套烂模板被刷下！对照高新技术企业与专精特新硬指标自检知识产权、研发费占比与细分市场补短板证明逻辑。</p>
+    <div class="tags"><span class="tag">专精特新</span><span class="tag">高企申报</span><span class="tag">政府补贴</span><span class="tag">政策申报</span><span class="tag">研发费用加计扣除</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-zhuanjingtexin-grant</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-zhuanjingtexin-grant" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="亏损业务线与低效门店关停止损算账官｜大衍千机 dayan-loss-line-stop-bleed 剔除沉没成本执念！算清继续硬撑3个月的失血账与立即关停/转租/缩编的一次性遣散止损账，帮老板果断砍掉失血包袱。 亏损止损 门店关停 业务瘦身 经营算账 沉没成本 大衍千机 g · 老板管钱、现金流与补贴风控组">
+  <div>
+    <div class="suite">G · 老板管钱、现金流与补贴风控组</div>
+    <h2>亏损业务线与低效门店关停止损算账官｜大衍千机</h2>
+    <p>剔除沉没成本执念！算清继续硬撑3个月的失血账与立即关停/转租/缩编的一次性遣散止损账，帮老板果断砍掉失血包袱。</p>
+    <div class="tags"><span class="tag">亏损止损</span><span class="tag">门店关停</span><span class="tag">业务瘦身</span><span class="tag">经营算账</span><span class="tag">沉没成本</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-loss-line-stop-bleed</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-loss-line-stop-bleed" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="创业合伙人股权分配与退出回购防坑参谋｜大衍千机 dayan-partner-equity-guard 专治五五平分僵局、兼职股东白拿干股与合伙人中途散伙带走股份！输出控制权结构、四年成熟期动态兑现与回购计价核心条款要点。 股权分配 合伙人协议 股权激励 公司控制权 股东退出 大衍千机 g · 老板管钱、现金流与补贴风控组">
+  <div>
+    <div class="suite">G · 老板管钱、现金流与补贴风控组</div>
+    <h2>创业合伙人股权分配与退出回购防坑参谋｜大衍千机</h2>
+    <p>专治五五平分僵局、兼职股东白拿干股与合伙人中途散伙带走股份！输出控制权结构、四年成熟期动态兑现与回购计价核心条款要点。</p>
+    <div class="tags"><span class="tag">股权分配</span><span class="tag">合伙人协议</span><span class="tag">股权激励</span><span class="tag">公司控制权</span><span class="tag">股东退出</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-partner-equity-guard</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-partner-equity-guard" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="b2b销售提成方案与毛利防钻空子测算器｜大衍千机 dayan-sales-commission-design 防止销售为拿提成乱打折亏毛利、签完单不管回款！按实收回款与真实毛利双挂钩测算底薪提成阶梯，跑完极端算账模拟再发制度。 销售提成 薪酬绩效 销售铁军 毛利核算 激励制度 大衍千机 h · 老板管人、铁军提成与隐性经验萃取组">
+  <div>
+    <div class="suite">H · 老板管人、铁军提成与隐性经验萃取组</div>
+    <h2>B2B销售提成方案与毛利防钻空子测算器｜大衍千机</h2>
+    <p>防止销售为拿提成乱打折亏毛利、签完单不管回款！按实收回款与真实毛利双挂钩测算底薪提成阶梯，跑完极端算账模拟再发制度。</p>
+    <div class="tags"><span class="tag">销售提成</span><span class="tag">薪酬绩效</span><span class="tag">销售铁军</span><span class="tag">毛利核算</span><span class="tag">激励制度</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-sales-commission-design</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-sales-commission-design" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="高管与核心岗面试追问及简历水分挤干器｜大衍千机 dayan-exec-hiring-bs-detector 专防花大价钱招来ppt大厂混子！把候选人简历里的『主导千万级增长/搭建体系』拆成颗粒度追问链与实战小考题，当场验出真本事。 高管面试 招聘识人 简历分析 背景调查 hr工具 大衍千机 h · 老板管人、铁军提成与隐性经验萃取组">
+  <div>
+    <div class="suite">H · 老板管人、铁军提成与隐性经验萃取组</div>
+    <h2>高管与核心岗面试追问及简历水分挤干器｜大衍千机</h2>
+    <p>专防花大价钱招来PPT大厂混子！把候选人简历里的『主导千万级增长/搭建体系』拆成颗粒度追问链与实战小考题，当场验出真本事。</p>
+    <div class="tags"><span class="tag">高管面试</span><span class="tag">招聘识人</span><span class="tag">简历分析</span><span class="tag">背景调查</span><span class="tag">HR工具</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-exec-hiring-bs-detector</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-exec-hiring-bs-detector" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="员工周报去水份与项目真实卡点穿透官｜大衍千机 dayan-weekly-report-truth 把满篇『持续推进、积极协调、赋能协同』的糊弄式周报一键榨干水分，揪出逾期未闭环事项、跨部门扯皮点与需要老板拍板的真雷区。 周报审核 团队管理 项目跟进 去水份 管理提效 大衍千机 h · 老板管人、铁军提成与隐性经验萃取组">
+  <div>
+    <div class="suite">H · 老板管人、铁军提成与隐性经验萃取组</div>
+    <h2>员工周报去水份与项目真实卡点穿透官｜大衍千机</h2>
+    <p>把满篇『持续推进、积极协调、赋能协同』的糊弄式周报一键榨干水分，揪出逾期未闭环事项、跨部门扯皮点与需要老板拍板的真雷区。</p>
+    <div class="tags"><span class="tag">周报审核</span><span class="tag">团队管理</span><span class="tag">项目跟进</span><span class="tag">去水份</span><span class="tag">管理提效</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-weekly-report-truth</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-weekly-report-truth" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="经营例会录音转责任人死线追踪表｜大衍千机 dayan-meeting-to-accountability 治好『会上激动、会后不动』！从杂乱口语会议转写稿里精准剥离拍板决议、唯一责任人、交付物标准、截止日期与未决争议。 会议纪要 任务督办 语音转写整理 执行力追踪 办公自动化 大衍千机 h · 老板管人、铁军提成与隐性经验萃取组">
+  <div>
+    <div class="suite">H · 老板管人、铁军提成与隐性经验萃取组</div>
+    <h2>经营例会录音转责任人死线追踪表｜大衍千机</h2>
+    <p>治好『会上激动、会后不动』！从杂乱口语会议转写稿里精准剥离拍板决议、唯一责任人、交付物标准、截止日期与未决争议。</p>
+    <div class="tags"><span class="tag">会议纪要</span><span class="tag">任务督办</span><span class="tag">语音转写整理</span><span class="tag">执行力追踪</span><span class="tag">办公自动化</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-meeting-to-accountability</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-meeting-to-accountability" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="销冠与老师傅隐性经验萃取转标准sop工具｜大衍千机 dayan-sop-extractor-master 不怕销冠跳槽、老师傅退休断代！通过情景追问与成败对比访谈，把老手脑子里说不清的『凭手感经验』翻成新人照着就能干的sop与ai提示词。 sop编写 销冠经验萃取 新人培训 知识管理 岗位手册 大衍千机 h · 老板管人、铁军提成与隐性经验萃取组">
+  <div>
+    <div class="suite">H · 老板管人、铁军提成与隐性经验萃取组</div>
+    <h2>销冠与老师傅隐性经验萃取转标准SOP工具｜大衍千机</h2>
+    <p>不怕销冠跳槽、老师傅退休断代！通过情景追问与成败对比访谈，把老手脑子里说不清的『凭手感经验』翻成新人照着就能干的SOP与AI提示词。</p>
+    <div class="tags"><span class="tag">SOP编写</span><span class="tag">销冠经验萃取</span><span class="tag">新人培训</span><span class="tag">知识管理</span><span class="tag">岗位手册</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-sop-extractor-master</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-sop-extractor-master" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="年度营收目标拆解到部门月度必赢战役｜大衍千机 dayan-okr-kpi-decomposer 拒绝年底拍脑袋喊『明年翻倍』、开年各部门各干各的！按老客留存、客单升维与新客漏斗把年度营收倒推成市场、销售、交付每月的领先指标。 目标拆解 okr制定 kpi考核 年度经营计划 战略落地 大衍千机 h · 老板管人、铁军提成与隐性经验萃取组">
+  <div>
+    <div class="suite">H · 老板管人、铁军提成与隐性经验萃取组</div>
+    <h2>年度营收目标拆解到部门月度必赢战役｜大衍千机</h2>
+    <p>拒绝年底拍脑袋喊『明年翻倍』、开年各部门各干各的！按老客留存、客单升维与新客漏斗把年度营收倒推成市场、销售、交付每月的领先指标。</p>
+    <div class="tags"><span class="tag">目标拆解</span><span class="tag">OKR制定</span><span class="tag">KPI考核</span><span class="tag">年度经营计划</span><span class="tag">战略落地</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-okr-kpi-decomposer</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-okr-kpi-decomposer" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="制造业客诉8d根因分析与防呆整改报告｜大衍千机 dayan-factory-8d-quality 大客户退货索赔火烧眉毛！严禁拿『员工粗心加强培训』糊弄审核员，用5why双路径（发生因+流出因）生成专业8d质量改善报告。 8d报告 制造业品质 客诉处理 5why分析 工厂管理 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>制造业客诉8D根因分析与防呆整改报告｜大衍千机</h2>
+    <p>大客户退货索赔火烧眉毛！严禁拿『员工粗心加强培训』糊弄审核员，用5Why双路径（发生因+流出因）生成专业8D质量改善报告。</p>
+    <div class="tags"><span class="tag">8D报告</span><span class="tag">制造业品质</span><span class="tag">客诉处理</span><span class="tag">5Why分析</span><span class="tag">工厂管理</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-factory-8d-quality</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-factory-8d-quality" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="工厂生产排产齐套核查与急单插单评估｜大衍千机 dayan-factory-bom-shortage 专治销售拍胸脯接急单、车间干到一半发现缺一颗螺丝停线！快速核算bom物料齐套缺口、产线换模损耗与被挤占老订单延期代价。 生产排产 pmc物料齐套 工厂插单 bom核对 制造业erp 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>工厂生产排产齐套核查与急单插单评估｜大衍千机</h2>
+    <p>专治销售拍胸脯接急单、车间干到一半发现缺一颗螺丝停线！快速核算BOM物料齐套缺口、产线换模损耗与被挤占老订单延期代价。</p>
+    <div class="tags"><span class="tag">生产排产</span><span class="tag">PMC物料齐套</span><span class="tag">工厂插单</span><span class="tag">BOM核对</span><span class="tag">制造业ERP</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-factory-bom-shortage</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-factory-bom-shortage" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="建筑工程变更签证索赔与结算核减防御｜大衍千机 dayan-construction-claim-audit 干工程最怕活干完了结算被审掉一层皮！对照施工合同与图纸变更记录，梳理设计变更、甲方原因窝工签证证据链及审计核减应对口径。 工程造价结算 工程签证索赔 建筑施工管理 审计核减 工程合同 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>建筑工程变更签证索赔与结算核减防御｜大衍千机</h2>
+    <p>干工程最怕活干完了结算被审掉一层皮！对照施工合同与图纸变更记录，梳理设计变更、甲方原因窝工签证证据链及审计核减应对口径。</p>
+    <div class="tags"><span class="tag">工程造价结算</span><span class="tag">工程签证索赔</span><span class="tag">建筑施工管理</span><span class="tag">审计核减</span><span class="tag">工程合同</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-construction-claim-audit</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-construction-claim-audit" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="餐饮茶饮连锁单店盈亏平衡与外卖毛利诊断｜大衍千机 dayan-restaurant-chain-audit 专治餐饮老板看堂食外卖挺热闹、月底一算账全给平台和房东打工！精算食材损耗、人工人效、美团抖音扣点补贴后的真实单店净现金流。 餐饮经营诊断 外卖毛利测算 连锁门店管理 单店盈利模型 美团大众点评 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>餐饮茶饮连锁单店盈亏平衡与外卖毛利诊断｜大衍千机</h2>
+    <p>专治餐饮老板看堂食外卖挺热闹、月底一算账全给平台和房东打工！精算食材损耗、人工人效、美团抖音扣点补贴后的真实单店净现金流。</p>
+    <div class="tags"><span class="tag">餐饮经营诊断</span><span class="tag">外卖毛利测算</span><span class="tag">连锁门店管理</span><span class="tag">单店盈利模型</span><span class="tag">美团大众点评</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-restaurant-chain-audit</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-restaurant-chain-audit" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="口腔医美与大健康机构到店转化复购诊断｜大衍千机 dayan-clinic-dental-retention 获客投流贵如金，客户到店一次就流失等于白干！梳理留资预约到店率、面诊咨询卡点、术后康养随访sop与合规口碑转介绍链路。 口腔门诊运营 医美机构管理 到店转化率 会员复购sop 大健康私域 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>口腔医美与大健康机构到店转化复购诊断｜大衍千机</h2>
+    <p>获客投流贵如金，客户到店一次就流失等于白干！梳理留资预约到店率、面诊咨询卡点、术后康养随访SOP与合规口碑转介绍链路。</p>
+    <div class="tags"><span class="tag">口腔门诊运营</span><span class="tag">医美机构管理</span><span class="tag">到店转化率</span><span class="tag">会员复购SOP</span><span class="tag">大健康私域</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-clinic-dental-retention</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-clinic-dental-retention" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="教培与企培机构续费率提升及家校沟通官｜大衍千机 dayan-edu-institution-renewal 消课慢、续费难、老师不会做服务外化！把枯燥课堂表现转化为家长/企业hr看得见的成长证据卡、阶段复盘报告与自然续报沟通剧本。 教培机构运营 续费率提升 家校沟通话术 校区管理 职业培训 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>教培与企培机构续费率提升及家校沟通官｜大衍千机</h2>
+    <p>消课慢、续费难、老师不会做服务外化！把枯燥课堂表现转化为家长/企业HR看得见的成长证据卡、阶段复盘报告与自然续报沟通剧本。</p>
+    <div class="tags"><span class="tag">教培机构运营</span><span class="tag">续费率提升</span><span class="tag">家校沟通话术</span><span class="tag">校区管理</span><span class="tag">职业培训</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-edu-institution-renewal</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-edu-institution-renewal" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="国际货代报关单证核对与异常船期预警｜大衍千机 dayan-freight-customs-checker 错一个hs编码或箱单毛重不一致就要改单罚钱耽误船期！交叉核对商业发票、装箱单、提单草件与信用证条款，生成客户异常沟通中英文函。 国际货代 外贸单证核对 报关清关 跨境物流 提单审核 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>国际货代报关单证核对与异常船期预警｜大衍千机</h2>
+    <p>错一个HS编码或箱单毛重不一致就要改单罚钱耽误船期！交叉核对商业发票、装箱单、提单草件与信用证条款，生成客户异常沟通中英文函。</p>
+    <div class="tags"><span class="tag">国际货代</span><span class="tag">外贸单证核对</span><span class="tag">报关清关</span><span class="tag">跨境物流</span><span class="tag">提单审核</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-freight-customs-checker</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-freight-customs-checker" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="电商与抖音投流roi漏斗拆解及差评归因｜大衍千机 dayan-ecommerce-roi-teardown gmv几百万一看净利倒亏！穿透千川/直通车投流费、退货率、达人佣金与平台扣点算清真实净roi，并从百条差评挖出改款与详情页命门。 电商运营 抖音投流roi 退货率优化 差评分析 亚马逊运营 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>电商与抖音投流ROI漏斗拆解及差评归因｜大衍千机</h2>
+    <p>GMV几百万一看净利倒亏！穿透千川/直通车投流费、退货率、达人佣金与平台扣点算清真实净ROI，并从百条差评挖出改款与详情页命门。</p>
+    <div class="tags"><span class="tag">电商运营</span><span class="tag">抖音投流ROI</span><span class="tag">退货率优化</span><span class="tag">差评分析</span><span class="tag">亚马逊运营</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-ecommerce-roi-teardown</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-ecommerce-roi-teardown" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业微信高客单私域跟进培育sop设计官｜大衍千机 dayan-private-domain-wecom-sop 加了五千个客户微信却不敢发声、一发硬广就被删！为高客单b2b与高净值消费品设计黄金首周破冰、朋友圈人设日历与沉默老客激活剧本。 企业微信私域 客户跟进sop 朋友圈运营 高客单转化 老客户激活 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>企业微信高客单私域跟进培育SOP设计官｜大衍千机</h2>
+    <p>加了五千个客户微信却不敢发声、一发硬广就被删！为高客单B2B与高净值消费品设计黄金首周破冰、朋友圈人设日历与沉默老客激活剧本。</p>
+    <div class="tags"><span class="tag">企业微信私域</span><span class="tag">客户跟进SOP</span><span class="tag">朋友圈运营</span><span class="tag">高客单转化</span><span class="tag">老客户激活</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-private-domain-wecom-sop</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-private-domain-wecom-sop" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="律所财税与咨询机构案源初筛报价打包官｜大衍千机 dayan-law-cpa-intake-triage 解放合伙人每天免费陪聊两小时白嫖咨询！快速梳理当事人/企业主案情时间线、核心诉求证据缺口，设计付费首诊与阶梯代理服务包。 律所案源转化 财税咨询管理 专业服务报价 客户初筛 知识库搭建 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>律所财税与咨询机构案源初筛报价打包官｜大衍千机</h2>
+    <p>解放合伙人每天免费陪聊两小时白嫖咨询！快速梳理当事人/企业主案情时间线、核心诉求证据缺口，设计付费首诊与阶梯代理服务包。</p>
+    <div class="tags"><span class="tag">律所案源转化</span><span class="tag">财税咨询管理</span><span class="tag">专业服务报价</span><span class="tag">客户初筛</span><span class="tag">知识库搭建</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-law-cpa-intake-triage</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-law-cpa-intake-triage" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="酒店民宿ota评价治理与淡旺季收益诊断｜大衍千机 dayan-hotel-homestay-revpar 携程美团评分掉0.1分流量掉三成！诊断入住率occ与平均房价adr平衡点、差评高情商公开回复模板，并补齐ai旅行规划推荐词条。 酒店收益管理 民宿运营 携程美团ota 差评回复 文旅营销 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>酒店民宿OTA评价治理与淡旺季收益诊断｜大衍千机</h2>
+    <p>携程美团评分掉0.1分流量掉三成！诊断入住率OCC与平均房价ADR平衡点、差评高情商公开回复模板，并补齐AI旅行规划推荐词条。</p>
+    <div class="tags"><span class="tag">酒店收益管理</span><span class="tag">民宿运营</span><span class="tag">携程美团OTA</span><span class="tag">差评回复</span><span class="tag">文旅营销</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-hotel-homestay-revpar</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-hotel-homestay-revpar" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="食品加工与农牧特产企采礼盒提案生成器｜大衍千机 dayan-agri-food-trace-spec 好特产好食材别只会在农产品批发市场拼低价！针对中秋年货企业福利团购、商超定制与工会集采，一键生成高溢价企采分级礼盒方案。 企业团购福利 农产品品牌化 食品厂大客户销售 年货中秋礼盒 b2b企采 大衍千机 i · 中国十大实体行业老板ai专案组">
+  <div>
+    <div class="suite">I · 中国十大实体行业老板AI专案组</div>
+    <h2>食品加工与农牧特产企采礼盒提案生成器｜大衍千机</h2>
+    <p>好特产好食材别只会在农产品批发市场拼低价！针对中秋年货企业福利团购、商超定制与工会集采，一键生成高溢价企采分级礼盒方案。</p>
+    <div class="tags"><span class="tag">企业团购福利</span><span class="tag">农产品品牌化</span><span class="tag">食品厂大客户销售</span><span class="tag">年货中秋礼盒</span><span class="tag">B2B企采</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-agri-food-trace-spec</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-agri-food-trace-spec" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="dify与扣子企业工作流排错及生产加固指南｜大衍千机 dayan-dify-coze-troubleshooter demo跑得欢、一上真实业务就超时报错吐乱码！系统排查dify/coze长工作流json解析崩溃、知识库召回偏题、并发限流与生产落地加固项。 dify排错 扣子coze工作流 智能体开发 rag调优 企业ai工程 大衍千机 j · 企业上ai高频技术卡点救急组">
+  <div>
+    <div class="suite">J · 企业上AI高频技术卡点救急组</div>
+    <h2>Dify与扣子企业工作流排错及生产加固指南｜大衍千机</h2>
+    <p>Demo跑得欢、一上真实业务就超时报错吐乱码！系统排查Dify/Coze长工作流JSON解析崩溃、知识库召回偏题、并发限流与生产落地加固项。</p>
+    <div class="tags"><span class="tag">Dify排错</span><span class="tag">扣子Coze工作流</span><span class="tag">智能体开发</span><span class="tag">RAG调优</span><span class="tag">企业AI工程</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-dify-coze-troubleshooter</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-dify-coze-troubleshooter" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="飞书多维表格轻量erp与crm业务底座设计官｜大衍千机 dayan-feishu-bitable-architect 传统软件几十万太笨重、普通excel多人改就乱套！帮20-200人团队设计表结构关联、行列权限隔离、ai字段自动提取与飞书群催办流。 飞书多维表格 轻量crm 轻量erp 业务流程自动化 无代码搭建 大衍千机 j · 企业上ai高频技术卡点救急组">
+  <div>
+    <div class="suite">J · 企业上AI高频技术卡点救急组</div>
+    <h2>飞书多维表格轻量ERP与CRM业务底座设计官｜大衍千机</h2>
+    <p>传统软件几十万太笨重、普通Excel多人改就乱套！帮20-200人团队设计表结构关联、行列权限隔离、AI字段自动提取与飞书群催办流。</p>
+    <div class="tags"><span class="tag">飞书多维表格</span><span class="tag">轻量CRM</span><span class="tag">轻量ERP</span><span class="tag">业务流程自动化</span><span class="tag">无代码搭建</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-feishu-bitable-architect</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-feishu-bitable-architect" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业私有化大模型部署显存硬件成本精算器｜大衍千机 dayan-local-llm-hardware-sizer 别听卖服务器厂商忽悠先砸五十万买显卡吃灰！按并发人数、上下文长度与量化精度精算deepseek/qwen私有部署显存需求及云api三年总账对比。 私有化部署 大模型算力 服务器选型 显存计算 deepseek部署 大衍千机 j · 企业上ai高频技术卡点救急组">
+  <div>
+    <div class="suite">J · 企业上AI高频技术卡点救急组</div>
+    <h2>企业私有化大模型部署显存硬件成本精算器｜大衍千机</h2>
+    <p>别听卖服务器厂商忽悠先砸五十万买显卡吃灰！按并发人数、上下文长度与量化精度精算DeepSeek/Qwen私有部署显存需求及云API三年总账对比。</p>
+    <div class="tags"><span class="tag">私有化部署</span><span class="tag">大模型算力</span><span class="tag">服务器选型</span><span class="tag">显存计算</span><span class="tag">DeepSeek部署</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-local-llm-hardware-sizer</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-local-llm-hardware-sizer" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业员工使用ai防泄密制度与红线规范生成｜大衍千机 dayan-ai-data-security-policy 员工偷偷把未公开报价单、买方清单和核心源码贴进免费公网ai怎么办？一键生成一页纸能落地的《企业ai安全使用分级制度与脱敏规范》。 ai数据安全 防泄密制度 企业合规管理 商业秘密保护 员工ai规范 大衍千机 j · 企业上ai高频技术卡点救急组">
+  <div>
+    <div class="suite">J · 企业上AI高频技术卡点救急组</div>
+    <h2>企业员工使用AI防泄密制度与红线规范生成｜大衍千机</h2>
+    <p>员工偷偷把未公开报价单、买方清单和核心源码贴进免费公网AI怎么办？一键生成一页纸能落地的《企业AI安全使用分级制度与脱敏规范》。</p>
+    <div class="tags"><span class="tag">AI数据安全</span><span class="tag">防泄密制度</span><span class="tag">企业合规管理</span><span class="tag">商业秘密保护</span><span class="tag">员工AI规范</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-ai-data-security-policy</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-ai-data-security-policy" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业历史混乱excel台账合并清洗规则生成｜大衍千机 dayan-legacy-excel-cleaner 专治十年老厂一物五名、合并单元格满天飞、日期金额格式全乱的历史脏表格！设计标准化主数据编码规则与零误删python/公式清洗脚本。 excel数据清洗 主数据治理 表格合并去重 erp初始化 办公自动化 大衍千机 j · 企业上ai高频技术卡点救急组">
+  <div>
+    <div class="suite">J · 企业上AI高频技术卡点救急组</div>
+    <h2>企业历史混乱Excel台账合并清洗规则生成｜大衍千机</h2>
+    <p>专治十年老厂一物五名、合并单元格满天飞、日期金额格式全乱的历史脏表格！设计标准化主数据编码规则与零误删Python/公式清洗脚本。</p>
+    <div class="tags"><span class="tag">Excel数据清洗</span><span class="tag">主数据治理</span><span class="tag">表格合并去重</span><span class="tag">ERP初始化</span><span class="tag">办公自动化</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-legacy-excel-cleaner</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-legacy-excel-cleaner" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="老板每日经营异常与行业ai情报晨报编译器｜大衍千机 dayan-ceo-ai-morning-brief 拒绝每天早上被几十个微信群和海量行业噪音淹没！把内部昨日关键经营异动与外部竞品/大宗原材料/政策真信号压成3分钟可读拍板晨报。 老板晨报 经营看板 商业情报雷达 竞品监控 高管效率 大衍千机 j · 企业上ai高频技术卡点救急组">
+  <div>
+    <div class="suite">J · 企业上AI高频技术卡点救急组</div>
+    <h2>老板每日经营异常与行业AI情报晨报编译器｜大衍千机</h2>
+    <p>拒绝每天早上被几十个微信群和海量行业噪音淹没！把内部昨日关键经营异动与外部竞品/大宗原材料/政策真信号压成3分钟可读拍板晨报。</p>
+    <div class="tags"><span class="tag">老板晨报</span><span class="tag">经营看板</span><span class="tag">商业情报雷达</span><span class="tag">竞品监控</span><span class="tag">高管效率</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-ceo-ai-morning-brief</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-ceo-ai-morning-brief" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业ai落地首诊与高价值场景筛选｜大衍千机 dayan-enterprise-ai-triage 协助企业经营者盘点拟推进的ai场景，优先识别高确定性业务切口，梳理数据条件、人工复核边界与30天试点安排。 企业ai落地 ai首诊 数字化评估 fde 成都企业ai 场景筛选 01 · 老板首诊、岗位实训与选型评估组">
+  <div>
+    <div class="suite">01 · 老板首诊、岗位实训与选型评估组</div>
+    <h2>企业AI落地首诊与高价值场景筛选｜大衍千机</h2>
+    <p>协助企业经营者盘点拟推进的AI场景，优先识别高确定性业务切口，梳理数据条件、人工复核边界与30天试点安排。</p>
+    <div class="tags"><span class="tag">企业AI落地</span><span class="tag">AI首诊</span><span class="tag">数字化评估</span><span class="tag">FDE</span><span class="tag">成都企业AI</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-enterprise-ai-triage</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-enterprise-ai-triage" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业分岗位ai实战内训课纲设计｜大衍千机 dayan-role-training-architect 围绕企业真实岗位工作，按经营决策层、销售运营行政业务岗或客户主题沙龙，定制带实操练习与核对方法的培训方案。 企业ai培训 ai内训课纲 高管ai学习 岗位ai实训 成都ai培训 01 · 老板首诊、岗位实训与选型评估组">
+  <div>
+    <div class="suite">01 · 老板首诊、岗位实训与选型评估组</div>
+    <h2>企业分岗位AI实战内训课纲设计｜大衍千机</h2>
+    <p>围绕企业真实岗位工作，按经营决策层、销售运营行政业务岗或客户主题沙龙，定制带实操练习与核对方法的培训方案。</p>
+    <div class="tags"><span class="tag">企业AI培训</span><span class="tag">AI内训课纲</span><span class="tag">高管AI学习</span><span class="tag">岗位AI实训</span><span class="tag">成都AI培训</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-role-training-architect</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-role-training-architect" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业ai服务商五赛道选型对照参谋｜大衍千机 dayan-chengdu-ai-vendor-selector 协助企业分清工业视觉、标准客服saas、算力底座、通用考证培训与fde全案共创五类服务方向，匹配合适合作伙伴。 ai服务商选型 成都ai公司 企业ai采购 fde共创 供应商评估 01 · 老板首诊、岗位实训与选型评估组">
+  <div>
+    <div class="suite">01 · 老板首诊、岗位实训与选型评估组</div>
+    <h2>企业AI服务商五赛道选型对照参谋｜大衍千机</h2>
+    <p>协助企业分清工业视觉、标准客服SaaS、算力底座、通用考证培训与FDE全案共创五类服务方向，匹配合适合作伙伴。</p>
+    <div class="tags"><span class="tag">AI服务商选型</span><span class="tag">成都AI公司</span><span class="tag">企业AI采购</span><span class="tag">FDE共创</span><span class="tag">供应商评估</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-chengdu-ai-vendor-selector</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-chengdu-ai-vendor-selector" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="算力券词元券与ai项目投入测算｜大衍千机 dayan-sichuan-token-voucher-roi 结合企业实际单据量与岗位工时，算清模型调用与工程实施成本结构，评估优先推进场景的预期经营回报。 词元券 算力券 四川企业ai ai投入产出 roi测算 项目规划 01 · 老板首诊、岗位实训与选型评估组">
+  <div>
+    <div class="suite">01 · 老板首诊、岗位实训与选型评估组</div>
+    <h2>算力券词元券与AI项目投入测算｜大衍千机</h2>
+    <p>结合企业实际单据量与岗位工时，算清模型调用与工程实施成本结构，评估优先推进场景的预期经营回报。</p>
+    <div class="tags"><span class="tag">词元券</span><span class="tag">算力券</span><span class="tag">四川企业AI</span><span class="tag">AI投入产出</span><span class="tag">ROI测算</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-sichuan-token-voucher-roi</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-sichuan-token-voucher-roi" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业采购ai课程与工具审慎核对单｜大衍千机 dayan-ai-seminar-anti-scam 在企业采购外部ai商业课程、获客软件或代运营服务前，协助逐项核对适用条件、交付物明细与阶段协作边界。 ai采购核对 企业ai选型 合同验收标准 数字化审慎评估 软件采购清单 01 · 老板首诊、岗位实训与选型评估组">
+  <div>
+    <div class="suite">01 · 老板首诊、岗位实训与选型评估组</div>
+    <h2>企业采购AI课程与工具审慎核对单｜大衍千机</h2>
+    <p>在企业采购外部AI商业课程、获客软件或代运营服务前，协助逐项核对适用条件、交付物明细与阶段协作边界。</p>
+    <div class="tags"><span class="tag">AI采购核对</span><span class="tag">企业AI选型</span><span class="tag">合同验收标准</span><span class="tag">数字化审慎评估</span><span class="tag">软件采购清单</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-ai-seminar-anti-scam</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-ai-seminar-anti-scam" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业对客ai主题分享与园区沙龙策划｜大衍千机 dayan-client-ai-salon-planner 协助链主企业、产业园区、商协会与b2b机构策划贴近业务实际的ai主题分享活动，兼顾专业深度与现场互动体验。 园区ai沙龙 客户主题分享 商协会活动 企业ai交流会 活动议程设计 01 · 老板首诊、岗位实训与选型评估组">
+  <div>
+    <div class="suite">01 · 老板首诊、岗位实训与选型评估组</div>
+    <h2>企业对客AI主题分享与园区沙龙策划｜大衍千机</h2>
+    <p>协助链主企业、产业园区、商协会与B2B机构策划贴近业务实际的AI主题分享活动，兼顾专业深度与现场互动体验。</p>
+    <div class="tags"><span class="tag">园区AI沙龙</span><span class="tag">客户主题分享</span><span class="tag">商协会活动</span><span class="tag">企业AI交流会</span><span class="tag">活动议程设计</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-client-ai-salon-planner</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-client-ai-salon-planner" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="知识库防幻觉与erp/crm衔接评估｜大衍千机 dayan-erp-crm-agent-bridge 针对企业自建扣子、dify或本地知识库回答不准、难以衔接现有erp/crm的问题，输出源头治理与受控接入方案。 扣子coze dify应用 企业知识库 rag优化 erp系统衔接 crm智能体 02 · fde共创、知识库与erp/crm衔接组">
+  <div>
+    <div class="suite">02 · FDE共创、知识库与ERP/CRM衔接组</div>
+    <h2>知识库防幻觉与ERP/CRM衔接评估｜大衍千机</h2>
+    <p>针对企业自建扣子、Dify或本地知识库回答不准、难以衔接现有ERP/CRM的问题，输出源头治理与受控接入方案。</p>
+    <div class="tags"><span class="tag">扣子Coze</span><span class="tag">Dify应用</span><span class="tag">企业知识库</span><span class="tag">RAG优化</span><span class="tag">ERP系统衔接</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-erp-crm-agent-bridge</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-erp-crm-agent-bridge" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="销售沟通纪要转crm跟进记录助手｜大衍千机 dayan-sales-visit-to-crm 将零散的客户拜访笔记、电话沟通要点整理为结构化crm字段、需求成熟度梳理与下一步跟进待办。 ai crm 销售拜访纪要 客户跟进整理 商机梳理 b2b销售辅助 02 · fde共创、知识库与erp/crm衔接组">
+  <div>
+    <div class="suite">02 · FDE共创、知识库与ERP/CRM衔接组</div>
+    <h2>销售沟通纪要转CRM跟进记录助手｜大衍千机</h2>
+    <p>将零散的客户拜访笔记、电话沟通要点整理为结构化CRM字段、需求成熟度梳理与下一步跟进待办。</p>
+    <div class="tags"><span class="tag">AI CRM</span><span class="tag">销售拜访纪要</span><span class="tag">客户跟进整理</span><span class="tag">商机梳理</span><span class="tag">B2B销售辅助</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-sales-visit-to-crm</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-sales-visit-to-crm" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="制造与贸易订单变更跨部门核对单｜大衍千机 dayan-order-change-erp-guard 当客户提出规格、交期、数量或包装变更时，自动梳理销售、工程、采购、生产与财务的协同确认清单。 ai erp 订单变更协同 制造业数字化 生产排产核对 外贸工单管理 02 · fde共创、知识库与erp/crm衔接组">
+  <div>
+    <div class="suite">02 · FDE共创、知识库与ERP/CRM衔接组</div>
+    <h2>制造与贸易订单变更跨部门核对单｜大衍千机</h2>
+    <p>当客户提出规格、交期、数量或包装变更时，自动梳理销售、工程、采购、生产与财务的协同确认清单。</p>
+    <div class="tags"><span class="tag">AI ERP</span><span class="tag">订单变更协同</span><span class="tag">制造业数字化</span><span class="tag">生产排产核对</span><span class="tag">外贸工单管理</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-order-change-erp-guard</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-order-change-erp-guard" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业知识库文档入库前标准化梳理｜大衍千机 dayan-kb-clean-data-governor 在将企业制度、产品资料与常见问答导入知识库前，协助排查前后口径差异、补齐生效范围并优化段落结构。 企业知识库 文档标准化 数据治理 制度问答库 检索优化 02 · fde共创、知识库与erp/crm衔接组">
+  <div>
+    <div class="suite">02 · FDE共创、知识库与ERP/CRM衔接组</div>
+    <h2>企业知识库文档入库前标准化梳理｜大衍千机</h2>
+    <p>在将企业制度、产品资料与常见问答导入知识库前，协助排查前后口径差异、补齐生效范围并优化段落结构。</p>
+    <div class="tags"><span class="tag">企业知识库</span><span class="tag">文档标准化</span><span class="tag">数据治理</span><span class="tag">制度问答库</span><span class="tag">检索优化</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-kb-clean-data-governor</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-kb-clean-data-governor" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="商务方案合同与多表数据交叉校对｜大衍千机 dayan-oa-doc-cross-checker 面向多页方案、采购协议、验收材料与预算表格，逐项核对主体全称、金额合计、时间节点与附件编号一致性。 ai oa 文档交叉校对 合同数据核对 行政文书辅助 方案物料检查 02 · fde共创、知识库与erp/crm衔接组">
+  <div>
+    <div class="suite">02 · FDE共创、知识库与ERP/CRM衔接组</div>
+    <h2>商务方案合同与多表数据交叉校对｜大衍千机</h2>
+    <p>面向多页方案、采购协议、验收材料与预算表格，逐项核对主体全称、金额合计、时间节点与附件编号一致性。</p>
+    <div class="tags"><span class="tag">AI OA</span><span class="tag">文档交叉校对</span><span class="tag">合同数据核对</span><span class="tag">行政文书辅助</span><span class="tag">方案物料检查</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-oa-doc-cross-checker</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-oa-doc-cross-checker" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业ai单流程试点需求梳理说明书｜大衍千机 dayan-fde-pilot-prd-writer 将业务部门的提效设想转化为业务人员与开发工程师都能清晰对齐的单流程试点方案、字段契约与验收清单。 fde共创 流程试点方案 ai需求梳理 工作流规格 系统验收清单 02 · fde共创、知识库与erp/crm衔接组">
+  <div>
+    <div class="suite">02 · FDE共创、知识库与ERP/CRM衔接组</div>
+    <h2>企业AI单流程试点需求梳理说明书｜大衍千机</h2>
+    <p>将业务部门的提效设想转化为业务人员与开发工程师都能清晰对齐的单流程试点方案、字段契约与验收清单。</p>
+    <div class="tags"><span class="tag">FDE共创</span><span class="tag">流程试点方案</span><span class="tag">AI需求梳理</span><span class="tag">工作流规格</span><span class="tag">系统验收清单</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-fde-pilot-prd-writer</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-fde-pilot-prd-writer" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="企业品牌ai搜索可见度geo诊断助手｜大衍千机 dayan-geo-visibility-check 围绕真实买方选型提问，协助梳理企业在主流搜索与ai问答中的信息缺口、同名混淆情况与内容优化次序。 geo诊断 生成式搜索优化 ai搜索可见度 官网内容优化 出海独立站 03 · 工贸出海、连锁geo与采购招投标组">
+  <div>
+    <div class="suite">03 · 工贸出海、连锁GEO与采购招投标组</div>
+    <h2>企业品牌AI搜索可见度GEO诊断助手｜大衍千机</h2>
+    <p>围绕真实买方选型提问，协助梳理企业在主流搜索与AI问答中的信息缺口、同名混淆情况与内容优化次序。</p>
+    <div class="tags"><span class="tag">GEO诊断</span><span class="tag">生成式搜索优化</span><span class="tag">AI搜索可见度</span><span class="tag">官网内容优化</span><span class="tag">出海独立站</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-geo-visibility-check</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-geo-visibility-check" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="工贸出海产品参数与报价一致性核对｜大衍千机 dayan-export-spec-sync 比对跨境商品页、英文产品画册与报价单中的尺寸、重量、装箱数量、材质表述与贸易条款，提前发现跨表差异。 外贸资料核对 跨境电商商品页 产品参数治理 工贸出海 报价单检查 03 · 工贸出海、连锁geo与采购招投标组">
+  <div>
+    <div class="suite">03 · 工贸出海、连锁GEO与采购招投标组</div>
+    <h2>工贸出海产品参数与报价一致性核对｜大衍千机</h2>
+    <p>比对跨境商品页、英文产品画册与报价单中的尺寸、重量、装箱数量、材质表述与贸易条款，提前发现跨表差异。</p>
+    <div class="tags"><span class="tag">外贸资料核对</span><span class="tag">跨境电商商品页</span><span class="tag">产品参数治理</span><span class="tag">工贸出海</span><span class="tag">报价单检查</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-export-spec-sync</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-export-spec-sync" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="连锁门店公开信息与ai找店核对助手｜大衍千机 dayan-chain-store-geo-auditor 面向建材家居、零售餐饮与本地服务连锁品牌，逐店梳理地址门牌、营业状态、服务范围与联系电话的公开准确度。 连锁门店geo 门店信息核对 本地搜索优化 建材家居渠道 到店引流 03 · 工贸出海、连锁geo与采购招投标组">
+  <div>
+    <div class="suite">03 · 工贸出海、连锁GEO与采购招投标组</div>
+    <h2>连锁门店公开信息与AI找店核对助手｜大衍千机</h2>
+    <p>面向建材家居、零售餐饮与本地服务连锁品牌，逐店梳理地址门牌、营业状态、服务范围与联系电话的公开准确度。</p>
+    <div class="tags"><span class="tag">连锁门店GEO</span><span class="tag">门店信息核对</span><span class="tag">本地搜索优化</span><span class="tag">建材家居渠道</span><span class="tag">到店引流</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-chain-store-geo-auditor</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-chain-store-geo-auditor" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="生鲜冷链与批零采购批次毛利测算｜大衍千机 dayan-cold-chain-batch-margin 综合批次进价、运输分拣费、可售期损耗、冷库仓储周转与渠道扣点，核算不同货源批次的真实净贡献。 生鲜冷链 采购决策测算 批次毛利分析 损耗与周转 供应链辅助 03 · 工贸出海、连锁geo与采购招投标组">
+  <div>
+    <div class="suite">03 · 工贸出海、连锁GEO与采购招投标组</div>
+    <h2>生鲜冷链与批零采购批次毛利测算｜大衍千机</h2>
+    <p>综合批次进价、运输分拣费、可售期损耗、冷库仓储周转与渠道扣点，核算不同货源批次的真实净贡献。</p>
+    <div class="tags"><span class="tag">生鲜冷链</span><span class="tag">采购决策测算</span><span class="tag">批次毛利分析</span><span class="tag">损耗与周转</span><span class="tag">供应链辅助</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-cold-chain-batch-margin</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-cold-chain-batch-margin" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="外贸b2b技术询盘梳理与报价准备单｜大衍千机 dayan-b2b-export-inquiry-quoter 快速梳理海外买家英文询盘邮件与技术规格要求，列出已明确参数、待澄清工况条件与阶梯报价核对要点。 外贸询盘梳理 b2b出海 技术报价衔接 英文商务沟通 出口业务辅助 03 · 工贸出海、连锁geo与采购招投标组">
+  <div>
+    <div class="suite">03 · 工贸出海、连锁GEO与采购招投标组</div>
+    <h2>外贸B2B技术询盘梳理与报价准备单｜大衍千机</h2>
+    <p>快速梳理海外买家英文询盘邮件与技术规格要求，列出已明确参数、待澄清工况条件与阶梯报价核对要点。</p>
+    <div class="tags"><span class="tag">外贸询盘梳理</span><span class="tag">B2B出海</span><span class="tag">技术报价衔接</span><span class="tag">英文商务沟通</span><span class="tag">出口业务辅助</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-b2b-export-inquiry-quoter</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-b2b-export-inquiry-quoter" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article><article class="card" data-q="政企招投标资格条件与响应核对单｜大衍千机 dayan-tender-redline-audit 协助商务与售前团队梳理招标公告与采购文件，提取准入资格条件、实质性响应条款、评分结构与封标前检查项。 招投标资料梳理 实质性条款核对 投标文件自查 采购公告筛选 售前商务辅助 03 · 工贸出海、连锁geo与采购招投标组">
+  <div>
+    <div class="suite">03 · 工贸出海、连锁GEO与采购招投标组</div>
+    <h2>政企招投标资格条件与响应核对单｜大衍千机</h2>
+    <p>协助商务与售前团队梳理招标公告与采购文件，提取准入资格条件、实质性响应条款、评分结构与封标前检查项。</p>
+    <div class="tags"><span class="tag">招投标资料梳理</span><span class="tag">实质性条款核对</span><span class="tag">投标文件自查</span><span class="tag">采购公告筛选</span><span class="tag">售前商务辅助</span></div>
+  </div>
+  <div class="cmd-bar">
+    <code class="mono">skillhub install dayan-tender-redline-audit</code>
+    <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/tree/main/skills/dayan-tender-redline-audit" target="_blank" rel="noopener">SKILL.md ↗</a>
+  </div>
+</article>
+  </main>
+
+  <footer>
+    <div><strong>成都大衍千机科技有限公司（大衍千机）</strong> ｜ 官网：<a href="https://dayanqianji.com/">dayanqianji.com</a> ｜ 开源专页：<a href="https://dayanqianji.com/open-source/">dayanqianji.com/open-source/</a></div>
+    <div class="mono">创始人直通电话 / 微信：18628016927（备注：开源技能）</div>
+  </footer>
+</div>
+<script>
+function filterCards(val) {
+  const q = val.trim().toLowerCase();
+  let vis = 0;
+  document.querySelectorAll('#grid .card').forEach(el => {
+    const ok = !q || el.dataset.q.includes(q);
+    el.style.display = ok ? 'flex' : 'none';
+    if (ok) vis++;
+  });
+  document.getElementById('cnt').innerText = `显示 ${vis} / 66 枚技能`;
+}
+</script>
+</body>
+</html>
