@@ -1,0 +1,73 @@
+{
+  "name": "dayan-executive-html-designer",
+  "version": "1.0.0",
+  "description": "Compiles long reports, proposals, and architecture diagrams into editorial #1B365D Navy single-file HTML dashboards and zero-overlap SVGs.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "01-productdesign"
+  ],
+  "agents": [
+    "./agents/executive-html-architect.md"
+  ],
+  "skills": [
+    "./skills/dayan-business-html",
+    "./skills/dayan-svg-diagram",
+    "./skills/dayan-slide-deck"
+  ],
+  "expertType": "agent",
+  "agentName": "executive-html-architect",
+  "displayName": {
+    "en": "Dayan Executive Designer",
+    "zh": "大衍深蓝看板师"
+  },
+  "profession": {
+    "en": "Executive HTML & SVG Architect",
+    "zh": "高管汇报视觉架构师"
+  },
+  "displayDescription": {
+    "en": "Transforms wordy memos into self-contained #1B365D Navy executive HTML briefings and crisp coordinate-calculated SVG diagrams.",
+    "zh": "专治万字纯文字报告老板不爱看！一键编译深蓝政商风单文件HTML看板与零重叠SVG架构图。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "01-ProductDesign",
+  "defaultInitPrompt": {
+    "en": "Compile my Markdown report into a single-file #1B365D Navy executive HTML dashboard",
+    "zh": "把这份长篇业务总结编译成深蓝政商风单文件HTML高管汇报页，发微信点开即看"
+  },
+  "plugin": "dayan-executive-html-designer",
+  "tags": [
+    {
+      "en": "Executive HTML",
+      "zh": "高管HTML看板"
+    },
+    {
+      "en": "Editorial SVG",
+      "zh": "手算SVG架构图"
+    },
+    {
+      "en": "16:9 Slide Deck",
+      "zh": "去塑料感演示稿"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Compile my Markdown report into a single-file #1B365D Navy executive HTML dashboard",
+      "zh": "把这份长篇业务总结编译成深蓝政商风单文件HTML高管汇报页，发微信点开即看"
+    },
+    {
+      "en": "Draw a clean, zero-overlap business editorial SVG architecture diagram for our system",
+      "zh": "帮我绘制一张深蓝金棕商务印刷风、文字零重叠的单文件SVG业务流程图"
+    },
+    {
+      "en": "Turn this proposal outline into an executive 16:9 presentation with one takeaway per slide",
+      "zh": "按一页一结论原则，把这份商业提案生成无廉价模板味的16:9高管演示HTML"
+    }
+  ]
+}

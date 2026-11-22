@@ -47,15 +47,18 @@ npx -y skills add Kosmoray/dayan-enterprise-ai-skills
 # 只装某一个高频技能（如：中文去AI味精修大师）
 npx -y skills add Kosmoray/dayan-enterprise-ai-skills --skill dayan-humanize-pro
 
-# 方式 2：使用腾讯官方 SkillHub / WorkBuddy（蓝V企业命名空间：dayanqianji）
-skillhub install dayan-humanize-pro
-skillhub install dayan-business-html
-skillhub install dayan-bid-scoring-loop
-skillhub install dayan-contract-4way-audit
+# 方式 2：使用腾讯官方 SkillHub / WorkBuddy（蓝V认证企业命名空间：dayanqianji）
+skillhub install dayan-humanize-pro --namespace dayanqianji
+skillhub install dayan-business-html --namespace dayanqianji
+skillhub install dayan-bid-scoring-loop --namespace dayanqianji
+skillhub install dayan-contract-4way-audit --namespace dayanqianji
 
-# 方式 3：克隆本仓库一键部署全部 66 枚技能至本地
+# 方式 2B：在腾讯 WorkBuddy / CodeBuddy 客户端内一键挂载「大衍千机 10 大王牌专家 & 专家团」插件源
+/plugin marketplace add https://github.com/Kosmoray/dayan-enterprise-ai-skills
+
+# 方式 3：克隆本仓库一键部署全部 66 枚技能至本地（支持 Claude / Codex / WorkBuddy）
 git clone https://github.com/Kosmoray/dayan-enterprise-ai-skills.git
-cd dayan-enterprise-ai-skills && bash install.sh
+cd dayan-enterprise-ai-skills && python3 installers/install_skills.py --agent workbuddy
 ```
 
 ---

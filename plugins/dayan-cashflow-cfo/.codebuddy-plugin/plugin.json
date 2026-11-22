@@ -1,0 +1,74 @@
+{
+  "name": "dayan-cashflow-cfo",
+  "version": "1.0.0",
+  "description": "SME CFO advisor for 13-week rolling cashflow stress tests, tiered AR collection letters, BOM supplier price audits, and loss-line stop-bleed.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "08-financeinvestment"
+  ],
+  "agents": [
+    "./agents/cashflow-margin-cfo.md"
+  ],
+  "skills": [
+    "./skills/dayan-cashflow-13week-radar",
+    "./skills/dayan-ar-collection-escalator",
+    "./skills/dayan-supplier-price-slasher",
+    "./skills/dayan-loss-line-stop-bleed"
+  ],
+  "expertType": "agent",
+  "agentName": "cashflow-margin-cfo",
+  "displayName": {
+    "en": "Dayan Cashflow CFO",
+    "zh": "大衍现金流算账参谋"
+  },
+  "profession": {
+    "en": "SME Cashflow & Margin Advisor",
+    "zh": "企业现金流与利润参谋"
+  },
+  "displayDescription": {
+    "en": "Builds 13-week cashflow radars, tiered AR collection scripts, supplier BOM price audits, and stop-bleed closure models.",
+    "zh": "告别账面有利润账上没钱发工资！专精13周现金流预警、分级催收、采购挤水分与亏损止损。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "en": "Build a 13-week rolling cashflow stress test table and highlight our lowest cash week",
+    "zh": "根据我们的应收应付、工资房租与税贷支出，生成13周滚动现金流压力测试与自救表"
+  },
+  "plugin": "dayan-cashflow-cfo",
+  "tags": [
+    {
+      "en": "13-Week Cashflow",
+      "zh": "13周现金流"
+    },
+    {
+      "en": "AR Collection",
+      "zh": "应收账款催收"
+    },
+    {
+      "en": "Supplier Audit",
+      "zh": "采购核价降本"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Build a 13-week rolling cashflow stress test table and highlight our lowest cash week",
+      "zh": "根据我们的应收应付、工资房租与税贷支出，生成13周滚动现金流压力测试与自救表"
+    },
+    {
+      "en": "Draft a tiered collection WeChat message and formal notice for a 60-day overdue B2B client",
+      "zh": "重要客户拖欠尾款60天既怕撕破脸又怕成坏账，帮我出阶梯催收微信话术与对账函"
+    },
+    {
+      "en": "Normalize and compare 3 messy supplier quotes on identical tax, payment term, and freight bases",
+      "zh": "把这三家口径不一的供应商报价单拉齐到同一税率账期运费标准，揪出水分并给议价筹码"
+    }
+  ]
+}

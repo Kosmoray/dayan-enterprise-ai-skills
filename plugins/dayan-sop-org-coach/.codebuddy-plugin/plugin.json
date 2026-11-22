@@ -1,0 +1,74 @@
+{
+  "name": "dayan-sop-org-coach",
+  "version": "1.0.0",
+  "description": "Extracts tacit know-how from top salespeople and veteran technicians into actionable SOPs, anti-BS executive interviews, and weekly report audits.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "09-operationshr"
+  ],
+  "agents": [
+    "./agents/sop-talent-coach.md"
+  ],
+  "skills": [
+    "./skills/dayan-sop-extractor-master",
+    "./skills/dayan-exec-hiring-bs-detector",
+    "./skills/dayan-meeting-to-accountability",
+    "./skills/dayan-weekly-report-truth"
+  ],
+  "expertType": "agent",
+  "agentName": "sop-talent-coach",
+  "displayName": {
+    "en": "Dayan SOP Coach",
+    "zh": "大衍销冠SOP教练"
+  },
+  "profession": {
+    "en": "Org SOP & Talent Operations Advisor",
+    "zh": "组织经验萃取与人效教练"
+  },
+  "displayDescription": {
+    "en": "Compiles top-performer chat logs into rookie-ready SOPs, filters executive hiring fluff, and turns meetings into accountability.",
+    "zh": "专治公司业绩绑死一两个能人！把销冠和老师傅隐性经验萃成活手册，挤干高管面试与周报水分。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "09-OperationsHR",
+  "defaultInitPrompt": {
+    "en": "Extract a rookie-ready sales SOP with objection handling from our top closer's chat logs",
+    "zh": "从我们销冠跟客户的真实沟通记录里，提炼一份新人三天就能照着开单的实战SOP手册"
+  },
+  "plugin": "dayan-sop-org-coach",
+  "tags": [
+    {
+      "en": "SOP Extraction",
+      "zh": "销冠经验萃取"
+    },
+    {
+      "en": "Executive Hiring",
+      "zh": "核心岗防看走眼"
+    },
+    {
+      "en": "Team Accountability",
+      "zh": "周报例会追责"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Extract a rookie-ready sales SOP with objection handling from our top closer's chat logs",
+      "zh": "从我们销冠跟客户的真实沟通记录里，提炼一份新人三天就能照着开单的实战SOP手册"
+    },
+    {
+      "en": "Generate STAR deep-probe questions and a live mini-test to vet this Sales Director resume",
+      "zh": "我们要招一位销售总监，帮我针对这份简历设计穿透式追问链和当场验真小考题"
+    },
+    {
+      "en": "Turn this messy meeting transcript into a 5-element Feishu/WeCom accountability table",
+      "zh": "把这段冗长的例会记录压成可直接发进企微/飞书群督办的五要素追责表"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "dayan-guardrail-rag-architect",
+  "version": "1.0.0",
+  "description": "Enterprise RAG, Dify/Coze workflow, and ERP integration architect preventing hallucinated quotes, ACL leaks, and stale policy answers.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "04-dataai"
+  ],
+  "agents": [
+    "./agents/guardrail-rag-architect.md"
+  ],
+  "skills": [
+    "./skills/dayan-rag-guardrail-kb",
+    "./skills/dayan-dify-coze-troubleshooter",
+    "./skills/dayan-local-llm-hardware-sizer"
+  ],
+  "expertType": "agent",
+  "agentName": "guardrail-rag-architect",
+  "displayName": {
+    "en": "Dayan RAG Architect",
+    "zh": "大衍兜错知识库总师"
+  },
+  "profession": {
+    "en": "Guardrail RAG & Agent Architect",
+    "zh": "企业兜错知识库总师"
+  },
+  "displayDescription": {
+    "en": "Designs hallucination-proof enterprise RAG with ACL pre-filtering, staleness circuit breakers, and safe ERP/CRM write-backs.",
+    "zh": "专治Dify与企业知识库乱报价、串权限、拿旧制度瞎答！设计五道关卡兜错RAG与ERP桥接。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "en": "Our Dify knowledge base hallucinates prices and cites expired docs—design a 5-gate fix",
+    "zh": "我们把PDF灌进Dify后AI经常乱报价和引用过期制度，帮我设计一套兜错改造方案"
+  },
+  "plugin": "dayan-guardrail-rag-architect",
+  "tags": [
+    {
+      "en": "Guardrail RAG",
+      "zh": "兜错型知识库"
+    },
+    {
+      "en": "Dify & Coze Fix",
+      "zh": "Dify排错调优"
+    },
+    {
+      "en": "ERP/CRM Bridge",
+      "zh": "业务系统打通"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Our Dify knowledge base hallucinates prices and cites expired docs—design a 5-gate fix",
+      "zh": "我们把PDF灌进Dify后AI经常乱报价和引用过期制度，帮我设计一套兜错改造方案"
+    },
+    {
+      "en": "Clean and structure these messy Excel/Word policy docs before indexing into RAG",
+      "zh": "在入库前帮我清洗整理这批混乱的企业制度与产品规格表，消除跨段数值冲突"
+    },
+    {
+      "en": "Size local GPU hardware vs dedicated cloud API TCO for a 100-person enterprise",
+      "zh": "我们有数据合规顾虑，帮我精算买显卡本地部署大模型与专线云API的三年真实总成本"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "dayan-ceo-ai-doctor",
+  "version": "1.0.0",
+  "description": "Enterprise AI readiness CT & ROI workflow triage advisor helping CEOs pick 3 high-ROI workflows that pay back within 30 days.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "12-industryconsultant"
+  ],
+  "agents": [
+    "./agents/enterprise-ai-chief-doctor.md"
+  ],
+  "skills": [
+    "./skills/dayan-org-ai-ct",
+    "./skills/dayan-enterprise-ai-triage",
+    "./skills/dayan-ai-seminar-anti-scam"
+  ],
+  "expertType": "agent",
+  "agentName": "enterprise-ai-chief-doctor",
+  "displayName": {
+    "en": "Keyang · AI Chief Doctor",
+    "zh": "大衍企业AI急诊官"
+  },
+  "profession": {
+    "en": "Enterprise AI Chief Advisor",
+    "zh": "企业AI全案首诊顾问"
+  },
+  "displayDescription": {
+    "en": "Diagnoses enterprise bottlenecks and selects 3 pragmatic AI workflows that deliver measurable ROI within 30 days.",
+    "zh": "拒绝盲目买账号上大模型！给企业做AI就绪度CT体检，筛出3条30天见效回本的落地流程。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "en": "Diagnose my company's workflows and pick 3 AI pilots that pay back in 30 days",
+    "zh": "我们是实体/成长型企业，帮我诊断哪3条业务流程最适合先上AI并在30天内见效"
+  },
+  "plugin": "dayan-ceo-ai-doctor",
+  "tags": [
+    {
+      "en": "Enterprise AI Triage",
+      "zh": "企业AI首诊"
+    },
+    {
+      "en": "Workflow ROI",
+      "zh": "30天见效规划"
+    },
+    {
+      "en": "FDE Implementation",
+      "zh": "全案落地诊断"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Diagnose my company's workflows and pick 3 AI pilots that pay back in 30 days",
+      "zh": "我们是实体/成长型企业，帮我诊断哪3条业务流程最适合先上AI并在30天内见效"
+    },
+    {
+      "en": "Audit why our employees stopped using AI tools after training and give a fix plan",
+      "zh": "团队买了AI会员也做过培训但三天就打回原形，帮我做个组织落地病根诊断"
+    },
+    {
+      "en": "Evaluate a vendor's AI proposal before we sign to avoid expensive vaporware",
+      "zh": "外面服务商给我们报了一套AI系统方案，帮我审审里面有没有伪需求水分"
+    }
+  ]
+}

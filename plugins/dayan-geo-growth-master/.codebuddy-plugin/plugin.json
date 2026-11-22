@@ -1,0 +1,73 @@
+{
+  "name": "dayan-geo-growth-master",
+  "version": "1.0.0",
+  "description": "Generative Engine Optimization (GEO) strategist helping B2B and multi-store brands earn organic citations in Doubao, Yuanbao, DeepSeek, and ChatGPT.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "05-marketinggrowth"
+  ],
+  "agents": [
+    "./agents/geo-ai-search-strategist.md"
+  ],
+  "skills": [
+    "./skills/dayan-geo-ai-seo",
+    "./skills/dayan-geo-visibility-check",
+    "./skills/dayan-chain-store-geo-auditor"
+  ],
+  "expertType": "agent",
+  "agentName": "geo-ai-search-strategist",
+  "displayName": {
+    "en": "Dayan GEO Strategist",
+    "zh": "大衍GEO获客操盘手"
+  },
+  "profession": {
+    "en": "GEO & AI Search Growth Lead",
+    "zh": "AI搜索获客操盘手"
+  },
+  "displayDescription": {
+    "en": "Audits why AI engines omit your brand and builds high-trust buyer FAQs, Schema.org JSON-LD, and llms.txt assets.",
+    "zh": "诊断豆包、元宝、DeepSeek为何不推荐你，输出高意向买方提问集、结构化事实与获客母稿。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "en": "Design 20 high-intent buyer prompts to test if Doubao and Yuanbao recommend our company",
+    "zh": "按我们公司的业务，设计20道真实买方采购提问盲测集并诊断官网信息缺口"
+  },
+  "plugin": "dayan-geo-growth-master",
+  "tags": [
+    {
+      "en": "GEO Optimization",
+      "zh": "GEO搜索优化"
+    },
+    {
+      "en": "AI Brand Visibility",
+      "zh": "豆包元宝收录"
+    },
+    {
+      "en": "B2B Inbound Leads",
+      "zh": "B2B精准获客"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Design 20 high-intent buyer prompts to test if Doubao and Yuanbao recommend our company",
+      "zh": "按我们公司的业务，设计20道真实买方采购提问盲测集并诊断官网信息缺口"
+    },
+    {
+      "en": "Generate llms.txt and FAQPage JSON-LD schema so AI search engines cite our products accurately",
+      "zh": "帮我们官网生成大模型最爱抓取引用的 llms.txt 与结构化 FAQ 事实卡片"
+    },
+    {
+      "en": "Write a high-citation comparison guide for Tencent Cloud and ByteDance ecosystems without ad-law violations",
+      "zh": "写一篇符合广告法合规、易被豆包和腾讯元宝采信引用的行业选型对比深度文"
+    }
+  ]
+}

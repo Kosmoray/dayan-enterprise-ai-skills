@@ -1,0 +1,56 @@
+{
+  "name": "dayan-enterprise-ai-experts",
+  "description": "成都大衍千机科技有限公司开源 WorkBuddy 企业级 AI 专家与专家团矩阵（10 Experts + 66 Skills）",
+  "plugins": [
+    {
+      "name": "dayan-contract-audit-team",
+      "source": "./plugins/dayan-contract-audit-team",
+      "description": "Four-angle B2B contract & quote review team (Delivery, Finance, Legal, Sales) catching fatal traps and drafting replacement clauses."
+    },
+    {
+      "name": "dayan-bid-winning-team",
+      "source": "./plugins/dayan-bid-winning-team",
+      "description": "Rubric-anchored technical proposal writing & isolated read-only judge scoring team to eliminate disqualification risks and win B2B bids."
+    },
+    {
+      "name": "dayan-ceo-ai-doctor",
+      "source": "./plugins/dayan-ceo-ai-doctor",
+      "description": "Enterprise AI readiness CT & ROI workflow triage advisor helping CEOs pick 3 high-ROI workflows that pay back within 30 days."
+    },
+    {
+      "name": "dayan-geo-growth-master",
+      "source": "./plugins/dayan-geo-growth-master",
+      "description": "Generative Engine Optimization (GEO) strategist helping B2B and multi-store brands earn organic citations in Doubao, Yuanbao, DeepSeek, and ChatGPT."
+    },
+    {
+      "name": "dayan-humanize-chief",
+      "source": "./plugins/dayan-humanize-chief",
+      "description": "Three-pass Chinese editorial master stripping AI buzzwords, hollow transitions, and robotic cadence into crisp executive prose."
+    },
+    {
+      "name": "dayan-executive-html-designer",
+      "source": "./plugins/dayan-executive-html-designer",
+      "description": "Compiles long reports, proposals, and architecture diagrams into editorial #1B365D Navy single-file HTML dashboards and zero-overlap SVGs."
+    },
+    {
+      "name": "dayan-guardrail-rag-architect",
+      "source": "./plugins/dayan-guardrail-rag-architect",
+      "description": "Enterprise RAG, Dify/Coze workflow, and ERP integration architect preventing hallucinated quotes, ACL leaks, and stale policy answers."
+    },
+    {
+      "name": "dayan-cashflow-cfo",
+      "source": "./plugins/dayan-cashflow-cfo",
+      "description": "SME CFO advisor for 13-week rolling cashflow stress tests, tiered AR collection letters, BOM supplier price audits, and loss-line stop-bleed."
+    },
+    {
+      "name": "dayan-sop-org-coach",
+      "source": "./plugins/dayan-sop-org-coach",
+      "description": "Extracts tacit know-how from top salespeople and veteran technicians into actionable SOPs, anti-BS executive interviews, and weekly report audits."
+    },
+    {
+      "name": "dayan-code-adversary-guard",
+      "source": "./plugins/dayan-code-adversary-guard",
+      "description": "Read-only 3-eye adversarial PR & code reviewer catching concurrency bugs, silent data corruption, auth bypasses, and secret leaks before release."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "name": "dayan-contract-audit-team",
+  "version": "1.0.0",
+  "description": "Four-angle B2B contract & quote review team (Delivery, Finance, Legal, Sales) catching fatal traps and drafting replacement clauses.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "11-securitycompliance"
+  ],
+  "agents": [
+    "./agents/contract-audit-team-lead.md",
+    "./agents/delivery-scope-auditor.md",
+    "./agents/finance-cashflow-auditor.md",
+    "./agents/legal-liability-auditor.md"
+  ],
+  "skills": [
+    "./skills/dayan-contract-4way-audit",
+    "./skills/dayan-oa-doc-cross-checker"
+  ],
+  "expertType": "team",
+  "agentName": "contract-audit-team-lead",
+  "teamInfo": {
+    "leadAgent": "contract-audit-team-lead",
+    "memberAgents": [
+      "delivery-scope-auditor",
+      "finance-cashflow-auditor",
+      "legal-liability-auditor"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Contract Audit Team",
+    "zh": "大衍合同排雷专家团"
+  },
+  "profession": {
+    "en": "Dayan Contract Audit Team",
+    "zh": "大衍合同排雷专家团"
+  },
+  "displayDescription": {
+    "en": "Parallel 4-angle B2B contract review catching back-to-back payment, uncapped liability, and IP traps with redline rewrites.",
+    "zh": "从交付边界、财务现金流、法务连带责任与商务成交四视角并行审合同，逐条给出替换话术与签字建议。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "11-SecurityCompliance",
+  "defaultInitPrompt": {
+    "en": "Audit my B2B contract draft from 4 angles and give copy-paste replacement clauses",
+    "zh": "帮我从交付、财务、法务、销售四视角审查这份商业合同，并给出逐条修改替换话术"
+  },
+  "plugin": "dayan-contract-audit-team",
+  "tags": [
+    {
+      "en": "Contract Review",
+      "zh": "商业合同审查"
+    },
+    {
+      "en": "Risk Redlines",
+      "zh": "霸王条款排雷"
+    },
+    {
+      "en": "B2B Negotiation",
+      "zh": "谈判替换话术"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Audit my B2B contract draft from 4 angles and give copy-paste replacement clauses",
+      "zh": "帮我从交付、财务、法务、销售四视角审查这份商业合同，并给出逐条修改替换话术"
+    },
+    {
+      "en": "Check this outsourcing agreement for back-to-back payment and IP ownership traps",
+      "zh": "排查这份软件定制外包协议里的背靠背付款、源码归属与默示验收漏洞"
+    },
+    {
+      "en": "Review our quotation sheet before sending to prevent scope creep and margin loss",
+      "zh": "在发给客户前帮我核查这份报价单与SOW的范围蔓延及毛利失血风险"
+    }
+  ],
+  "members": [
+    {
+      "id": "contract-audit-team-lead",
+      "displayName": {
+        "en": "Contract Lead Partner",
+        "zh": "大衍合同主审官"
+      },
+      "profession": {
+        "en": "Contract Audit Lead",
+        "zh": "合同会审主理人"
+      },
+      "avatar": "avatars/contract-audit-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "delivery-scope-auditor",
+      "displayName": {
+        "en": "Delivery Scope Auditor",
+        "zh": "交付戍边官"
+      },
+      "profession": {
+        "en": "Delivery Scope Specialist",
+        "zh": "项目交付边界审查专家"
+      },
+      "avatar": "avatars/delivery-scope-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "finance-cashflow-auditor",
+      "displayName": {
+        "en": "Cashflow Risk Auditor",
+        "zh": "现金流审计官"
+      },
+      "profession": {
+        "en": "Finance & Cashflow Auditor",
+        "zh": "商务回款与税务审查专家"
+      },
+      "avatar": "avatars/finance-cashflow-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "legal-liability-auditor",
+      "displayName": {
+        "en": "Legal Liability Auditor",
+        "zh": "法务风控官"
+      },
+      "profession": {
+        "en": "IP & Liability Specialist",
+        "zh": "知识产权与违约上限审查专家"
+      },
+      "avatar": "avatars/legal-liability-auditor.png",
+      "role": "member"
+    }
+  ]
+}

@@ -16,6 +16,7 @@ TARGETS = {
     "agents": pathlib.Path.home() / ".agents" / "skills",
     "cursor": pathlib.Path.home() / ".cursor" / "skills",
     "codex": pathlib.Path.home() / ".agents" / "skills",
+    "workbuddy": pathlib.Path.home() / ".workbuddy" / "skills",
 }
 
 

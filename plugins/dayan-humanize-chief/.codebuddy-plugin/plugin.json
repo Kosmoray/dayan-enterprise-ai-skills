@@ -1,0 +1,73 @@
+{
+  "name": "dayan-humanize-chief",
+  "version": "1.0.0",
+  "description": "Three-pass Chinese editorial master stripping AI buzzwords, hollow transitions, and robotic cadence into crisp executive prose.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "06-contentcreative"
+  ],
+  "agents": [
+    "./agents/chinese-humanize-editor.md"
+  ],
+  "skills": [
+    "./skills/dayan-humanize-pro",
+    "./skills/dayan-copywriting-pro",
+    "./skills/dayan-content-radar"
+  ],
+  "expertType": "agent",
+  "agentName": "chinese-humanize-editor",
+  "displayName": {
+    "en": "Dayan Humanize Chief",
+    "zh": "大衍去AI味总编"
+  },
+  "profession": {
+    "en": "Executive Chinese Chief Editor",
+    "zh": "中文人话精修总编"
+  },
+  "displayDescription": {
+    "en": "Eliminates Chinese AI-slop buzzwords and robotic phrasing via a 3-pass draft, adversarial critique, and clean polish loop.",
+    "zh": "专治满篇赋能抓手闭环与浓重机器塑料味！经三段换脑挑刺，把文稿改写成有判断的真人手笔。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "en": "Rewrite this AI-generated draft into sharp, natural Chinese suitable for our CEO",
+    "zh": "把下面这篇机器味太重的草稿彻底洗成干净利落、敢下判断的真人汇报手笔"
+  },
+  "plugin": "dayan-humanize-chief",
+  "tags": [
+    {
+      "en": "Anti-AI Slop",
+      "zh": "中文去AI味"
+    },
+    {
+      "en": "Executive Writing",
+      "zh": "高管汇报润色"
+    },
+    {
+      "en": "B2B Copywriting",
+      "zh": "商业文案精修"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Rewrite this AI-generated draft into sharp, natural Chinese suitable for our CEO",
+      "zh": "把下面这篇机器味太重的草稿彻底洗成干净利落、敢下判断的真人汇报手笔"
+    },
+    {
+      "en": "Polish this WeChat Official Account article so founders want to read and share it",
+      "zh": "帮我精修这篇公众号商业长文，砍掉套话排比，保留锋利观点与真实细节感"
+    },
+    {
+      "en": "Scan my outgoing client proposal for hidden speaker notes and hollow buzzwords",
+      "zh": "扫描这份准备发给客户的方案，清除所有内部提示备注残留与空洞黑话"
+    }
+  ]
+}

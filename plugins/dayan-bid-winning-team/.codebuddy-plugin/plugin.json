@@ -1,0 +1,138 @@
+{
+  "name": "dayan-bid-winning-team",
+  "version": "1.0.0",
+  "description": "Rubric-anchored technical proposal writing & isolated read-only judge scoring team to eliminate disqualification risks and win B2B bids.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "07-salescommerce"
+  ],
+  "agents": [
+    "./agents/bid-winning-team-lead.md",
+    "./agents/tender-redline-scanner.md",
+    "./agents/technical-bid-writer.md",
+    "./agents/independent-bid-judge.md"
+  ],
+  "skills": [
+    "./skills/dayan-bid-scoring-loop",
+    "./skills/dayan-tender-redline-audit"
+  ],
+  "expertType": "team",
+  "agentName": "bid-winning-team-lead",
+  "teamInfo": {
+    "leadAgent": "bid-winning-team-lead",
+    "memberAgents": [
+      "tender-redline-scanner",
+      "technical-bid-writer",
+      "independent-bid-judge"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Bid Winning Team",
+    "zh": "大衍高分投标专家团"
+  },
+  "profession": {
+    "en": "Dayan Bid Winning Team",
+    "zh": "大衍高分投标专家团"
+  },
+  "displayDescription": {
+    "en": "Disqualification check, rubric-anchored proposal drafting, and isolated judge scoring loops to maximize bid scores.",
+    "zh": "严格按招标文件逐行锚定评分表：废标红绿灯自检、技术标精写与独立毒舌评委打分改稿闭环。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "en": "Parse this RFP document, list disqualification redlines, and map the scoring rubric",
+    "zh": "解析这份招标文件，先列出全部★号废标红线，再拆解技术标满分对位表"
+  },
+  "plugin": "dayan-bid-winning-team",
+  "tags": [
+    {
+      "en": "Bid Proposals",
+      "zh": "政企招投标"
+    },
+    {
+      "en": "Rubric Scoring",
+      "zh": "评委模拟打分"
+    },
+    {
+      "en": "Disqualification Guard",
+      "zh": "废标红线核查"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Parse this RFP document, list disqualification redlines, and map the scoring rubric",
+      "zh": "解析这份招标文件，先列出全部★号废标红线，再拆解技术标满分对位表"
+    },
+    {
+      "en": "Draft our technical solution chapter anchored strictly to every rubric point",
+      "zh": "严格对照评分标准逐条撰写高分技术方案章节，让评委30秒扫到全部得分锚点"
+    },
+    {
+      "en": "Score our current proposal draft like a strict external judge and fix point deductions",
+      "zh": "以严苛外部评委视角给这份投标初稿逐项打分挑刺，并把丢分项改到高分线"
+    }
+  ],
+  "members": [
+    {
+      "id": "bid-winning-team-lead",
+      "displayName": {
+        "en": "Bid Director",
+        "zh": "大衍夺标总指挥"
+      },
+      "profession": {
+        "en": "Bid Proposal Lead",
+        "zh": "投标工程主理人"
+      },
+      "avatar": "avatars/bid-winning-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "tender-redline-scanner",
+      "displayName": {
+        "en": "Redline Scanner",
+        "zh": "废标排雷官"
+      },
+      "profession": {
+        "en": "Tender Compliance Specialist",
+        "zh": "招投标资格与废标核查专家"
+      },
+      "avatar": "avatars/tender-redline-scanner.png",
+      "role": "member"
+    },
+    {
+      "id": "technical-bid-writer",
+      "displayName": {
+        "en": "Technical Bid Writer",
+        "zh": "技术标主笔官"
+      },
+      "profession": {
+        "en": "Proposal Author",
+        "zh": "高分技术方案撰稿专家"
+      },
+      "avatar": "avatars/technical-bid-writer.png",
+      "role": "member"
+    },
+    {
+      "id": "independent-bid-judge",
+      "displayName": {
+        "en": "Independent Bid Judge",
+        "zh": "独立毒舌评委"
+      },
+      "profession": {
+        "en": "Rubric Scoring Judge",
+        "zh": "只读模拟评标打分专家"
+      },
+      "avatar": "avatars/independent-bid-judge.png",
+      "role": "member"
+    }
+  ]
+}

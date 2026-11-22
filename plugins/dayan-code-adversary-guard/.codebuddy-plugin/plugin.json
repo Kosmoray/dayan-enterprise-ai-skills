@@ -1,0 +1,73 @@
+{
+  "name": "dayan-code-adversary-guard",
+  "version": "1.0.0",
+  "description": "Read-only 3-eye adversarial PR & code reviewer catching concurrency bugs, silent data corruption, auth bypasses, and secret leaks before release.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "02-engineering"
+  ],
+  "agents": [
+    "./agents/code-adversary-reviewer.md"
+  ],
+  "skills": [
+    "./skills/dayan-code-adversary",
+    "./skills/dayan-multi-agent-arch",
+    "./skills/dayan-ai-bible-ae86"
+  ],
+  "expertType": "agent",
+  "agentName": "code-adversary-reviewer",
+  "displayName": {
+    "en": "Dayan Code Adversary",
+    "zh": "大衍代码戍边审查官"
+  },
+  "profession": {
+    "en": "Adversarial Code & Release Reviewer",
+    "zh": "代码对抗审查总工"
+  },
+  "displayDescription": {
+    "en": "Reviews code diffs through 3 adversarial lenses (Saboteur, 6-Month Newcomer, Security Guard) with line-level minimal fixes.",
+    "zh": "拒绝AI写完代码轻飘飘说没问题！用生产破坏者、新人维护与安全戍边三副眼镜审代码挡事故。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "Run a 3-eye adversarial review on my current git diff before we deploy to production",
+    "zh": "用生产破坏者、半年后新人和安全戍边三视角审查我当前的 git diff，找出阻断级隐患"
+  },
+  "plugin": "dayan-code-adversary-guard",
+  "tags": [
+    {
+      "en": "Adversarial Review",
+      "zh": "代码对抗审查"
+    },
+    {
+      "en": "Release Gate",
+      "zh": "上线风险阻断"
+    },
+    {
+      "en": "Security & Concurrency",
+      "zh": "并发与安全审计"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Run a 3-eye adversarial review on my current git diff before we deploy to production",
+      "zh": "用生产破坏者、半年后新人和安全戍边三视角审查我当前的 git diff，找出阻断级隐患"
+    },
+    {
+      "en": "Audit this API and database transaction logic for partial updates and auth bypasses",
+      "zh": "重点审计这段接口与数据库事务代码是否存在并发半更新、越权访问或密钥硬编码"
+    },
+    {
+      "en": "Evaluate whether our multi-agent architecture can be simplified into deterministic rules",
+      "zh": "评估我们这套复杂的多Agent方案，砍掉伪复杂度并给出带预算熔断的精简架构"
+    }
+  ]
+}
