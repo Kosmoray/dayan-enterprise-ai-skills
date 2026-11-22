@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" width="1200" height="390">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091929"/>
+      <stop offset="55%" stop-color="#1B365D"/>
+      <stop offset="100%" stop-color="#132946"/>
+    </linearGradient>
+    <linearGradient id="goldline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AD7B27"/>
+      <stop offset="70%" stop-color="#E5B968"/>
+      <stop offset="100%" stop-color="rgba(173,123,39,0)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="390" rx="18" fill="url(#bg)"/>
+  <rect x="18" y="18" width="1164" height="354" rx="12" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+
+  <!-- Left 7x7+1 Dayan Emblem -->
+  <rect x="54" y="74" width="138" height="138" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <circle cx="76" cy="96" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="91" cy="96" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="106" cy="96" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="121" cy="96" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="136" cy="96" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="151" cy="96" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="166" cy="96" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="76" cy="111" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="91" cy="111" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="106" cy="111" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="121" cy="111" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="136" cy="111" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="151" cy="111" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="166" cy="111" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="76" cy="126" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="91" cy="126" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="106" cy="126" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="121" cy="126" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="136" cy="126" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="151" cy="126" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="166" cy="126" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="76" cy="141" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="91" cy="141" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="106" cy="141" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="121" cy="141" r="2.6" fill="#AD7B27"/><circle cx="136" cy="141" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="151" cy="141" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="166" cy="141" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="76" cy="156" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="91" cy="156" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="106" cy="156" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="121" cy="156" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="136" cy="156" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="151" cy="156" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="166" cy="156" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="76" cy="171" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="91" cy="171" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="106" cy="171" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="121" cy="171" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="136" cy="171" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="151" cy="171" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="166" cy="171" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="76" cy="186" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="91" cy="186" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="106" cy="186" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="121" cy="186" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="136" cy="186" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="151" cy="186" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="166" cy="186" r="2.6" fill="rgba(255,255,255,0.82)"/><circle cx="186" cy="82" r="5.2" fill="#D7263D"/>
+  <text x="123" y="238" text-anchor="middle" fill="#E5B968" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="1.5">49 + 1 MATRIX</text>
+
+  <!-- Main Copy -->
+  <text x="232" y="92" fill="#E5B968" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700" letter-spacing="2">CHENGDU DAYAN QIANJI · 成都大衍千机科技（天府长岛首家入驻 OPC）开源出品</text>
+  <text x="232" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="40" font-weight="800">大衍千机 · 66 枚企业级 AI 实战技能军火库</text>
+  <rect x="232" y="168" width="680" height="3" fill="url(#goldline)"/>
+  <text x="232" y="206" fill="rgba(255,255,255,0.88)" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18">不玩概念玩具，全是真刀真枪给企业做首诊、审合同、写标书、搭兜错知识库打出来的吃饭家伙。</text>
+  <text x="232" y="236" fill="rgba(255,255,255,0.68)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">Works with: Claude Code · Cursor · Codex CLI · 腾讯 WorkBuddy / SkillHub (蓝V认证企业 #1) · Open Agent Skills</text>
+
+  <!-- 6 Feature Pills -->
+  <g transform="translate(232, 266)" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="600">
+    <rect x="0" y="0" width="142" height="36" rx="8" fill="rgba(173,123,39,0.22)" stroke="#AD7B27"/>
+    <text x="71" y="23" text-anchor="middle" fill="#FFF4DC">去AI味人话精修</text>
+
+    <rect x="154" y="0" width="162" height="36" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.22)"/>
+    <text x="235" y="23" text-anchor="middle" fill="#FFFFFF">深蓝政商HTML看板</text>
+
+    <rect x="328" y="0" width="162" height="36" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.22)"/>
+    <text x="409" y="23" text-anchor="middle" fill="#FFFFFF">标书写审打分闭环</text>
+
+    <rect x="502" y="0" width="154" height="36" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.22)"/>
+    <text x="579" y="23" text-anchor="middle" fill="#FFFFFF">合同四视角审查</text>
+
+    <rect x="668" y="0" width="154" height="36" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.22)"/>
+    <text x="745" y="23" text-anchor="middle" fill="#FFFFFF">兜错型企业知识库</text>
+
+    <rect x="834" y="0" width="102" height="36" rx="8" fill="rgba(215,38,61,0.24)" stroke="#D7263D"/>
+    <text x="885" y="23" text-anchor="middle" fill="#FFD8DF">+十大行业</text>
+  </g>
+
+  <!-- Bottom Colophon -->
+  <text x="232" y="344" fill="rgba(255,255,255,0.62)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">Founder: 雷可扬 (Keyang Lei)  |  Official Site: https://dayanqianji.com/  |  MIT Open Source</text>
+</svg>
