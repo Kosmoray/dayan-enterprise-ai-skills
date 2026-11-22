@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dayan-enterprise-ai-skills"
+version = "1.1.0"
+description = "66 Battle-Tested Enterprise AI Agent Skills & Zero-Dependency Executive CLI Tools by Chengdu Dayan Qianji Technology Co., Ltd. (雷可扬)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "Keyang Lei (雷可扬) · 成都大衍千机科技有限公司", email = "contact@dayanqianji.com"}
+]
+keywords = [
+  "ai-agents",
+  "claude-code",
+  "agent-skills",
+  "workbuddy",
+  "skillhub",
+  "enterprise-ai",
+  "b2b",
+  "rag",
+  "humanize",
+  "contract-audit",
+  "geo"
+]
+urls = {Homepage = "https://dayanqianji.com/open-source/", Repository = "https://github.com/Kosmoray/dayan-enterprise-ai-skills", Documentation = "https://kosmoray.github.io/dayan-enterprise-ai-skills/"}
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = [
+  "dayan_humanize_lint",
+  "dayan_html_compiler",
+  "dayan_skill_finder",
+  "dayan_contract_quickscan",
+  "dayan_catalog_data"
+]
+
+[project.scripts]
+dayan-lint = "dayan_humanize_lint:main"
+dayan-html = "dayan_html_compiler:main"
+dayan-find = "dayan_skill_finder:main"
+dayan-contract = "dayan_contract_quickscan:main"

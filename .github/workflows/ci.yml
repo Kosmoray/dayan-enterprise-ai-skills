@@ -1,0 +1,42 @@
+name: Validate Skills & CLI Tools
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate all SKILL.md frontmatter & non-empty bodies
+        run: |
+          python3 - <<'PY'
+          import pathlib, re, sys
+          skills_dir = pathlib.Path("skills")
+          skill_files = sorted(skills_dir.glob("*/SKILL.md"))
+          assert len(skill_files) >= 66, f"Expected >= 66 skills, found {len(skill_files)}"
+          for sf in skill_files:
+              txt = sf.read_text(encoding="utf-8")
+              assert txt.startswith("---\n"), f"Missing YAML frontmatter in {sf}"
+              assert "name:" in txt and "description:" in txt, f"Missing name/description in {sf}"
+              assert len(txt) >= 800, f"Skill body too thin in {sf}: {len(txt)} chars"
+          print(f"✅ Validated {len(skill_files)} enterprise skills!")
+          PY
+
+      - name: Smoke-test all 4 Zero-Dependency CLI Tools
+        run: |
+          python3 scripts/dayan_skill_finder.py 合同
+          python3 scripts/dayan_humanize_lint.py examples/sample_ai_slop.md
+          python3 scripts/dayan_contract_quickscan.py examples/sample_b2b_contract.md
+          python3 scripts/dayan_html_compiler.py examples/sample_ai_slop.md /tmp/test_brief.html
+          test -s /tmp/test_brief.html

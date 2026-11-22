@@ -4,8 +4,10 @@
 
 <p align="center">
   <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/stargazers"><img src="https://img.shields.io/github/stars/Kosmoray/dayan-enterprise-ai-skills?style=for-the-badge&color=AD7B27&label=STARS" alt="GitHub Stars"/></a>
+  <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/actions"><img src="https://img.shields.io/github/actions/workflow/status/Kosmoray/dayan-enterprise-ai-skills/ci.yml?branch=main&style=for-the-badge&label=CI_VALIDATE" alt="CI Status"/></a>
   <a href="https://skillhub.cn/enterprise-zone"><img src="https://img.shields.io/badge/腾讯_SkillHub-蓝V认证企业_66_Skills-1B365D?style=for-the-badge" alt="Tencent SkillHub Verified"/></a>
   <a href="https://www.skills.sh/kosmoray/dayan-enterprise-ai-skills"><img src="https://img.shields.io/badge/skills.sh-Global_Indexed-0F766E?style=for-the-badge" alt="skills.sh"/></a>
+  <a href="./pyproject.toml"><img src="https://img.shields.io/badge/Python_CLI-Zero_Dependency-3776AB?style=for-the-badge" alt="Python Zero-Dep CLI"/></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-265592?style=for-the-badge" alt="MIT License"/></a>
 </p>
 
@@ -54,6 +56,30 @@ skillhub install dayan-contract-4way-audit
 # 方式 3：克隆本仓库一键部署全部 66 枚技能至本地
 git clone https://github.com/Kosmoray/dayan-enterprise-ai-skills.git
 cd dayan-enterprise-ai-skills && bash install.sh
+```
+
+---
+
+## 🛠️ 开箱即跑：内置 4 大零依赖 Python 命令行急救神器（无需 API Key！）
+
+除了 66 枚挂载进智能体的深度 `SKILL.md` 专家系统，本仓库在 [`scripts/`](./scripts/) 中内置了 **4 把纯标准库、零第三方依赖、离线毫秒级响应的 Python CLI 武器**（支持本地直跑、GitHub Actions 门禁或 `uvx` 免克隆调用）：
+
+```bash
+# 1️⃣ 【乙方法务保命】1秒扫描合同里的「背靠背付款/无限连带赔偿/源码归甲方/默认不验收」等致命霸王条款
+python3 scripts/dayan_contract_quickscan.py examples/sample_b2b_contract.md
+
+# 2️⃣ 【外发净稿门禁】1秒测出中文「AI 塑料味指数（0-100分）」并拦截未删干净的演讲/内部制作备注
+python3 scripts/dayan_humanize_lint.py examples/sample_ai_slop.md --fail-under 50
+
+# 3️⃣ 【老板拍板呈现】1秒把任意 Markdown 报告编译成 #1B365D 深蓝政商风单文件 HTML 高管看板（微信点开即看）
+python3 scripts/dayan_html_compiler.py examples/sample_ai_slop.md /tmp/executive_brief.html
+
+# 4️⃣ 【痛点秒搜武器】输入任意经营卡点词（如：合同 / 标书 / 现金流 / 餐饮 / 工厂），秒出对应安装指令
+python3 scripts/dayan_skill_finder.py 合同
+
+# ⚡ 进阶玩法：不克隆仓库，直接通过 uvx 远程免安装运行任意工具！
+uvx --from git+https://github.com/Kosmoray/dayan-enterprise-ai-skills.git dayan-contract your_contract.md
+uvx --from git+https://github.com/Kosmoray/dayan-enterprise-ai-skills.git dayan-lint your_article.md
 ```
 
 ---

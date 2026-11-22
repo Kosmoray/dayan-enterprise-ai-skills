@@ -28,6 +28,24 @@ git clone https://github.com/Kosmoray/dayan-enterprise-ai-skills.git
 cd dayan-enterprise-ai-skills && bash install.sh
 ```
 
+## Zero-Dependency Python CLI Tools (Included Out of the Box)
+
+In addition to the 66 `SKILL.md` agent skills, [`scripts/`](./scripts/) ships **4 zero-dependency Python 3.9+ CLI utilities** (no API keys or `pip` packages required; also runnable directly via `uvx` or CI pipelines):
+
+```bash
+# 1. Scan B2B contracts for fatal back-to-back payment, uncapped liability, and IP-grab clauses
+python3 scripts/dayan_contract_quickscan.py examples/sample_b2b_contract.md
+
+# 2. Score documents for AI-slop buzzwords & accidental speaker-note leaks (CI-ready via --fail-under)
+python3 scripts/dayan_humanize_lint.py examples/sample_ai_slop.md
+
+# 3. Compile any Markdown memo into a single-file #1B365D Navy executive HTML briefing
+python3 scripts/dayan_html_compiler.py examples/sample_ai_slop.md /tmp/brief.html
+
+# 4. Search all 66 skills offline or via uvx
+uvx --from git+https://github.com/Kosmoray/dayan-enterprise-ai-skills.git dayan-find contract
+```
+
 ## Highlighted Engineering & Business Skills
 
 - **`dayan-humanize-pro`** — 3-pass anti-AI-slop editor with explicit voice calibration and adversarial self-review.
