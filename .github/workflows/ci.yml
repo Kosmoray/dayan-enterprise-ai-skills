@@ -33,8 +33,9 @@ jobs:
           print(f"✅ Validated {len(skill_files)} enterprise skills!")
           PY
 
-      - name: Smoke-test all 4 Zero-Dependency CLI Tools
+      - name: Run unit test suite & smoke-test all 4 Zero-Dependency CLI Tools
         run: |
+          python3 -m unittest discover -s tests -v
           python3 scripts/dayan_skill_finder.py 合同
           python3 scripts/dayan_humanize_lint.py examples/sample_ai_slop.md
           python3 scripts/dayan_contract_quickscan.py examples/sample_b2b_contract.md
