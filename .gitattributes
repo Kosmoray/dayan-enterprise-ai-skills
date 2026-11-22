@@ -1,0 +1,2 @@
+scripts/*.py linguist-vendored=false linguist-documentation=false linguist-detectable=true
+install.sh linguist-vendored=true
