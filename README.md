@@ -6,6 +6,7 @@
   <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/stargazers"><img src="https://img.shields.io/github/stars/Kosmoray/dayan-enterprise-ai-skills?style=for-the-badge&color=AD7B27&label=STARS" alt="GitHub Stars"/></a>
   <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/actions"><img src="https://img.shields.io/github/actions/workflow/status/Kosmoray/dayan-enterprise-ai-skills/ci.yml?branch=main&style=for-the-badge&label=CI_VALIDATE" alt="CI Status"/></a>
   <a href="https://skillhub.cn/enterprise-zone"><img src="https://img.shields.io/badge/腾讯_SkillHub-蓝V认证企业_66_Skills-1B365D?style=for-the-badge" alt="Tencent SkillHub Verified"/></a>
+  <a href="./docs/DOUBAO-VOLCENGINE-GUIDE.md"><img src="https://img.shields.io/badge/字节_豆包工作-66_Skills_安全扫描通过-0066FF?style=for-the-badge" alt="Doubao Work Verified"/></a>
   <a href="https://www.skills.sh/kosmoray/dayan-enterprise-ai-skills"><img src="https://img.shields.io/badge/skills.sh-Global_Indexed-0F766E?style=for-the-badge" alt="skills.sh"/></a>
   <a href="./pyproject.toml"><img src="https://img.shields.io/badge/Python_CLI-Zero_Dependency-3776AB?style=for-the-badge" alt="Python Zero-Dep CLI"/></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-265592?style=for-the-badge" alt="MIT License"/></a>
@@ -38,7 +39,7 @@
 
 ## ⚡ 10 秒极速安装（支持所有主流 Agent 客户端）
 
-兼容 **Claude Code**、**Cursor**、**Codex CLI**、**腾讯 WorkBuddy / SkillHub**、**Cline**、**Windsurf** 等所有支持 `SKILL.md` 标准的智能体工具：
+兼容 **字节跳动豆包工作（Doubao Work）**、**火山方舟（Volcengine Ark）**、**扣子（Coze）**、**腾讯 WorkBuddy / SkillHub**、**Claude Code**、**Cursor**、**Codex CLI** 等所有支持 `SKILL.md` 标准的智能体工具（详见 [📘 字节豆包工作与火山方舟接入指南](./docs/DOUBAO-VOLCENGINE-GUIDE.md)）：
 
 ```bash
 # 方式 1：使用 Vercel 官方 skills CLI（自动适配 Claude Code / Cursor / Codex 等）
@@ -55,6 +56,9 @@ skillhub install dayan-contract-4way-audit --namespace dayanqianji
 
 # 方式 2B：在腾讯 WorkBuddy / CodeBuddy 客户端内一键挂载「大衍千机 10 大王牌专家 & 专家团」插件源
 /plugin marketplace add https://github.com/Kosmoray/dayan-enterprise-ai-skills
+
+# 方式 2C：装入字节跳动「豆包工作（doubao.com/chat/skills）」
+# 下载 Release v1.3.0 中的 dayan-doubao-work-66-skills.zip 解压单枚 .zip 上传即可（零安全黄标）
 
 # 方式 3：克隆本仓库一键部署全部 66 枚技能至本地（支持 Claude / Codex / WorkBuddy）
 git clone https://github.com/Kosmoray/dayan-enterprise-ai-skills.git
