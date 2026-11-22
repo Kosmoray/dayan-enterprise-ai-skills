@@ -1,0 +1,142 @@
+{
+  "name": "dayan-eng-epc-claim-team",
+  "version": "1.1.0",
+  "description": "Construction & MEP engineering subcontract back-to-back clause rewrite, 28-day claim radar, GB55037 fire code inspection, and main material price adjustment team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "11-securitycompliance"
+  ],
+  "agents": [
+    "./agents/epc-claim-team-lead.md",
+    "./agents/epc-contract-claim-lawyer.md",
+    "./agents/epc-boq-cost-chief.md",
+    "./agents/epc-fire-safety-chief.md"
+  ],
+  "skills": [
+    "./skills/dayan-epc-subcontract-back2back",
+    "./skills/dayan-epc-visa-expire-radar",
+    "./skills/dayan-epc-fire-code-audit",
+    "./skills/dayan-epc-boq-unbalanced-bid",
+    "./skills/dayan-epc-material-price-diff",
+    "./skills/dayan-epc-safety-hazard-log"
+  ],
+  "expertType": "team",
+  "agentName": "epc-claim-team-lead",
+  "teamInfo": {
+    "leadAgent": "epc-claim-team-lead",
+    "memberAgents": [
+      "epc-contract-claim-lawyer",
+      "epc-boq-cost-chief",
+      "epc-fire-safety-chief"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan EPC Claim & Cost Team",
+    "zh": "大衍建设工程索赔成控总工团"
+  },
+  "profession": {
+    "en": "Dayan EPC Claim & Cost Team",
+    "zh": "大衍建设工程索赔成控总工团"
+  },
+  "displayDescription": {
+    "en": "Rewrite subcontract back-to-back traps, track 28-day visa claims, check GB55037 fire rules, and calc price diffs.",
+    "zh": "破除分包背靠背霸王条款，盯紧28天签证索赔时效、主材±5%调差核算与GB55037消防强条报验。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "11-SecurityCompliance",
+  "defaultInitPrompt": {
+    "en": "Rewrite the 'pay-when-paid' back-to-back payment and audit delay clauses in this MEP subcontract",
+    "zh": "帮我依据最高院批复精神审查这份机电分包合同里的“收到业主款再付”背靠背条款，并写出保命修改版"
+  },
+  "plugin": "dayan-eng-epc-claim-team",
+  "tags": [
+    {
+      "en": "Construction Claim",
+      "zh": "工程签证索赔"
+    },
+    {
+      "en": "Back-to-Back Clause",
+      "zh": "分包背靠背"
+    },
+    {
+      "en": "GB55037 Fire Code",
+      "zh": "消防验收强条"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Rewrite the 'pay-when-paid' back-to-back payment and audit delay clauses in this MEP subcontract",
+      "zh": "帮我依据最高院批复精神审查这份机电分包合同里的“收到业主款再付”背靠背条款，并写出保命修改版"
+    },
+    {
+      "en": "Audit unsigned verbal site changes approaching the 28-day claim deadline and calculate copper/steel price adjustments",
+      "zh": "梳理项目部微信群里快满28天时效的口头变更增项补齐签证单，并按±5%风险包干公式核算铜缆钢材涨价补差"
+    },
+    {
+      "en": "Pre-check our commercial renovation project against GB55037 mandatory fire protection code before housing inspection",
+      "zh": "在报住建消防验收前，对照GB55037建筑防火通用规范强条帮我排查桥架封堵、疏散净宽与防排烟联动隐患"
+    }
+  ],
+  "members": [
+    {
+      "id": "epc-claim-team-lead",
+      "displayName": {
+        "en": "EPC Commercial & Technical Chief",
+        "zh": "工程商务成控总工"
+      },
+      "profession": {
+        "en": "Construction Claim & Code Lead",
+        "zh": "工程索赔与总工主理人"
+      },
+      "avatar": "avatars/epc-claim-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "epc-contract-claim-lawyer",
+      "displayName": {
+        "en": "Construction Claim Specialist",
+        "zh": "工程反背靠背索赔官"
+      },
+      "profession": {
+        "en": "Subcontract & Visa Claim Guard",
+        "zh": "分包合同与28天索赔锁链"
+      },
+      "avatar": "avatars/epc-contract-claim-lawyer.png",
+      "role": "member"
+    },
+    {
+      "id": "epc-boq-cost-chief",
+      "displayName": {
+        "en": "BOQ & Price Diff Chief",
+        "zh": "清单清标与调差总师"
+      },
+      "profession": {
+        "en": "Quantity Surveying Specialist",
+        "zh": "不平衡报价与主材调差"
+      },
+      "avatar": "avatars/epc-boq-cost-chief.png",
+      "role": "member"
+    },
+    {
+      "id": "epc-fire-safety-chief",
+      "displayName": {
+        "en": "Fire Code & Safety Chief",
+        "zh": "消防与危大安全总工"
+      },
+      "profession": {
+        "en": "Fire & Hazard Engineering Lead",
+        "zh": "GB55037验收与住建37号令"
+      },
+      "avatar": "avatars/epc-fire-safety-chief.png",
+      "role": "member"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "name": "dayan-dental-aesthetic-team",
+  "version": "1.1.0",
+  "description": "Dental implant/orthodontics & medical aesthetics ad-law compliance, CBCT consultation SOP, prepaid card depletion alert, NMPA device check, and local GEO team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "05-marketinggrowth"
+  ],
+  "agents": [
+    "./agents/dental-aesthetic-lead.md",
+    "./agents/med-compliance-officer.md",
+    "./agents/clinic-consult-coach.md",
+    "./agents/card-geo-operator.md"
+  ],
+  "skills": [
+    "./skills/dayan-med-ad-law-redline",
+    "./skills/dayan-dental-implant-ortho-sop",
+    "./skills/dayan-aesthetic-card-depletion",
+    "./skills/dayan-aesthetic-device-nmpa",
+    "./skills/dayan-med-informed-consent-guard",
+    "./skills/dayan-clinic-local-geo-rank"
+  ],
+  "expertType": "team",
+  "agentName": "dental-aesthetic-lead",
+  "teamInfo": {
+    "leadAgent": "dental-aesthetic-lead",
+    "memberAgents": [
+      "med-compliance-officer",
+      "clinic-consult-coach",
+      "card-geo-operator"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Dental & Aesthetics Team",
+    "zh": "大衍口腔医美合规增长专家团"
+  },
+  "profession": {
+    "en": "Dayan Dental & Aesthetics Team",
+    "zh": "大衍口腔医美合规增长专家团"
+  },
+  "displayDescription": {
+    "en": "Screen medical ad-law violations, extract dental CT consultation SOPs, alert dormant VIP cards, and boost local GEO.",
+    "zh": "拦截医美口腔新广告法违禁词罚单，萃取种植正畸看片转化SOP、预警沉睡高客单耗卡并优化同城AI找院。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "en": "Screen our Xiaohongshu/Douyin/Meituan clinic copy for medical advertising law violations and rewrite safely",
+    "zh": "帮我按医疗广告管理办法审查这篇小红书/美团种草文案里的功效断言与违禁词，并改成高信任合规科普版"
+  },
+  "plugin": "dayan-dental-aesthetic-team",
+  "tags": [
+    {
+      "en": "Medical Ad Law",
+      "zh": "医疗广告排雷"
+    },
+    {
+      "en": "Dental & Aesthetics",
+      "zh": "口腔轻医美"
+    },
+    {
+      "en": "Card Depletion CRM",
+      "zh": "耗卡复购激活"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Screen our Xiaohongshu/Douyin/Meituan clinic copy for medical advertising law violations and rewrite safely",
+      "zh": "帮我按医疗广告管理办法审查这篇小红书/美团种草文案里的功效断言与违禁词，并改成高信任合规科普版"
+    },
+    {
+      "en": "Design a dormant VIP prepaid card depletion alert & reactivation plan plus dental CBCT consultation SOP",
+      "zh": "针对院内余额过万但超60天未到院的沉睡VIP客户设计分层唤醒耗卡方案，并梳理种植牙初诊看片沟通SOP"
+    },
+    {
+      "en": "Audit pre-op informed consent timestamps, NMPA Class-III device certificates, and local AI search visibility",
+      "zh": "核查门诊术前知情同意书病历免责闭环、进口光电探头NMPA三类证真伪及同城豆包搜附近看牙曝光缺口"
+    }
+  ],
+  "members": [
+    {
+      "id": "dental-aesthetic-lead",
+      "displayName": {
+        "en": "Healthcare Clinic Chief Operator",
+        "zh": "消费医疗集团运营院长"
+      },
+      "profession": {
+        "en": "Clinic Compliance & Growth Lead",
+        "zh": "口腔医美合规增长主理人"
+      },
+      "avatar": "avatars/dental-aesthetic-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "med-compliance-officer",
+      "displayName": {
+        "en": "Medical Ad & NMPA Auditor",
+        "zh": "医疗广告与药械合规官"
+      },
+      "profession": {
+        "en": "Healthcare Compliance Guard",
+        "zh": "违禁词拦截与三类证验真"
+      },
+      "avatar": "avatars/med-compliance-officer.png",
+      "role": "member"
+    },
+    {
+      "id": "clinic-consult-coach",
+      "displayName": {
+        "en": "Clinical Consultation Coach",
+        "zh": "口腔医美接诊教练"
+      },
+      "profession": {
+        "en": "Patient Consultation Specialist",
+        "zh": "CBCT读片沟通与顾问式升单"
+      },
+      "avatar": "avatars/clinic-consult-coach.png",
+      "role": "member"
+    },
+    {
+      "id": "card-geo-operator",
+      "displayName": {
+        "en": "VIP Retention & Local GEO Lead",
+        "zh": "耗卡复购与同城GEO官"
+      },
+      "profession": {
+        "en": "Clinic CRM & GEO Specialist",
+        "zh": "沉睡预收激活与AI找院曝光"
+      },
+      "avatar": "avatars/card-geo-operator.png",
+      "role": "member"
+    }
+  ]
+}

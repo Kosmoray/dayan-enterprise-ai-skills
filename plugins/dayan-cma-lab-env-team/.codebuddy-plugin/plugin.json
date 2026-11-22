@@ -1,0 +1,142 @@
+{
+  "name": "dayan-cma-lab-env-team",
+  "version": "1.1.0",
+  "description": "CMA/CNAS testing laboratory raw-data cross-check, anti-out-of-scope stamp guard, pollutant discharge permit audit, COD troubleshooting, and gov tender team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "11-securitycompliance"
+  ],
+  "agents": [
+    "./agents/cma-lab-env-lead.md",
+    "./agents/cma-quality-signoff-guard.md",
+    "./agents/lab-asset-tender-officer.md",
+    "./agents/env-permit-process-chief.md"
+  ],
+  "skills": [
+    "./skills/dayan-cma-raw-report-crosscheck",
+    "./skills/dayan-cma-scope-stamp-guard",
+    "./skills/dayan-env-discharge-permit-log",
+    "./skills/dayan-env-wastewater-cod-triage",
+    "./skills/dayan-cma-gov-tender-composer",
+    "./skills/dayan-lab-reagent-std-expiry"
+  ],
+  "expertType": "team",
+  "agentName": "cma-lab-env-lead",
+  "teamInfo": {
+    "leadAgent": "cma-lab-env-lead",
+    "memberAgents": [
+      "cma-quality-signoff-guard",
+      "lab-asset-tender-officer",
+      "env-permit-process-chief"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan CMA Lab & Env Team",
+    "zh": "大衍CMA检测与环保工程总工团"
+  },
+  "profession": {
+    "en": "Dayan CMA Lab & Env Team",
+    "zh": "大衍CMA检测与环保工程总工团"
+  },
+  "displayDescription": {
+    "en": "Cross-check CMA raw lab records vs final reports, block out-of-scope stamps, audit discharge logs, and fix COD.",
+    "zh": "交叉校对CMA原始记录与检测报告防虚假飞检，拦截超范围盖章，排查排污许可台账与污水COD氨氮超标。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "11-SecurityCompliance",
+  "defaultInitPrompt": {
+    "en": "Cross-check our lab sampling timestamps, MDL rounding, active standard numbers, and CMA scope table before stamping",
+    "zh": "在授权签字人签发盖CMA章前，帮我核对这份检测报告的标准年代号、检出限修约、采样保存时效与附表基质范围"
+  },
+  "plugin": "dayan-cma-lab-env-team",
+  "tags": [
+    {
+      "en": "CMA CNAS Lab",
+      "zh": "CMA检验检测"
+    },
+    {
+      "en": "Discharge Permit",
+      "zh": "排污许可迎检"
+    },
+    {
+      "en": "Wastewater Ops",
+      "zh": "污水运维排错"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Cross-check our lab sampling timestamps, MDL rounding, active standard numbers, and CMA scope table before stamping",
+      "zh": "在授权签字人签发盖CMA章前，帮我核对这份检测报告的标准年代号、检出限修约、采样保存时效与附表基质范围"
+    },
+    {
+      "en": "Audit factory pollutant discharge permit self-monitoring frequency, quarterly logs, and hazardous waste manifests",
+      "zh": "对照企业排污许可证副本，帮我全面自查各排放口自行监测漏测项、季报年报物料衡算与活性炭危废更换台账"
+    },
+    {
+      "en": "Troubleshoot sudden effluent ammonia/COD spike in our industrial wastewater station and check government tender docs",
+      "zh": "工业污水站好氧池出水氨氮与COD突发升高且pH跌至6.6，帮我按排错树定位原因并给出应急缓冲调参步骤"
+    }
+  ],
+  "members": [
+    {
+      "id": "cma-lab-env-lead",
+      "displayName": {
+        "en": "Lab Quality & Env Chief Engineer",
+        "zh": "检验检测与环保总工"
+      },
+      "profession": {
+        "en": "CMA Quality & Env Engineering Lead",
+        "zh": "实验室授权签字与环保主理人"
+      },
+      "avatar": "avatars/cma-lab-env-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "cma-quality-signoff-guard",
+      "displayName": {
+        "en": "CMA Report & Scope Guard",
+        "zh": "CMA报告与附表质控官"
+      },
+      "profession": {
+        "en": "Laboratory QA/QC Auditor",
+        "zh": "原始记录校对与防超范围盖章"
+      },
+      "avatar": "avatars/cma-quality-signoff-guard.png",
+      "role": "member"
+    },
+    {
+      "id": "lab-asset-tender-officer",
+      "displayName": {
+        "en": "CRM Reagent & Tender Officer",
+        "zh": "标物溯源与检测投标官"
+      },
+      "profession": {
+        "en": "Lab Metrology & Bid Specialist",
+        "zh": "易制毒双锁台账与政企组卷"
+      },
+      "avatar": "avatars/lab-asset-tender-officer.png",
+      "role": "member"
+    },
+    {
+      "id": "env-permit-process-chief",
+      "displayName": {
+        "en": "Env Permit & Wastewater Chief",
+        "zh": "排污许可与水处理总工"
+      },
+      "profession": {
+        "en": "EHS & Wastewater Process Engineer",
+        "zh": "环保管家迎检与生化排错树"
+      },
+      "avatar": "avatars/env-permit-process-chief.png",
+      "role": "member"
+    }
+  ]
+}

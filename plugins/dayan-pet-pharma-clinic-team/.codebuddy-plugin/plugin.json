@@ -1,0 +1,142 @@
+{
+  "name": "dayan-pet-pharma-clinic-team",
+  "version": "1.1.0",
+  "description": "Companion animal specialty hospital & veterinary pharma compliance, BSA safe dosing alert, cold-chain vaccine tracking, and dental/imaging growth team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "12-industryconsultant"
+  ],
+  "agents": [
+    "./agents/pet-clinic-team-lead.md",
+    "./agents/vet-pharma-auditor.md",
+    "./agents/pet-consent-guardian.md",
+    "./agents/pet-specialty-growth.md"
+  ],
+  "skills": [
+    "./skills/dayan-pet-drug-compliance",
+    "./skills/dayan-pet-triage-consent",
+    "./skills/dayan-pet-vaccine-coldchain",
+    "./skills/dayan-pet-dental-imaging-sop",
+    "./skills/dayan-pet-postop-retention",
+    "./skills/dayan-pet-clinic-geo-check"
+  ],
+  "expertType": "team",
+  "agentName": "pet-clinic-team-lead",
+  "teamInfo": {
+    "leadAgent": "pet-clinic-team-lead",
+    "memberAgents": [
+      "vet-pharma-auditor",
+      "pet-consent-guardian",
+      "pet-specialty-growth"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Pet Pharma & Clinic Team",
+    "zh": "大衍宠医专科合规经营专家团"
+  },
+  "profession": {
+    "en": "Dayan Pet Pharma & Clinic Team",
+    "zh": "大衍宠医专科合规经营专家团"
+  },
+  "displayDescription": {
+    "en": "Check vet drug approvals, human-to-pet drug rules, BSA dose limits, surgical consent, and specialty clinic growth.",
+    "zh": "核查兽药批文与人药兽用合规红线、犬猫体表面积给药安全阈值、术前免责告知及牙科影像高客单转化。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "en": "Verify veterinary drug approval numbers, human-to-pet drug compliance, and feline/canine BSA safety limits",
+    "zh": "帮我核查这批门店用药的兽药批文、人药转宠物用合规红线及犬猫体重给药安全剂量预警"
+  },
+  "plugin": "dayan-pet-pharma-clinic-team",
+  "tags": [
+    {
+      "en": "Pet Hospital Ops",
+      "zh": "宠物专科医院"
+    },
+    {
+      "en": "Vet Drug Compliance",
+      "zh": "兽药人药合规"
+    },
+    {
+      "en": "Clinic Retention",
+      "zh": "宠医复购升单"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Verify veterinary drug approval numbers, human-to-pet drug compliance, and feline/canine BSA safety limits",
+      "zh": "帮我核查这批门店用药的兽药批文、人药转宠物用合规红线及犬猫体重给药安全剂量预警"
+    },
+    {
+      "en": "Audit our pet anesthesia & high-risk surgery informed consent form to prevent medical disputes",
+      "zh": "审查我们宠物医院的高龄犬猫麻醉与重症手术术前知情同意书，补齐医患纠纷免责证据链"
+    },
+    {
+      "en": "Build a consultation SOP for pet dental scaling, imaging diagnostics, and 3-7-21 post-op follow-up",
+      "zh": "梳理一套不招顾客反感的宠物牙科洁治、影像体检升单接诊话术与术后3-7-21天企微随访SOP"
+    }
+  ],
+  "members": [
+    {
+      "id": "pet-clinic-team-lead",
+      "displayName": {
+        "en": "Pet Hospital Chief Director",
+        "zh": "连锁宠医医疗院长"
+      },
+      "profession": {
+        "en": "Veterinary Operations Lead",
+        "zh": "宠医合规与经营主理人"
+      },
+      "avatar": "avatars/pet-clinic-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "vet-pharma-auditor",
+      "displayName": {
+        "en": "Vet Pharma Compliance Officer",
+        "zh": "兽药与给药合规官"
+      },
+      "profession": {
+        "en": "Veterinary Drug Auditor",
+        "zh": "动保批文与给药红线"
+      },
+      "avatar": "avatars/vet-pharma-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "pet-consent-guardian",
+      "displayName": {
+        "en": "Clinical Consent Risk Officer",
+        "zh": "医患证据风控官"
+      },
+      "profession": {
+        "en": "Consent & Cold-Chain Specialist",
+        "zh": "麻醉告知与冷链台账"
+      },
+      "avatar": "avatars/pet-consent-guardian.png",
+      "role": "member"
+    },
+    {
+      "id": "pet-specialty-growth",
+      "displayName": {
+        "en": "Specialty Clinic Growth Lead",
+        "zh": "宠医专科增长官"
+      },
+      "profession": {
+        "en": "Pet Clinic Retention Specialist",
+        "zh": "牙科影像转化与同城GEO"
+      },
+      "avatar": "avatars/pet-specialty-growth.png",
+      "role": "member"
+    }
+  ]
+}

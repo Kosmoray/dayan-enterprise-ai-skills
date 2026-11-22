@@ -1,6 +1,6 @@
 {
   "name": "dayan-guardrail-rag-architect",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Enterprise RAG, Dify/Coze workflow, and ERP integration architect preventing hallucinated quotes, ACL leaks, and stale policy answers.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -28,8 +28,8 @@
     "zh": "大衍兜错知识库总师"
   },
   "profession": {
-    "en": "Guardrail RAG & Agent Architect",
-    "zh": "企业兜错知识库总师"
+    "en": "Dayan RAG Architect",
+    "zh": "大衍兜错知识库总师"
   },
   "displayDescription": {
     "en": "Designs hallucination-proof enterprise RAG with ACL pre-filtering, staleness circuit breakers, and safe ERP/CRM write-backs.",

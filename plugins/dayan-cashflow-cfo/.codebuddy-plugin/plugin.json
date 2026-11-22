@@ -1,6 +1,6 @@
 {
   "name": "dayan-cashflow-cfo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SME CFO advisor for 13-week rolling cashflow stress tests, tiered AR collection letters, BOM supplier price audits, and loss-line stop-bleed.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -29,8 +29,8 @@
     "zh": "大衍现金流算账参谋"
   },
   "profession": {
-    "en": "SME Cashflow & Margin Advisor",
-    "zh": "企业现金流与利润参谋"
+    "en": "Dayan Cashflow CFO",
+    "zh": "大衍现金流算账参谋"
   },
   "displayDescription": {
     "en": "Builds 13-week cashflow radars, tiered AR collection scripts, supplier BOM price audits, and stop-bleed closure models.",

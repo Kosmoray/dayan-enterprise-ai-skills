@@ -1,0 +1,142 @@
+{
+  "name": "dayan-gov-it-integrator-team",
+  "version": "1.1.0",
+  "description": "Gov/Enterprise IT system integration & custom software scope-creep firewall, Xinchuang domestic stack matrix, audit sign-off pack, POC guard, and channel split team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "02-engineering"
+  ],
+  "agents": [
+    "./agents/gov-it-integrator-lead.md",
+    "./agents/xinchuang-poc-architect.md",
+    "./agents/pmo-audit-director.md",
+    "./agents/sla-channel-governor.md"
+  ],
+  "skills": [
+    "./skills/dayan-it-scope-creep-firewall",
+    "./skills/dayan-it-xinchuang-compat-matrix",
+    "./skills/dayan-it-acceptance-signoff-pack",
+    "./skills/dayan-it-presales-poc-script",
+    "./skills/dayan-it-sla-incident-postmortem",
+    "./skills/dayan-it-channel-integrator-split"
+  ],
+  "expertType": "team",
+  "agentName": "gov-it-integrator-lead",
+  "teamInfo": {
+    "leadAgent": "gov-it-integrator-lead",
+    "memberAgents": [
+      "xinchuang-poc-architect",
+      "pmo-audit-director",
+      "sla-channel-governor"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan IT Integrator Delivery Team",
+    "zh": "大衍政企信创集成防烂尾专家团"
+  },
+  "profession": {
+    "en": "Dayan IT Integrator Delivery Team",
+    "zh": "大衍政企信创集成防烂尾专家团"
+  },
+  "displayDescription": {
+    "en": "Stop custom software scope creep, verify Xinchuang domestic compatibility, prepare audit sign-offs, and guard POCs.",
+    "zh": "拦住软件定制口头加需求蔓延，核查政企信创密评适配工时、备齐终验审计防卡尾款材料与渠道分润规则。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "Turn this client's unpaid verbal feature request into a polite AB-option paid Change Request (CR) memo",
+    "zh": "甲方在群里口头要求顺手加3个跨系统实时报表，帮我写一段不伤感情的AB选项回复并生成收费变更单（CR）"
+  },
+  "plugin": "dayan-gov-it-integrator-team",
+  "tags": [
+    {
+      "en": "Scope Creep Guard",
+      "zh": "防需求蔓延"
+    },
+    {
+      "en": "Xinchuang Stack",
+      "zh": "政企信创密评"
+    },
+    {
+      "en": "IT Audit Sign-off",
+      "zh": "终验防卡尾款"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Turn this client's unpaid verbal feature request into a polite AB-option paid Change Request (CR) memo",
+      "zh": "甲方在群里口头要求顺手加3个跨系统实时报表，帮我写一段不伤感情的AB选项回复并生成收费变更单（CR）"
+    },
+    {
+      "en": "Check Xinchuang CPU/OS/Dameng DB compatibility workload, commercial cryptography (SM2/3/4) BOM, and final audit docs",
+      "zh": "核查这套Oracle迁达梦+麒麟信创项目的SQL改造工时、等保密评硬件漏项，并列出财政终验审计防卡尾款归档清单"
+    },
+    {
+      "en": "Design a 14-day bounded presales POC agreement to prevent free consulting and audit channel partner commission splits",
+      "zh": "在投入研发做POC前起草一份锁死3项达标刻度与14天边界的防白嫖备忘录，并审查总集渠道同比例回款分润协议"
+    }
+  ],
+  "members": [
+    {
+      "id": "gov-it-integrator-lead",
+      "displayName": {
+        "en": "Enterprise IT Delivery VP",
+        "zh": "政企集成交付副总裁"
+      },
+      "profession": {
+        "en": "IT Integration & Delivery Lead",
+        "zh": "软件集成防烂尾主理人"
+      },
+      "avatar": "avatars/gov-it-integrator-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "xinchuang-poc-architect",
+      "displayName": {
+        "en": "Xinchuang & Presales Architect",
+        "zh": "信创密评与售前架构师"
+      },
+      "profession": {
+        "en": "Domestic Stack & POC Specialist",
+        "zh": "国产化适配工时与防白嫖POC"
+      },
+      "avatar": "avatars/xinchuang-poc-architect.png",
+      "role": "member"
+    },
+    {
+      "id": "pmo-audit-director",
+      "displayName": {
+        "en": "PMO Scope & Audit Director",
+        "zh": "范围基线与终验审计总监"
+      },
+      "profession": {
+        "en": "Scope Firewall & Sign-off Lead",
+        "zh": "变更单谈判与五账合一验收"
+      },
+      "avatar": "avatars/pmo-audit-director.png",
+      "role": "member"
+    },
+    {
+      "id": "sla-channel-governor",
+      "displayName": {
+        "en": "SLA Postmortem & Channel Lead",
+        "zh": "故障COE与渠道分润官"
+      },
+      "profession": {
+        "en": "Incident COE & Channel Controller",
+        "zh": "5-Why复盘与净毛利分佣"
+      },
+      "avatar": "avatars/sla-channel-governor.png",
+      "role": "member"
+    }
+  ]
+}

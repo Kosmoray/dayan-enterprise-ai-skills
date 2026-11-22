@@ -1,0 +1,142 @@
+{
+  "name": "dayan-aero-gjb-mfg-team",
+  "version": "1.1.0",
+  "description": "Aerospace & defense-grade precision machining GJB9001C internal audit, special-process subcontracting kit tracking, FAI check, and air-gapped local LLM sizing team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "12-industryconsultant"
+  ],
+  "agents": [
+    "./agents/aero-gjb-team-lead.md",
+    "./agents/gjb-quality-auditor.md",
+    "./agents/special-process-pmc.md",
+    "./agents/airgap-infra-architect.md"
+  ],
+  "skills": [
+    "./skills/dayan-aero-gjb9001-audit",
+    "./skills/dayan-aero-special-process-vendor",
+    "./skills/dayan-aero-fai-inspection",
+    "./skills/dayan-aero-lowvol-pmc-kit",
+    "./skills/dayan-aero-airgap-llm-sizer",
+    "./skills/dayan-aero-trial-contract-guard"
+  ],
+  "expertType": "team",
+  "agentName": "aero-gjb-team-lead",
+  "teamInfo": {
+    "leadAgent": "aero-gjb-team-lead",
+    "memberAgents": [
+      "gjb-quality-auditor",
+      "special-process-pmc",
+      "airgap-infra-architect"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Aero Precision Mfg Team",
+    "zh": "大衍军工航空配套质量齐套团"
+  },
+  "profession": {
+    "en": "Dayan Aero Precision Mfg Team",
+    "zh": "大衍军工航空配套质量齐套团"
+  },
+  "displayDescription": {
+    "en": "Manage GJB9001C CAPA, heat/surface special-process vendors, FAI tolerance checks, and air-gapped LLM sizing.",
+    "zh": "统筹GJB9001C质量内审整改、热表特种外协资质与齐套排产、首件公差核对及断网不出域算力精算。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "en": "Draft GJB9001C internal audit root-cause analysis and CAPA corrective actions for machining nonconformities",
+    "zh": "针对这次GJB9001C质量内审开出的工序追溯与首件记录不符合项，编写五步归因与CAPA纠正措施报告"
+  },
+  "plugin": "dayan-aero-gjb-mfg-team",
+  "tags": [
+    {
+      "en": "GJB9001C Quality",
+      "zh": "GJB质量体系"
+    },
+    {
+      "en": "Precision Machining",
+      "zh": "航空机加齐套"
+    },
+    {
+      "en": "Air-Gapped AI",
+      "zh": "涉密不出域算力"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Draft GJB9001C internal audit root-cause analysis and CAPA corrective actions for machining nonconformities",
+      "zh": "针对这次GJB9001C质量内审开出的工序追溯与首件记录不符合项，编写五步归因与CAPA纠正措施报告"
+    },
+    {
+      "en": "Audit multi-stage special-process (heat treatment, anodizing, NDT) vendor certificates and kit bottlenecks",
+      "zh": "核查这批试制结构件在机加、热处理、阳极氧化与无损检测外协环节的供方资质效期与断料瓶颈"
+    },
+    {
+      "en": "Size air-gapped on-premise GPU hardware and TCO for running local enterprise RAG inside our plant",
+      "zh": "按数据物理不出厂区要求，帮我精算50人并发查阅工艺卡知识库所需的本地大模型一体机显存与真实成本"
+    }
+  ],
+  "members": [
+    {
+      "id": "aero-gjb-team-lead",
+      "displayName": {
+        "en": "Aerospace Plant Chief Engineer",
+        "zh": "航空配套厂总工程师"
+      },
+      "profession": {
+        "en": "Aerospace Quality & PMC Lead",
+        "zh": "军品质量与生管主理人"
+      },
+      "avatar": "avatars/aero-gjb-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "gjb-quality-auditor",
+      "displayName": {
+        "en": "GJB9001C Quality Auditor",
+        "zh": "GJB质量体系内审官"
+      },
+      "profession": {
+        "en": "GJB CAPA & FAI Specialist",
+        "zh": "体系内审与首件FAI核对"
+      },
+      "avatar": "avatars/gjb-quality-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "special-process-pmc",
+      "displayName": {
+        "en": "Special Process PMC Officer",
+        "zh": "特种外协齐套生管官"
+      },
+      "profession": {
+        "en": "Subcontracting & Kit Planner",
+        "zh": "热表处理外协与插单排产"
+      },
+      "avatar": "avatars/special-process-pmc.png",
+      "role": "member"
+    },
+    {
+      "id": "airgap-infra-architect",
+      "displayName": {
+        "en": "Air-Gapped AI Architect",
+        "zh": "不出域私有化架构师"
+      },
+      "profession": {
+        "en": "On-Premise LLM & Contract Guard",
+        "zh": "本地一体机选型与合同保密"
+      },
+      "avatar": "avatars/airgap-infra-architect.png",
+      "role": "member"
+    }
+  ]
+}

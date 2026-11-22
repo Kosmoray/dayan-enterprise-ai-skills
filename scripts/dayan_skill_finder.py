@@ -58,11 +58,20 @@ def main():
 
     query = " ".join(sys.argv[1:]).strip().lower()
     catalog = load_catalog()
-    matched = []
+    scored = []
     for meta, full_txt in catalog:
-        blob = f"{meta['slug']} {meta['displayName']} {meta['summary']} {meta.get('tags', '')}".lower()
-        if not query or all(tok in blob or tok in full_txt.lower() for tok in query.split()):
-            matched.append(meta)
+        head = f"{meta['slug']} {meta['displayName']} {meta.get('tags', '')}".lower()
+        summ = meta.get("summary", "").lower()
+        body_low = full_txt.lower()
+        if not query:
+            scored.append((0, meta["slug"], meta))
+            continue
+        toks = query.split()
+        if all(tok in head or tok in summ or tok in body_low for tok in toks):
+            score = sum(head.count(t) * 20 + summ.count(t) * 6 + min(body_low.count(t), 5) for t in toks)
+            scored.append((-score, meta["slug"], meta))
+    scored.sort(key=lambda x: (x[0], x[1]))
+    matched = [x[2] for x in scored]
 
     print("=" * 78)
     print(f"🔎 大衍千机开源技能引擎 · 匹配「{query or '全部'}」共 {len(matched)} / {len(catalog)} 枚企业技能")

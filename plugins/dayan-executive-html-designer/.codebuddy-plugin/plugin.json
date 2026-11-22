@@ -1,6 +1,6 @@
 {
   "name": "dayan-executive-html-designer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Compiles long reports, proposals, and architecture diagrams into editorial #1B365D Navy single-file HTML dashboards and zero-overlap SVGs.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -28,8 +28,8 @@
     "zh": "大衍深蓝看板师"
   },
   "profession": {
-    "en": "Executive HTML & SVG Architect",
-    "zh": "高管汇报视觉架构师"
+    "en": "Dayan Executive Designer",
+    "zh": "大衍深蓝看板师"
   },
   "displayDescription": {
     "en": "Transforms wordy memos into self-contained #1B365D Navy executive HTML briefings and crisp coordinate-calculated SVG diagrams.",

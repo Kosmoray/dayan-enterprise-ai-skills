@@ -1,0 +1,142 @@
+{
+  "name": "dayan-auto-machinery-cis-team",
+  "version": "1.1.0",
+  "description": "Used EV & construction machinery cross-border export to Central Asia & Russian-speaking markets: RFQ quoting, VIN & SMGS rail bill cross-check, and FX contract guard.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "07-salescommerce"
+  ],
+  "agents": [
+    "./agents/cis-export-team-lead.md",
+    "./agents/cis-rfq-specialist.md",
+    "./agents/smgs-customs-auditor.md",
+    "./agents/cis-fx-legal-guard.md"
+  ],
+  "skills": [
+    "./skills/dayan-cis-vehicle-rfq-quoter",
+    "./skills/dayan-cis-vin-smgs-checker",
+    "./skills/dayan-cis-ev-battery-dg",
+    "./skills/dayan-cis-fx-payment-guard",
+    "./skills/dayan-cis-asis-warranty-contract",
+    "./skills/dayan-cis-dealer-spec-sync"
+  ],
+  "expertType": "team",
+  "agentName": "cis-export-team-lead",
+  "teamInfo": {
+    "leadAgent": "cis-export-team-lead",
+    "memberAgents": [
+      "cis-rfq-specialist",
+      "smgs-customs-auditor",
+      "cis-fx-legal-guard"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Auto & Machinery CIS Team",
+    "zh": "大衍二手车工程机械俄语出海团"
+  },
+  "profession": {
+    "en": "Dayan Auto & Machinery CIS Team",
+    "zh": "大衍二手车工程机械俄语出海团"
+  },
+  "displayDescription": {
+    "en": "Quote Russian/CIS vehicle RFQs, cross-check 17-digit VIN & SMGS rail bills, UN38.3 EV rules, and As-Is contracts.",
+    "zh": "拆解俄语车商询盘报价，交叉核对17位VIN码、出口许可证与中欧班列SMGS运单及现状交车合同。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "en": "Cross-check our commercial invoice, packing list, export license, and SMGS rail waybill for VIN and weight mismatches",
+    "zh": "帮我交叉核对这份发往阿拉木图的二手电车发票、装箱单、出口许可证与SMGS铁路运单里的VIN码和件毛体一致性"
+  },
+  "plugin": "dayan-auto-machinery-cis-team",
+  "tags": [
+    {
+      "en": "Used Car Export",
+      "zh": "二手车平行出口"
+    },
+    {
+      "en": "SMGS Rail Customs",
+      "zh": "中欧班列单证"
+    },
+    {
+      "en": "Machinery CIS",
+      "zh": "工程机械出海"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Cross-check our commercial invoice, packing list, export license, and SMGS rail waybill for VIN and weight mismatches",
+      "zh": "帮我交叉核对这份发往阿拉木图的二手电车发票、装箱单、出口许可证与SMGS铁路运单里的VIN码和件毛体一致性"
+    },
+    {
+      "en": "Parse this Russian/Kazakh buyer inquiry for excavators/EVs and draft an FOB Khorgos tiered quotation",
+      "zh": "拆解这段中亚车商发来的新能源车与二手挖机配置询盘，生成FOB/CIP霍尔果斯口岸专业报价提纲"
+    },
+    {
+      "en": "Review our cross-border used machinery As-Is sales contract for deposit ratio, FX settlement, and mileage disclaimers",
+      "zh": "审查这份跨境二手工程机械现状交车（As-Is）买卖合同，锁死定金放单红线、锁汇条款与里程车况免责边界"
+    }
+  ],
+  "members": [
+    {
+      "id": "cis-export-team-lead",
+      "displayName": {
+        "en": "CIS Cross-Border Trade Director",
+        "zh": "中亚俄语出海贸易总监"
+      },
+      "profession": {
+        "en": "Vehicle & Machinery Export Lead",
+        "zh": "车机跨境出口主理人"
+      },
+      "avatar": "avatars/cis-export-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "cis-rfq-specialist",
+      "displayName": {
+        "en": "CIS RFQ & Spec Specialist",
+        "zh": "俄英车机询盘报价官"
+      },
+      "profession": {
+        "en": "Multilingual Vehicle Quoter",
+        "zh": "多语种询盘拆解与参数同步"
+      },
+      "avatar": "avatars/cis-rfq-specialist.png",
+      "role": "member"
+    },
+    {
+      "id": "smgs-customs-auditor",
+      "displayName": {
+        "en": "SMGS & DG Customs Auditor",
+        "zh": "班列SMGS与危包核单官"
+      },
+      "profession": {
+        "en": "Rail Waybill & License Checker",
+        "zh": "VIN校验与铁路联运单证"
+      },
+      "avatar": "avatars/smgs-customs-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "cis-fx-legal-guard",
+      "displayName": {
+        "en": "Cross-Border FX & Legal Guard",
+        "zh": "跨境收汇与免责法务官"
+      },
+      "profession": {
+        "en": "Export Payment & Contract Guard",
+        "zh": "见款放单与现状交车免责"
+      },
+      "avatar": "avatars/cis-fx-legal-guard.png",
+      "role": "member"
+    }
+  ]
+}

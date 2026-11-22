@@ -4,7 +4,7 @@ slug: dayan-bid-scoring-loop
 displayName: "高分投标技术方案写审改闭环系统｜大衍千机"
 version: 1.0.0
 summary: "解析招标评分点与废标红线，采用写手生成与只读评审专家独立打分找扣分项的多轮收敛闭环，把技术标打磨到高水准。"
-description: "开源自成都大衍千机科技投标工程方法论：拒绝一次性吐出平庸标书，强制执行评分点逐行锚定、资质废标红绿灯自检、MECE章节展开与Writer/Judge分离式模拟打分迭代闭环。"
+description: "开源自成都大衍千机科技投标工程方法论：拒绝一次性吐出平庸标书，按标准流程执行评分点逐行锚定、资质废标红绿灯自检、MECE章节展开与Writer/Judge分离式模拟打分迭代闭环。"
 tags: ["写标书", "投标技术方案", "评分点响应", "废标自检", "政府采购投标", "大衍千机"]
 license: MIT
 homepage: "https://dayanqianji.com/services/custom-ai/"

@@ -1,0 +1,142 @@
+{
+  "name": "dayan-sichuan-food-oem-team",
+  "version": "1.1.0",
+  "description": "Sichuan compound seasoning OEM & liquor gift-box packaging GB7718-2025 anti-troll label compliance, cooking-loss tiered quoting, and dealer rebate team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "07-salescommerce"
+  ],
+  "agents": [
+    "./agents/sichuan-food-oem-lead.md",
+    "./agents/gb7718-label-inspector.md",
+    "./agents/recipe-diecut-pricer.md",
+    "./agents/oem-rebate-controller.md"
+  ],
+  "skills": [
+    "./skills/dayan-food-gb7718-antitroll",
+    "./skills/dayan-food-oem-recipe-quoter",
+    "./skills/dayan-liquor-box-diecut-cost",
+    "./skills/dayan-food-dealer-rebate-recon",
+    "./skills/dayan-food-private-label-contract",
+    "./skills/dayan-food-batch-recall-trace"
+  ],
+  "expertType": "team",
+  "agentName": "sichuan-food-oem-lead",
+  "teamInfo": {
+    "leadAgent": "sichuan-food-oem-lead",
+    "memberAgents": [
+      "gb7718-label-inspector",
+      "recipe-diecut-pricer",
+      "oem-rebate-controller"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Food OEM & Packaging Team",
+    "zh": "大衍川调食品OEM核价合规团"
+  },
+  "profession": {
+    "en": "Dayan Food OEM & Packaging Team",
+    "zh": "大衍川调食品OEM核价合规团"
+  },
+  "displayDescription": {
+    "en": "Scan GB7718-2025 food labels against professional lawsuits, quote OEM recipes with loss rates, and audit rebates.",
+    "zh": "严查GB7718食品标签防职业打假索赔，精算定制底料炒制损耗三档核价、酒盒刀版成本与经销商返利。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "en": "Check our prepackaged seasoning label & nutrition table against GB7718-2025 to prevent professional claims",
+    "zh": "按GB7718新国标帮我逐项排查这款预包装复合调味料配料表、致敏原与宣传语的职业打假索赔风险"
+  },
+  "plugin": "dayan-sichuan-food-oem-team",
+  "tags": [
+    {
+      "en": "GB7718 Label Guard",
+      "zh": "GB7718防打假"
+    },
+    {
+      "en": "Seasoning OEM Quote",
+      "zh": "底料代工核价"
+    },
+    {
+      "en": "Liquor Packaging",
+      "zh": "白酒礼盒核价"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Check our prepackaged seasoning label & nutrition table against GB7718-2025 to prevent professional claims",
+      "zh": "按GB7718新国标帮我逐项排查这款预包装复合调味料配料表、致敏原与宣传语的职业打假索赔风险"
+    },
+    {
+      "en": "Calculate 500kg / 2T / 10T tiered ex-factory quotes factoring in cooking evaporation loss and packaging",
+      "zh": "算上牛油炒制挥发损耗、内袋灌装与纸箱辅材，帮我核算餐饮客户定制底料500kg、2吨、10吨三档保本报价"
+    },
+    {
+      "en": "Audit private-label OEM packaging MOQ dead-stock clauses and multi-tier distributor quarterly rebates",
+      "zh": "审查这份商超贴牌代工合同里的专属包材呆滞兜底条款，并拉平本季度经销商搭赠与返利对账单"
+    }
+  ],
+  "members": [
+    {
+      "id": "sichuan-food-oem-lead",
+      "displayName": {
+        "en": "Food & Packaging Supply Lead",
+        "zh": "川调与酒包供应链总监"
+      },
+      "profession": {
+        "en": "Food OEM Operations Lead",
+        "zh": "食品OEM核价与合规主理人"
+      },
+      "avatar": "avatars/sichuan-food-oem-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "gb7718-label-inspector",
+      "displayName": {
+        "en": "GB7718 Label Inspector",
+        "zh": "食品标签防打假官"
+      },
+      "profession": {
+        "en": "Food Label & Recall Auditor",
+        "zh": "预包装标签与批次追溯"
+      },
+      "avatar": "avatars/gb7718-label-inspector.png",
+      "role": "member"
+    },
+    {
+      "id": "recipe-diecut-pricer",
+      "displayName": {
+        "en": "Recipe & Packaging Pricer",
+        "zh": "底料与酒包核价师"
+      },
+      "profession": {
+        "en": "OEM Costing Specialist",
+        "zh": "炒制收率与礼盒多工序成本"
+      },
+      "avatar": "avatars/recipe-diecut-pricer.png",
+      "role": "member"
+    },
+    {
+      "id": "oem-rebate-controller",
+      "displayName": {
+        "en": "OEM Contract & Rebate Controller",
+        "zh": "贴牌合同与返利对账官"
+      },
+      "profession": {
+        "en": "OEM Legal & Finance Auditor",
+        "zh": "呆滞包材兜底与窜货返利"
+      },
+      "avatar": "avatars/oem-rebate-controller.png",
+      "role": "member"
+    }
+  ]
+}

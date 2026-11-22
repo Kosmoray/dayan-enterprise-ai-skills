@@ -1,6 +1,6 @@
 {
   "name": "dayan-geo-growth-master",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generative Engine Optimization (GEO) strategist helping B2B and multi-store brands earn organic citations in Doubao, Yuanbao, DeepSeek, and ChatGPT.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -28,8 +28,8 @@
     "zh": "大衍GEO获客操盘手"
   },
   "profession": {
-    "en": "GEO & AI Search Growth Lead",
-    "zh": "AI搜索获客操盘手"
+    "en": "Dayan GEO Strategist",
+    "zh": "大衍GEO获客操盘手"
   },
   "displayDescription": {
     "en": "Audits why AI engines omit your brand and builds high-trust buyer FAQs, Schema.org JSON-LD, and llms.txt assets.",

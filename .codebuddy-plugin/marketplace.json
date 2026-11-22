@@ -1,6 +1,6 @@
 {
   "name": "dayan-enterprise-ai-experts",
-  "description": "成都大衍千机科技有限公司开源 WorkBuddy 企业级 AI 专家与专家团矩阵（10 Experts + 66 Skills）",
+  "description": "成都大衍千机科技有限公司开源 WorkBuddy 企业级 AI 专家与行业专家团矩阵（19 Experts + 120 Skills）",
   "plugins": [
     {
       "name": "dayan-contract-audit-team",
@@ -51,6 +51,51 @@
       "name": "dayan-code-adversary-guard",
       "source": "./plugins/dayan-code-adversary-guard",
       "description": "Read-only 3-eye adversarial PR & code reviewer catching concurrency bugs, silent data corruption, auth bypasses, and secret leaks before release."
+    },
+    {
+      "name": "dayan-heavy-ev-station-team",
+      "source": "./plugins/dayan-heavy-ev-station-team",
+      "description": "Heavy-duty EV supercharging, battery swapping, and C&I solar-storage-charging investment TCO, grid demand tariff, and fleet offtake contract team."
+    },
+    {
+      "name": "dayan-pet-pharma-clinic-team",
+      "source": "./plugins/dayan-pet-pharma-clinic-team",
+      "description": "Companion animal specialty hospital & veterinary pharma compliance, BSA safe dosing alert, cold-chain vaccine tracking, and dental/imaging growth team."
+    },
+    {
+      "name": "dayan-aero-gjb-mfg-team",
+      "source": "./plugins/dayan-aero-gjb-mfg-team",
+      "description": "Aerospace & defense-grade precision machining GJB9001C internal audit, special-process subcontracting kit tracking, FAI check, and air-gapped local LLM sizing team."
+    },
+    {
+      "name": "dayan-sichuan-food-oem-team",
+      "source": "./plugins/dayan-sichuan-food-oem-team",
+      "description": "Sichuan compound seasoning OEM & liquor gift-box packaging GB7718-2025 anti-troll label compliance, cooking-loss tiered quoting, and dealer rebate team."
+    },
+    {
+      "name": "dayan-auto-machinery-cis-team",
+      "source": "./plugins/dayan-auto-machinery-cis-team",
+      "description": "Used EV & construction machinery cross-border export to Central Asia & Russian-speaking markets: RFQ quoting, VIN & SMGS rail bill cross-check, and FX contract guard."
+    },
+    {
+      "name": "dayan-eng-epc-claim-team",
+      "source": "./plugins/dayan-eng-epc-claim-team",
+      "description": "Construction & MEP engineering subcontract back-to-back clause rewrite, 28-day claim radar, GB55037 fire code inspection, and main material price adjustment team."
+    },
+    {
+      "name": "dayan-dental-aesthetic-team",
+      "source": "./plugins/dayan-dental-aesthetic-team",
+      "description": "Dental implant/orthodontics & medical aesthetics ad-law compliance, CBCT consultation SOP, prepaid card depletion alert, NMPA device check, and local GEO team."
+    },
+    {
+      "name": "dayan-cma-lab-env-team",
+      "source": "./plugins/dayan-cma-lab-env-team",
+      "description": "CMA/CNAS testing laboratory raw-data cross-check, anti-out-of-scope stamp guard, pollutant discharge permit audit, COD troubleshooting, and gov tender team."
+    },
+    {
+      "name": "dayan-gov-it-integrator-team",
+      "source": "./plugins/dayan-gov-it-integrator-team",
+      "description": "Gov/Enterprise IT system integration & custom software scope-creep firewall, Xinchuang domestic stack matrix, audit sign-off pack, POC guard, and channel split team."
     }
   ]
 }

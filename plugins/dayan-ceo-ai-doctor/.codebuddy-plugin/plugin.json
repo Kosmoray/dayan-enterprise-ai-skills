@@ -1,6 +1,6 @@
 {
   "name": "dayan-ceo-ai-doctor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Enterprise AI readiness CT & ROI workflow triage advisor helping CEOs pick 3 high-ROI workflows that pay back within 30 days.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -28,8 +28,8 @@
     "zh": "大衍企业AI急诊官"
   },
   "profession": {
-    "en": "Enterprise AI Chief Advisor",
-    "zh": "企业AI全案首诊顾问"
+    "en": "Keyang · AI Chief Doctor",
+    "zh": "大衍企业AI急诊官"
   },
   "displayDescription": {
     "en": "Diagnoses enterprise bottlenecks and selects 3 pragmatic AI workflows that deliver measurable ROI within 30 days.",

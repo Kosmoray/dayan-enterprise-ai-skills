@@ -1,0 +1,142 @@
+{
+  "name": "dayan-heavy-ev-station-team",
+  "version": "1.1.0",
+  "description": "Heavy-duty EV supercharging, battery swapping, and C&I solar-storage-charging investment TCO, grid demand tariff, and fleet offtake contract team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "12-industryconsultant"
+  ],
+  "agents": [
+    "./agents/heavy-ev-station-lead.md",
+    "./agents/grid-tariff-analyst.md",
+    "./agents/fleet-tco-operator.md",
+    "./agents/epc-offtake-counsel.md"
+  ],
+  "skills": [
+    "./skills/dayan-ev-heavy-truck-tco",
+    "./skills/dayan-ev-grid-demand-tariff",
+    "./skills/dayan-ev-bess-peak-shaving",
+    "./skills/dayan-ev-fleet-offtake-audit",
+    "./skills/dayan-ev-epc-hidden-cost",
+    "./skills/dayan-ev-subsidy-acceptance"
+  ],
+  "expertType": "team",
+  "agentName": "heavy-ev-station-lead",
+  "teamInfo": {
+    "leadAgent": "heavy-ev-station-lead",
+    "memberAgents": [
+      "grid-tariff-analyst",
+      "fleet-tco-operator",
+      "epc-offtake-counsel"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Heavy EV Charging Team",
+    "zh": "大衍重卡超充光储充总工团"
+  },
+  "profession": {
+    "en": "Dayan Heavy EV Charging Team",
+    "zh": "大衍重卡超充光储充总工团"
+  },
+  "displayDescription": {
+    "en": "Calculate heavy-truck EV TCO, grid capacity vs demand tariffs, BESS IRR, and audit fleet offtake contracts.",
+    "zh": "精算干线矿山重卡油改电回本周期、国网容量与需量电费临界点、储能套利及车队保底电量锁客协议。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "en": "Calculate heavy-truck charging station payback and compare grid capacity vs demand tariff",
+    "zh": "帮我测算这座电动重卡超充站的回本周期，并对比国网按容量与按最大需量计费哪个更省钱"
+  },
+  "plugin": "dayan-heavy-ev-station-team",
+  "tags": [
+    {
+      "en": "Heavy EV Charging",
+      "zh": "电动重卡超充"
+    },
+    {
+      "en": "Grid Demand Tariff",
+      "zh": "两部制需量电费"
+    },
+    {
+      "en": "Solar Storage",
+      "zh": "工商业光储充"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Calculate heavy-truck charging station payback and compare grid capacity vs demand tariff",
+      "zh": "帮我测算这座电动重卡超充站的回本周期，并对比国网按容量与按最大需量计费哪个更省钱"
+    },
+    {
+      "en": "Audit our logistics fleet minimum charging volume offtake agreement for hidden risks",
+      "zh": "审查这份物流车队保底充电量与阶梯服务费锁客协议，标出违约与电价联动漏洞"
+    },
+    {
+      "en": "Stress-test C&I solar-storage-charging peak-valley arbitrage IRR and EPC hidden costs",
+      "zh": "对这套工商业光储充方案做峰谷套利真实IRR压力测试，并排查箱变外线EPC报价漏项"
+    }
+  ],
+  "members": [
+    {
+      "id": "heavy-ev-station-lead",
+      "displayName": {
+        "en": "Heavy EV Investment Chief",
+        "zh": "重卡超充投决总工"
+      },
+      "profession": {
+        "en": "EV Infrastructure Lead",
+        "zh": "充换电投建主理人"
+      },
+      "avatar": "avatars/heavy-ev-station-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "grid-tariff-analyst",
+      "displayName": {
+        "en": "Grid Tariff Analyst",
+        "zh": "两部制电价精算师"
+      },
+      "profession": {
+        "en": "Power Tariff & BESS Specialist",
+        "zh": "电力报装与储能精算"
+      },
+      "avatar": "avatars/grid-tariff-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "fleet-tco-operator",
+      "displayName": {
+        "en": "Heavy Fleet TCO Officer",
+        "zh": "重卡车队运营官"
+      },
+      "profession": {
+        "en": "Fleet Electrification Specialist",
+        "zh": "矿山干线油改电核算"
+      },
+      "avatar": "avatars/fleet-tco-operator.png",
+      "role": "member"
+    },
+    {
+      "id": "epc-offtake-counsel",
+      "displayName": {
+        "en": "EPC & Offtake Counsel",
+        "zh": "场站EPC与锁客法务官"
+      },
+      "profession": {
+        "en": "Station EPC & Contract Auditor",
+        "zh": "充换电工程与协议风控"
+      },
+      "avatar": "avatars/epc-offtake-counsel.png",
+      "role": "member"
+    }
+  ]
+}
