@@ -1,0 +1,142 @@
+{
+  "name": "dayan-pool-inverter-filter-team",
+  "version": "1.2.0",
+  "description": "Smart inverter pool pump & 54%-margin SPA replacement filter overseas channel matching, DOE energy ROI, cross-brand filter sizing, and WRAS/NSF50 compliance team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "07-salescommerce"
+  ],
+  "agents": [
+    "./agents/pool-spa-export-lead.md",
+    "./agents/pool-channel-hunter.md",
+    "./agents/inverter-filter-engineer.md",
+    "./agents/wras-exclusivity-guard.md"
+  ],
+  "skills": [
+    "./skills/dayan-pool-dealer-channel-matcher",
+    "./skills/dayan-pool-inverter-doe-roi",
+    "./skills/dayan-spa-filter-crossref-guard",
+    "./skills/dayan-pool-wras-nsf50-cert",
+    "./skills/dayan-pool-territory-exclusivity",
+    "./skills/dayan-spa-consumable-replenish"
+  ],
+  "expertType": "team",
+  "agentName": "pool-spa-export-lead",
+  "teamInfo": {
+    "leadAgent": "pool-spa-export-lead",
+    "memberAgents": [
+      "pool-channel-hunter",
+      "inverter-filter-engineer",
+      "wras-exclusivity-guard"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Pool Pump & Filter Team",
+    "zh": "大衍泳池变频泵与滤芯出海团"
+  },
+  "profession": {
+    "en": "Dayan Pool Pump & Filter Team",
+    "zh": "大衍泳池变频泵与滤芯出海团"
+  },
+  "displayDescription": {
+    "en": "Match US/EU pool builders, calculate DOE inverter pump savings, cross-check SPA filter sizes, and verify NSF50.",
+    "zh": "精准开发欧美泳池工程商与分销渠道，核算变频泵DOE省电回本账、SPA滤芯跨品牌互换与涉水认证。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "en": "Screen qualified US/UK/EU pool builders & distributors and generate a DOE electricity-saving ROI pitch for inverter pumps",
+    "zh": "帮我筛选有安装售后能力的英美欧泳池专业渠道买方，并生成变频泳池泵替代定速泵的DOE省电回本算账卡"
+  },
+  "plugin": "dayan-pool-inverter-filter-team",
+  "tags": [
+    {
+      "en": "Inverter Pool Pump",
+      "zh": "变频泳池热泵"
+    },
+    {
+      "en": "SPA Filter Export",
+      "zh": "SPA替换滤芯"
+    },
+    {
+      "en": "Overseas Channels",
+      "zh": "欧美专业渠道"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Screen qualified US/UK/EU pool builders & distributors and generate a DOE electricity-saving ROI pitch for inverter pumps",
+      "zh": "帮我筛选有安装售后能力的英美欧泳池专业渠道买方，并生成变频泳池泵替代定速泵的DOE省电回本算账卡"
+    },
+    {
+      "en": "Cross-check Pleatco/Unicel/Filbur SPA replacement filter dimensions, pleat counts, and peak-season safety stock",
+      "zh": "核对这批出口SPA替换滤芯与Unicel/Pleatco原厂型号的外径长度上下开口互换表，并测算欧美旺季备货量"
+    },
+    {
+      "en": "Verify NSF/ANSI 50 & UK WRAS water contact compliance and review regional distributor exclusivity thresholds",
+      "zh": "自查泳池水泵与滤芯出口英美所需的NSF50、WRAS认证完整性，并审查海外区域经销首年提货门槛协议"
+    }
+  ],
+  "members": [
+    {
+      "id": "pool-spa-export-lead",
+      "displayName": {
+        "en": "Pool & SPA Export Director",
+        "zh": "泳池与SPA出海操盘总监"
+      },
+      "profession": {
+        "en": "Pool Equipment & Filter Lead",
+        "zh": "变频泵与高毛利滤芯主理人"
+      },
+      "avatar": "avatars/pool-spa-export-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "pool-channel-hunter",
+      "displayName": {
+        "en": "Pool Builder Channel Hunter",
+        "zh": "欧美专业渠道猎手"
+      },
+      "profession": {
+        "en": "B2B Pool Distributor Specialist",
+        "zh": "英美欧安装商筛选与首谈"
+      },
+      "avatar": "avatars/pool-channel-hunter.png",
+      "role": "member"
+    },
+    {
+      "id": "inverter-filter-engineer",
+      "displayName": {
+        "en": "Pump & Filter Spec Engineer",
+        "zh": "节能与滤芯互换总师"
+      },
+      "profession": {
+        "en": "DOE Energy & Filter Cross-Ref",
+        "zh": "WEF能效精算与跨牌号防错"
+      },
+      "avatar": "avatars/inverter-filter-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "wras-exclusivity-guard",
+      "displayName": {
+        "en": "Cert & Territory Legal Guard",
+        "zh": "涉水认证与经销法务官"
+      },
+      "profession": {
+        "en": "Water Cert & Distribution Counsel",
+        "zh": "NSF50/WRAS核查与防占坑协议"
+      },
+      "avatar": "avatars/wras-exclusivity-guard.png",
+      "role": "member"
+    }
+  ]
+}

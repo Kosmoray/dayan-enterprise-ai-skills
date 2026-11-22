@@ -1,6 +1,6 @@
 {
   "name": "dayan-cma-lab-env-team",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "CMA/CNAS testing laboratory raw-data cross-check, anti-out-of-scope stamp guard, pollutant discharge permit audit, COD troubleshooting, and gov tender team.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",

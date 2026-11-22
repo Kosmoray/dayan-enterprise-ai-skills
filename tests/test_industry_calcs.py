@@ -20,6 +20,9 @@ from scripts.industry import (  # noqa: E402
     ev_station_tco_calc,
     gb7718_oem_quote_guard,
     gjb_kit_shortage_audit,
+    liquid_cooling_uqd_calc,
+    pool_pump_filter_roi_calc,
+    transformer_bom_quote_guard,
     vet_dose_compliance_check,
 )
 
@@ -152,13 +155,16 @@ class TestBatch01IndustryCalculators(unittest.TestCase):
         clean_rep = cis_export_doc_checker.cross_check_cis_documents(clean_bundle)
         self.assertEqual(clean_rep["status"], "GREEN")
 
-    def test_06_all_five_cli_scripts_demo_and_json_modes(self):
+    def test_06_all_cli_scripts_demo_and_json_modes(self):
         script_names = [
             "ev_station_tco_calc.py",
             "vet_dose_compliance_check.py",
             "gjb_kit_shortage_audit.py",
             "gb7718_oem_quote_guard.py",
             "cis_export_doc_checker.py",
+            "liquid_cooling_uqd_calc.py",
+            "pool_pump_filter_roi_calc.py",
+            "transformer_bom_quote_guard.py",
         ]
         for sname in script_names:
             spath = REPO_ROOT / "scripts" / "industry" / sname
@@ -181,6 +187,64 @@ class TestBatch01IndustryCalculators(unittest.TestCase):
                 parsed = json.loads(proc_json.stdout)
                 self.assertIn("dayanqianji.com", parsed["powered_by"])
                 self.assertIn("18628016927", parsed["powered_by"])
+
+    def test_07_liquid_cooling_uqd_and_dew_point(self):
+        # Demo has ambient 27C / 75% RH => dew point ~22.25C > inlet 22.0C => RED condensation card
+        rep = liquid_cooling_uqd_calc.calculate_liquid_cooling_uqd(liquid_cooling_uqd_calc.DEMO_LC_SCENARIO)
+        self.assertEqual(rep["status"], "RED")
+        rc_codes = {r["code"] for r in rep["red_cards"]}
+        self.assertIn("CONDENSATION_DEW_POINT_RED_CARD", rc_codes)
+        self.assertIn("UQD_PRESSURE_DROP_EXCEEDED", rc_codes)
+
+        # Verify PG0 vs PG25 vs PG35 flow increases as Cp*rho decreases (using UQD06 Cv=4.0)
+        p0 = dict(liquid_cooling_uqd_calc.DEMO_LC_SCENARIO, pg_concentration_pct=0, supply_inlet_temp_c=28.0, uqd_cv_per_pair=4.0)
+        p35 = dict(p0, pg_concentration_pct=35)
+        r0 = liquid_cooling_uqd_calc.calculate_liquid_cooling_uqd(p0)
+        r35 = liquid_cooling_uqd_calc.calculate_liquid_cooling_uqd(p35)
+        self.assertEqual(r0["status"], "GREEN")
+        self.assertGreater(r35["hydraulics_and_thermal"]["rack_flow_lpm"], r0["hydraulics_and_thermal"]["rack_flow_lpm"])
+
+    def test_08_pool_pump_roi_and_spa_filter_crossref(self):
+        rep = pool_pump_filter_roi_calc.evaluate_pool_and_spa(pool_pump_filter_roi_calc.DEMO_POOL_PAYLOAD)
+        pe = rep["inverter_pump_economics"]
+        self.assertGreater(pe["energy_saving_pct"], 65.0)
+        self.assertLess(pe["homeowner_payback_months"], 15.0)
+        self.assertGreater(rep["spa_filter_audit"]["channel_gross_margin_pct"], 50.0)
+
+        # Demo sample intentionally has length overshoot, SAE thread mismatch & pleat shortfall => RED
+        self.assertEqual(rep["status"], "RED")
+        codes = {c["code"] for c in rep["spa_filter_audit"]["red_cards"]}
+        self.assertIn("FILTER_LENGTH_TOLERANCE_EXCEEDED", codes)
+        self.assertIn("FILTER_ENDCAP_THREAD_MISMATCH", codes)
+        self.assertIn("FILTER_AREA_SHORTFALL", codes)
+
+        # Fix sample dimensions, thread, and full 245 pleats => GREEN
+        clean_payload = json.loads(json.dumps(pool_pump_filter_roi_calc.DEMO_POOL_PAYLOAD))
+        clean_payload["spa_filter_check"]["factory_sample"]["length_inch"] = 13.3125
+        clean_payload["spa_filter_check"]["factory_sample"]["bottom_end_cap"] = "Open 2-1/8 inch"
+        clean_payload["spa_filter_check"]["factory_sample"]["pleat_count"] = 245
+        clean_rep = pool_pump_filter_roi_calc.evaluate_pool_and_spa(clean_payload)
+        self.assertEqual(clean_rep["status"], "GREEN")
+
+    def test_09_transformer_toc_and_iec60076_reject(self):
+        # Demo has measured_p0 = 2.82 vs guaranteed 2.40 (+17.5% > +15% IEC component limit) => RED
+        rep = transformer_bom_quote_guard.evaluate_transformer_bid(transformer_bom_quote_guard.DEMO_TRANSFORMER_BID)
+        self.assertEqual(rep["status"], "RED")
+        codes = {c["code"] for c in rep["red_cards"]}
+        self.assertIn("IEC60076_COMPONENT_LOSS_REJECT", codes)
+        self.assertGreater(rep["bom_and_quote"]["lme_unhedged_erosion_usd"], 1500.0)
+        self.assertGreater(rep["toc_and_iec_audit"]["loss_penalty_usd"], 7000.0)
+
+        # Compliant design with spot copper matched => GREEN
+        clean_bid = dict(
+            transformer_bom_quote_guard.DEMO_TRANSFORMER_BID,
+            spot_lme_metal_usd_per_ton=9200.0,
+            measured_p0_kw=2.35,
+            measured_pk_kw=18.20,
+        )
+        clean_rep = transformer_bom_quote_guard.evaluate_transformer_bid(clean_bid)
+        self.assertEqual(clean_rep["status"], "GREEN")
+        self.assertEqual(clean_rep["toc_and_iec_audit"]["loss_penalty_usd"], 0.0)
 
 
 if __name__ == "__main__":

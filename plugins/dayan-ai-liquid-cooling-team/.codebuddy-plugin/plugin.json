@@ -1,0 +1,142 @@
+{
+  "name": "dayan-ai-liquid-cooling-team",
+  "version": "1.2.0",
+  "description": "AI data center liquid cooling UQD quick-disconnect Cv & zero-drip check, CDU thermal sizing, OEM qualification, and GPU leak-liability cap team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "02-engineering"
+  ],
+  "agents": [
+    "./agents/ai-liquid-cooling-lead.md",
+    "./agents/uqd-cdu-thermal-chief.md",
+    "./agents/wetted-material-ul-guard.md",
+    "./agents/lc-oem-liability-counsel.md"
+  ],
+  "skills": [
+    "./skills/dayan-lc-uqd-cv-leakcheck",
+    "./skills/dayan-lc-cdu-thermal-sizing",
+    "./skills/dayan-lc-oem-qualification-pack",
+    "./skills/dayan-lc-wet-material-compat",
+    "./skills/dayan-lc-datacenter-pue-roi",
+    "./skills/dayan-lc-leak-liability-contract"
+  ],
+  "expertType": "team",
+  "agentName": "ai-liquid-cooling-lead",
+  "teamInfo": {
+    "leadAgent": "ai-liquid-cooling-lead",
+    "memberAgents": [
+      "uqd-cdu-thermal-chief",
+      "wetted-material-ul-guard",
+      "lc-oem-liability-counsel"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan AI Liquid Cooling Team",
+    "zh": "大衍AI算力液冷散热总工团"
+  },
+  "profession": {
+    "en": "Dayan AI Liquid Cooling Team",
+    "zh": "大衍AI算力液冷散热总工团"
+  },
+  "displayDescription": {
+    "en": "Size AI rack CDU cooling & UQD Cv pressure drop, pass OEM qualifications, check materials, and cap leak liability.",
+    "zh": "精算AI高密机柜CDU流量与UQD快接头压降零滴漏，打通服务器OEM工程送样与漏液赔偿封顶审查。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "Calculate 120kW AI rack coolant flow rate, UQD quick-disconnect Cv pressure drop, and dew-point condensation margin",
+    "zh": "帮我核算120kW高密AI机柜所需的丙二醇冷却液流量、串联UQD快接头压降Cv值与防凝露露点安全裕度"
+  },
+  "plugin": "dayan-ai-liquid-cooling-team",
+  "tags": [
+    {
+      "en": "AI Liquid Cooling",
+      "zh": "AI算力液冷"
+    },
+    {
+      "en": "UQD & CDU Sizing",
+      "zh": "UQD快接与CDU"
+    },
+    {
+      "en": "OEM Qualification",
+      "zh": "服务器OEM准入"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Calculate 120kW AI rack coolant flow rate, UQD quick-disconnect Cv pressure drop, and dew-point condensation margin",
+      "zh": "帮我核算120kW高密AI机柜所需的丙二醇冷却液流量、串联UQD快接头压降Cv值与防凝露露点安全裕度"
+    },
+    {
+      "en": "Prepare an engineering RFI qualification & sample test pack for overseas AI server OEMs and check wetted material compatibility",
+      "zh": "梳理进入海外AI服务器OEM冷板供应链的工程评审送样包，并核查丙二醇与EPDM铜铝回路电化学兼容性"
+    },
+    {
+      "en": "Audit our data center liquid cooling supply contract to cap consequential GPU damage liability and calculate PUE ROI",
+      "zh": "审查算力中心液冷供货合同里的漏液烧毁GPU连带赔偿上限条款，并测算风冷改液冷PUE降至1.15回本账"
+    }
+  ],
+  "members": [
+    {
+      "id": "ai-liquid-cooling-lead",
+      "displayName": {
+        "en": "AI Thermal Systems Chief",
+        "zh": "智算液冷系统总工"
+      },
+      "profession": {
+        "en": "Liquid Cooling Engineering Lead",
+        "zh": "算力液冷研发与准入主理人"
+      },
+      "avatar": "avatars/ai-liquid-cooling-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "uqd-cdu-thermal-chief",
+      "displayName": {
+        "en": "UQD & CDU Thermal Chief",
+        "zh": "流体热工与UQD总师"
+      },
+      "profession": {
+        "en": "Fluid & Thermal Sizing Specialist",
+        "zh": "Cv流阻压降与防凝露精算"
+      },
+      "avatar": "avatars/uqd-cdu-thermal-chief.png",
+      "role": "member"
+    },
+    {
+      "id": "wetted-material-ul-guard",
+      "displayName": {
+        "en": "Materials & UL Compliance Officer",
+        "zh": "湿态材料与UL准入官"
+      },
+      "profession": {
+        "en": "Wetted Material & OCP Auditor",
+        "zh": "接液材质防腐蚀与OCP标准"
+      },
+      "avatar": "avatars/wetted-material-ul-guard.png",
+      "role": "member"
+    },
+    {
+      "id": "lc-oem-liability-counsel",
+      "displayName": {
+        "en": "OEM BD & Liability Counsel",
+        "zh": "OEM送样与赔偿封顶官"
+      },
+      "profession": {
+        "en": "OEM Qualification & Legal Guard",
+        "zh": "工程送样推进与GPU免责上限"
+      },
+      "avatar": "avatars/lc-oem-liability-counsel.png",
+      "role": "member"
+    }
+  ]
+}

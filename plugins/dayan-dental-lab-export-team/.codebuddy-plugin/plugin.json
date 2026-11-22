@@ -1,0 +1,142 @@
+{
+  "name": "dayan-dental-lab-export-team",
+  "version": "1.2.0",
+  "description": "Cross-border digital dental lab outsourcing to EU/UK/AU dental labs: 5-case trial prospecting, 3Shape STL margin & English Rx check, MDR/FDA docs, and HIPAA privacy team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "07-salescommerce"
+  ],
+  "agents": [
+    "./agents/dental-lab-export-lead.md",
+    "./agents/overseas-dlab-hunter.md",
+    "./agents/cadcam-rx-supervisor.md",
+    "./agents/mdr-hipaa-sla-officer.md"
+  ],
+  "skills": [
+    "./skills/dayan-dlab-overseas-prospecting",
+    "./skills/dayan-dlab-stl-rx-triage",
+    "./skills/dayan-dlab-zirconia-remake-cost",
+    "./skills/dayan-dlab-mdr-fda-custom-doc",
+    "./skills/dayan-dlab-crossborder-tat-sla",
+    "./skills/dayan-dlab-clinic-privacy-hipaa"
+  ],
+  "expertType": "team",
+  "agentName": "dental-lab-export-lead",
+  "teamInfo": {
+    "leadAgent": "dental-lab-export-lead",
+    "memberAgents": [
+      "overseas-dlab-hunter",
+      "cadcam-rx-supervisor",
+      "mdr-hipaa-sla-officer"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Cross-Border Dental Lab Team",
+    "zh": "大衍数字化义齿跨境技工专家团"
+  },
+  "profession": {
+    "en": "Dayan Cross-Border Dental Lab Team",
+    "zh": "大衍数字化义齿跨境技工专家团"
+  },
+  "displayDescription": {
+    "en": "Develop EU/AU dental lab accounts, review 3Shape STL margins & English Rx to cut remakes, and check MDR/FDA.",
+    "zh": "开发欧美澳牙科技工所长期样单，严审3Shape口扫边缘线与英文处方防返修，核查MDR与FDA合规。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "en": "Identify mid-sized German/UK/Australian dental labs facing technician shortages and draft a 5-case digital trial proposal",
+    "zh": "帮我筛选缺成熟技师的德国、英国与澳洲中型牙科技工所（Dental Lab），设计5例全锆冠口扫试做首谈方案"
+  },
+  "plugin": "dayan-dental-lab-export-team",
+  "tags": [
+    {
+      "en": "Digital Dental Lab",
+      "zh": "数字化义齿出口"
+    },
+    {
+      "en": "3Shape STL Triage",
+      "zh": "口扫处方防返修"
+    },
+    {
+      "en": "Overseas Dental Lab",
+      "zh": "海外技工所开发"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Identify mid-sized German/UK/Australian dental labs facing technician shortages and draft a 5-case digital trial proposal",
+      "zh": "帮我筛选缺成熟技师的德国、英国与澳洲中型牙科技工所（Dental Lab），设计5例全锆冠口扫试做首谈方案"
+    },
+    {
+      "en": "Review this incoming 3Shape STL scan & English dental Rx for margin clarity, occlusal clearance, and shade mismatch risks",
+      "zh": "在排产切削前帮我审核这份海外发来的3Shape口扫订单与英文医技处方，排查边缘线不清与咬合空间不足返修雷点"
+    },
+    {
+      "en": "Calculate tiered CAD/CAM zirconia crown export margins factoring in remake rates, DHL express SLA, and EU MDR/FDA rules",
+      "zh": "算上国际快件运费与3%免费返修率损耗，核算全锆冠与个性化种植基台对欧出口保本价，并核对MDR定制声明与GDPR脱敏"
+    }
+  ],
+  "members": [
+    {
+      "id": "dental-lab-export-lead",
+      "displayName": {
+        "en": "Global Dental Lab BD Director",
+        "zh": "跨国义齿外包业务总监"
+      },
+      "profession": {
+        "en": "Cross-Border Dental Lab Lead",
+        "zh": "海外技工所开发与交付主理人"
+      },
+      "avatar": "avatars/dental-lab-export-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "overseas-dlab-hunter",
+      "displayName": {
+        "en": "Dental Lab Account Hunter",
+        "zh": "海外技工所开发顾问"
+      },
+      "profession": {
+        "en": "Dental Outsourcing BD Specialist",
+        "zh": "德英澳技工所筛选与样单推进"
+      },
+      "avatar": "avatars/overseas-dlab-hunter.png",
+      "role": "member"
+    },
+    {
+      "id": "cadcam-rx-supervisor",
+      "displayName": {
+        "en": "CAD/CAM Rx Triage Supervisor",
+        "zh": "CAD口扫审单防返修主管"
+      },
+      "profession": {
+        "en": "Digital Dental QC & Costing",
+        "zh": "STL咬合边缘审校与核价"
+      },
+      "avatar": "avatars/cadcam-rx-supervisor.png",
+      "role": "member"
+    },
+    {
+      "id": "mdr-hipaa-sla-officer",
+      "displayName": {
+        "en": "MDR/FDA & HIPAA Officer",
+        "zh": "欧美国际药械与隐私官"
+      },
+      "profession": {
+        "en": "Dental Regulatory & SLA Guard",
+        "zh": "定制器械声明与病例脱敏"
+      },
+      "avatar": "avatars/mdr-hipaa-sla-officer.png",
+      "role": "member"
+    }
+  ]
+}

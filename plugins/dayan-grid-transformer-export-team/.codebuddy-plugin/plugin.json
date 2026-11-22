@@ -1,0 +1,142 @@
+{
+  "name": "dayan-grid-transformer-export-team",
+  "version": "1.2.0",
+  "description": "Power transformer & HV/LV switchgear export IEC/IEEE spec deviation review, TOC loss-capitalization penalty calc, copper escalator, UL/KEMA check, and L/C guard team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "02-engineering"
+  ],
+  "agents": [
+    "./agents/grid-export-team-lead.md",
+    "./agents/xfmr-toc-chief-designer.md",
+    "./agents/switchgear-ul-auditor.md",
+    "./agents/copper-lc-risk-guard.md"
+  ],
+  "skills": [
+    "./skills/dayan-grid-xfmr-spec-deviation",
+    "./skills/dayan-grid-loss-penalty-toc",
+    "./skills/dayan-grid-copper-price-escalator",
+    "./skills/dayan-grid-ul-kema-cert-check",
+    "./skills/dayan-grid-switchgear-bom-guard",
+    "./skills/dayan-grid-heavy-lift-lc-guard"
+  ],
+  "expertType": "team",
+  "agentName": "grid-export-team-lead",
+  "teamInfo": {
+    "leadAgent": "grid-export-team-lead",
+    "memberAgents": [
+      "xfmr-toc-chief-designer",
+      "switchgear-ul-auditor",
+      "copper-lc-risk-guard"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Grid Transformer Export Team",
+    "zh": "大衍电力变压器开关柜出海团"
+  },
+  "profession": {
+    "en": "Dayan Grid Transformer Export Team",
+    "zh": "大衍电力变压器开关柜出海团"
+  },
+  "displayDescription": {
+    "en": "Review 100-page IEC/IEEE transformer specs, calc TOC loss penalties, lock copper escalators, and check UL/KEMA.",
+    "zh": "秒审英文IEC与IEEE变压器标书偏离，精算TOC超耗罚金、铜硅钢联动锁价与成套开关柜BOM防漏。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "Scan this English IEEE C57 / IEC 60076 transformer tender spec for temperature-rise, OLTC AVL, and TOC loss penalty traps",
+    "zh": "帮我审查这份欧美/中东英文变压器标书里的环温温升折减、指定进口有载分接开关AVL及TOC超耗罚金陷阱"
+  },
+  "plugin": "dayan-grid-transformer-export-team",
+  "tags": [
+    {
+      "en": "Transformer Export",
+      "zh": "电力变压器出海"
+    },
+    {
+      "en": "TOC Loss Penalty",
+      "zh": "损耗罚金精算"
+    },
+    {
+      "en": "Switchgear BOM",
+      "zh": "高低压开关柜"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Scan this English IEEE C57 / IEC 60076 transformer tender spec for temperature-rise, OLTC AVL, and TOC loss penalty traps",
+      "zh": "帮我审查这份欧美/中东英文变压器标书里的环温温升折减、指定进口有载分接开关AVL及TOC超耗罚金陷阱"
+    },
+    {
+      "en": "Check our HV/LV switchgear single-line diagram & BOM for missing Form 4b partitions, arc-flash relays, and 100% neutral busbars",
+      "zh": "对照一次主接线图核查这份数据中心成套开关柜报价BOM，排查Form 4b隔板、弧光保护与100%零线铜排漏项"
+    },
+    {
+      "en": "Draft an LME copper & grain-oriented silicon steel price escalation clause and screen heavy-lift L/C soft clauses",
+      "zh": "为交期12个月的出口变压器合同设计LME铜价与取向硅钢价格联动公式，并排查信用证软条款与海运3g冲击免责点"
+    }
+  ],
+  "members": [
+    {
+      "id": "grid-export-team-lead",
+      "displayName": {
+        "en": "Power Grid Export Chief",
+        "zh": "电力装备出海总工程师"
+      },
+      "profession": {
+        "en": "Grid Equipment Export Lead",
+        "zh": "变压器与成套电气出海主理人"
+      },
+      "avatar": "avatars/grid-export-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "xfmr-toc-chief-designer",
+      "displayName": {
+        "en": "Transformer TOC Chief Designer",
+        "zh": "电磁偏离与TOC总师"
+      },
+      "profession": {
+        "en": "Electromagnetic & TOC Specialist",
+        "zh": "IEC/IEEE偏离与超耗罚金核算"
+      },
+      "avatar": "avatars/xfmr-toc-chief-designer.png",
+      "role": "member"
+    },
+    {
+      "id": "switchgear-ul-auditor",
+      "displayName": {
+        "en": "Switchgear BOM & UL Auditor",
+        "zh": "成套审图与UL准入官"
+      },
+      "profession": {
+        "en": "Switchgear & Grid Cert Specialist",
+        "zh": "Form4b铜排防漏与KEMA核验"
+      },
+      "avatar": "avatars/switchgear-ul-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "copper-lc-risk-guard",
+      "displayName": {
+        "en": "Commodity & Heavy-Lift Counsel",
+        "zh": "铜硅钢锁价与重运风控官"
+      },
+      "profession": {
+        "en": "Escalation & L/C Risk Guard",
+        "zh": "LME调价公式与冲击仪交接"
+      },
+      "avatar": "avatars/copper-lc-risk-guard.png",
+      "role": "member"
+    }
+  ]
+}

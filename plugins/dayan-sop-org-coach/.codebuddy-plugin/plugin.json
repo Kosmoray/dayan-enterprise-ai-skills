@@ -1,6 +1,6 @@
 {
   "name": "dayan-sop-org-coach",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Extracts tacit know-how from top salespeople and veteran technicians into actionable SOPs, anti-BS executive interviews, and weekly report audits.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -29,8 +29,8 @@
     "zh": "大衍销冠SOP教练"
   },
   "profession": {
-    "en": "Dayan SOP Coach",
-    "zh": "大衍销冠SOP教练"
+    "en": "Org SOP & Talent Operations Advisor",
+    "zh": "组织经验萃取与人效教练"
   },
   "displayDescription": {
     "en": "Compiles top-performer chat logs into rookie-ready SOPs, filters executive hiring fluff, and turns meetings into accountability.",

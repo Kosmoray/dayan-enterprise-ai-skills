@@ -1,0 +1,142 @@
+{
+  "name": "dayan-precious-catalyst-recycle-team",
+  "version": "1.2.0",
+  "description": "Precious metal spent catalyst (Pt/Pd/Rh) & Li-ion battery black-mass recycling assay pricing, blind sampling, futures hedging, HW50 hazardous waste compliance, and cash anti-fraud team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "08-financeinvestment"
+  ],
+  "agents": [
+    "./agents/pgm-recycle-team-lead.md",
+    "./agents/assay-payable-pricer.md",
+    "./agents/sampling-custody-marshal.md",
+    "./agents/hedge-hw50-compliance.md"
+  ],
+  "skills": [
+    "./skills/dayan-pmr-pgm-assay-settlement",
+    "./skills/dayan-pmr-blackmass-nicoli-coef",
+    "./skills/dayan-pmr-blind-sampling-moisture",
+    "./skills/dayan-pmr-futures-hedge-guard",
+    "./skills/dayan-pmr-hw50-manifest-compliance",
+    "./skills/dayan-pmr-cash-escrow-antifraud"
+  ],
+  "expertType": "team",
+  "agentName": "pgm-recycle-team-lead",
+  "teamInfo": {
+    "leadAgent": "pgm-recycle-team-lead",
+    "memberAgents": [
+      "assay-payable-pricer",
+      "sampling-custody-marshal",
+      "hedge-hw50-compliance"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Catalyst & Black-Mass Team",
+    "zh": "大衍贵金属催化剂黑粉回收团"
+  },
+  "profession": {
+    "en": "Dayan Catalyst & Black-Mass Team",
+    "zh": "大衍贵金属催化剂黑粉回收团"
+  },
+  "displayDescription": {
+    "en": "Price Pt/Pd/Rh spent catalysts & Li-ion black mass, enforce blind sampling, hedge futures, and check HW50 laws.",
+    "zh": "精算废铂钯铑催化剂与锂电黑粉干基品位折算价，锁死四分法盲抽仲裁、期货套保与HW50跨省危废合规。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "en": "Calculate dry-basis payable settlement for spent Pd/Pt carbon catalyst or NCM/LFP black mass with impurity deductions",
+    "zh": "帮我扣除含水烧失率与氟铜铝杂质超标项，精确核算这批废钯炭催化剂与三元铁锂黑粉的干基应付结算总价"
+  },
+  "plugin": "dayan-precious-catalyst-recycle-team",
+  "tags": [
+    {
+      "en": "PGM Catalyst Recycle",
+      "zh": "贵金属废催化剂"
+    },
+    {
+      "en": "Battery Black Mass",
+      "zh": "锂电黑粉计价"
+    },
+    {
+      "en": "Futures & HW50 Guard",
+      "zh": "套保与危废合规"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Calculate dry-basis payable settlement for spent Pd/Pt carbon catalyst or NCM/LFP black mass with impurity deductions",
+      "zh": "帮我扣除含水烧失率与氟铜铝杂质超标项，精确核算这批废钯炭催化剂与三元铁锂黑粉的干基应付结算总价"
+    },
+    {
+      "en": "Design an on-site cone-quartering blind sampling, moisture arbitration, and cash-collection anti-swap SOP",
+      "zh": "制定一套现款收购数百万高值金属废料的破桶混匀四分法取制样、铅封仲裁样与防遥控地磅掉包现场SOP"
+    },
+    {
+      "en": "Verify cross-provincial HW50 hazardous waste 8-digit code compliance and calculate 20-day inventory futures hedge lots",
+      "zh": "核对跨省收运废催化剂HW50八位危废代码与电子联单刑事红线，并测算20天提纯周期所需的期货空头套保手数"
+    }
+  ],
+  "members": [
+    {
+      "id": "pgm-recycle-team-lead",
+      "displayName": {
+        "en": "Precious Recycling Risk VP",
+        "zh": "再生贵金属贸易风控总裁"
+      },
+      "profession": {
+        "en": "PGM & Black-Mass Trading Lead",
+        "zh": "贵金属与黑粉精算主理人"
+      },
+      "avatar": "avatars/pgm-recycle-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "assay-payable-pricer",
+      "displayName": {
+        "en": "Assay & Payables Pricer",
+        "zh": "品位折算与扣杂核价师"
+      },
+      "profession": {
+        "en": "PGM & Li2CO3 Settlement Analyst",
+        "zh": "铂钯铑火法与黑粉5.323换算"
+      },
+      "avatar": "avatars/assay-payable-pricer.png",
+      "role": "member"
+    },
+    {
+      "id": "sampling-custody-marshal",
+      "displayName": {
+        "en": "Sampling & Anti-Fraud Marshal",
+        "zh": "取制样仲裁与防骗总监"
+      },
+      "profession": {
+        "en": "Sampling & Custody Inspector",
+        "zh": "破桶四分法与双磅同车押运"
+      },
+      "avatar": "avatars/sampling-custody-marshal.png",
+      "role": "member"
+    },
+    {
+      "id": "hedge-hw50-compliance",
+      "displayName": {
+        "en": "Hedging & HW50 EHS Officer",
+        "zh": "套保敞口与危废合规官"
+      },
+      "profession": {
+        "en": "Futures Risk & Hazardous Waste Guard",
+        "zh": "Delta中性套保与固废八位码"
+      },
+      "avatar": "avatars/hedge-hw50-compliance.png",
+      "role": "member"
+    }
+  ]
+}

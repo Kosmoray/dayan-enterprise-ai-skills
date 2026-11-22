@@ -1,6 +1,6 @@
 {
   "name": "dayan-enterprise-ai-experts",
-  "description": "成都大衍千机科技有限公司开源 WorkBuddy 企业级 AI 专家与行业专家团矩阵（19 Experts + 120 Skills）",
+  "description": "成都大衍千机科技有限公司开源 WorkBuddy 企业级 AI 专家与暴利富矿专家团矩阵（25 Experts + 156 Skills）",
   "plugins": [
     {
       "name": "dayan-contract-audit-team",
@@ -96,6 +96,36 @@
       "name": "dayan-gov-it-integrator-team",
       "source": "./plugins/dayan-gov-it-integrator-team",
       "description": "Gov/Enterprise IT system integration & custom software scope-creep firewall, Xinchuang domestic stack matrix, audit sign-off pack, POC guard, and channel split team."
+    },
+    {
+      "name": "dayan-ai-liquid-cooling-team",
+      "source": "./plugins/dayan-ai-liquid-cooling-team",
+      "description": "AI data center liquid cooling UQD quick-disconnect Cv & zero-drip check, CDU thermal sizing, OEM qualification, and GPU leak-liability cap team."
+    },
+    {
+      "name": "dayan-pool-inverter-filter-team",
+      "source": "./plugins/dayan-pool-inverter-filter-team",
+      "description": "Smart inverter pool pump & 54%-margin SPA replacement filter overseas channel matching, DOE energy ROI, cross-brand filter sizing, and WRAS/NSF50 compliance team."
+    },
+    {
+      "name": "dayan-dental-lab-export-team",
+      "source": "./plugins/dayan-dental-lab-export-team",
+      "description": "Cross-border digital dental lab outsourcing to EU/UK/AU dental labs: 5-case trial prospecting, 3Shape STL margin & English Rx check, MDR/FDA docs, and HIPAA privacy team."
+    },
+    {
+      "name": "dayan-grid-transformer-export-team",
+      "source": "./plugins/dayan-grid-transformer-export-team",
+      "description": "Power transformer & HV/LV switchgear export IEC/IEEE spec deviation review, TOC loss-capitalization penalty calc, copper escalator, UL/KEMA check, and L/C guard team."
+    },
+    {
+      "name": "dayan-precious-catalyst-recycle-team",
+      "source": "./plugins/dayan-precious-catalyst-recycle-team",
+      "description": "Precious metal spent catalyst (Pt/Pd/Rh) & Li-ion battery black-mass recycling assay pricing, blind sampling, futures hedging, HW50 hazardous waste compliance, and cash anti-fraud team."
+    },
+    {
+      "name": "dayan-offgrid-microgrid-epc-team",
+      "source": "./plugins/dayan-offgrid-microgrid-epc-team",
+      "description": "Off-grid mining & industrial diesel-solar-storage microgrid EPC export: crusher inrush PCS sizing, diesel anti-wet-stacking ROI, 50C heat derating, UN3536 DG shipping, and full-pay release team."
     }
   ]
 }

@@ -1,0 +1,142 @@
+{
+  "name": "dayan-offgrid-microgrid-epc-team",
+  "version": "1.2.0",
+  "description": "Off-grid mining & industrial diesel-solar-storage microgrid EPC export: crusher inrush PCS sizing, diesel anti-wet-stacking ROI, 50C heat derating, UN3536 DG shipping, and full-pay release team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "12-industryconsultant"
+  ],
+  "agents": [
+    "./agents/offgrid-microgrid-lead.md",
+    "./agents/vsg-ems-chief-engineer.md",
+    "./agents/desert-un3536-officer.md",
+    "./agents/emerging-pay-triage-guard.md"
+  ],
+  "skills": [
+    "./skills/dayan-mg-crush-inrush-sizing",
+    "./skills/dayan-mg-diesel-pv-ems-fuel",
+    "./skills/dayan-mg-harsh-heat-derating",
+    "./skills/dayan-mg-un3536-dg-shipping",
+    "./skills/dayan-mg-fob-fullpay-release",
+    "./skills/dayan-mg-multilang-field-triage"
+  ],
+  "expertType": "team",
+  "agentName": "offgrid-microgrid-lead",
+  "teamInfo": {
+    "leadAgent": "offgrid-microgrid-lead",
+    "memberAgents": [
+      "vsg-ems-chief-engineer",
+      "desert-un3536-officer",
+      "emerging-pay-triage-guard"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Off-Grid Microgrid EPC Team",
+    "zh": "大衍离网光柴储微电网出海团"
+  },
+  "profession": {
+    "en": "Dayan Off-Grid Microgrid EPC Team",
+    "zh": "大衍离网光柴储微电网出海团"
+  },
+  "displayDescription": {
+    "en": "Size off-grid PCS for mining crusher inrush, calc diesel-saving ROI, check 50C derating, and guard UN3536 & payment.",
+    "zh": "校核矿山冲击负荷防烧储能PCS，精算光储柴替油回本账、50℃降额、UN3536海运与见全款放单。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "en": "Size grid-forming PCS & transformer for an off-grid gold mine with heavy jaw crushers/ball mills and calculate diesel-saving payback",
+    "zh": "非洲金矿有球磨机与颚式破碎机大冲击负荷，帮我校核离网构网型储能PCS防烧机容量并测算替代$1.6/升柴油回本周期"
+  },
+  "plugin": "dayan-offgrid-microgrid-epc-team",
+  "tags": [
+    {
+      "en": "Off-Grid Microgrid",
+      "zh": "离网光柴储微网"
+    },
+    {
+      "en": "Mining Energy Export",
+      "zh": "非洲矿山供电"
+    },
+    {
+      "en": "UN3536 & Full-Pay",
+      "zh": "储能危运与收汇"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Size grid-forming PCS & transformer for an off-grid gold mine with heavy jaw crushers/ball mills and calculate diesel-saving payback",
+      "zh": "非洲金矿有球磨机与颚式破碎机大冲击负荷，帮我校核离网构网型储能PCS防烧机容量并测算替代$1.6/升柴油回本周期"
+    },
+    {
+      "en": "Check 50C desert temperature derating, C5 anti-corrosion, and diesel generator ≥35% load anti-wet-stacking EMS rules",
+      "zh": "核查发往中东/非洲50℃沙漠矿区的储能液冷降额余量、C5防腐等级及EMS防止柴油机低负载积碳拉缸保护逻辑"
+    },
+    {
+      "en": "Verify UN3536 Class-9 dangerous goods ocean shipping timeline, ≤30% SOC check, and full-payment-before-shipment contract clauses",
+      "zh": "梳理20尺锂电储能柜海运UN3536危申报与SOC≤30%出厂死锁清单，并审查亚非拉客户发货前付清全款防弃货合同"
+    }
+  ],
+  "members": [
+    {
+      "id": "offgrid-microgrid-lead",
+      "displayName": {
+        "en": "Off-Grid Microgrid EPC Chief",
+        "zh": "海外微电网EPC总指挥"
+      },
+      "profession": {
+        "en": "Microgrid Export & Engineering Lead",
+        "zh": "离网光柴储出海主理人"
+      },
+      "avatar": "avatars/offgrid-microgrid-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "vsg-ems-chief-engineer",
+      "displayName": {
+        "en": "Grid-Forming & EMS Chief",
+        "zh": "构网电气与柴发协同总师"
+      },
+      "profession": {
+        "en": "VSG Sizing & Diesel EMS Specialist",
+        "zh": "冲击电流校核与防湿堆省油"
+      },
+      "avatar": "avatars/vsg-ems-chief-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "desert-un3536-officer",
+      "displayName": {
+        "en": "Harsh Env & DG Logistics Officer",
+        "zh": "极端热工与危品关务官"
+      },
+      "profession": {
+        "en": "Thermal Derating & IMDG Specialist",
+        "zh": "50℃高温降额与UN3536海运"
+      },
+      "avatar": "avatars/desert-un3536-officer.png",
+      "role": "member"
+    },
+    {
+      "id": "emerging-pay-triage-guard",
+      "displayName": {
+        "en": "Payment & Field Triage Guard",
+        "zh": "新兴市场收汇与多语售后官"
+      },
+      "profession": {
+        "en": "Export Payment & LOTO Triage Lead",
+        "zh": "离厂前全款红线与英法排错卡"
+      },
+      "avatar": "avatars/emerging-pay-triage-guard.png",
+      "role": "member"
+    }
+  ]
+}

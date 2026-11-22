@@ -1,6 +1,6 @@
 {
   "name": "dayan-code-adversary-guard",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Read-only 3-eye adversarial PR & code reviewer catching concurrency bugs, silent data corruption, auth bypasses, and secret leaks before release.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -28,8 +28,8 @@
     "zh": "大衍代码戍边审查官"
   },
   "profession": {
-    "en": "Dayan Code Adversary",
-    "zh": "大衍代码戍边审查官"
+    "en": "Adversarial Code & Release Reviewer",
+    "zh": "代码对抗审查总工"
   },
   "displayDescription": {
     "en": "Reviews code diffs through 3 adversarial lenses (Saboteur, 6-Month Newcomer, Security Guard) with line-level minimal fixes.",

@@ -5,8 +5,8 @@
 <p align="center">
   <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/stargazers"><img src="https://img.shields.io/github/stars/Kosmoray/dayan-enterprise-ai-skills?style=for-the-badge&color=AD7B27&label=STARS" alt="GitHub Stars"/></a>
   <a href="https://github.com/Kosmoray/dayan-enterprise-ai-skills/actions"><img src="https://img.shields.io/github/actions/workflow/status/Kosmoray/dayan-enterprise-ai-skills/ci.yml?branch=main&style=for-the-badge&label=CI_VALIDATE" alt="CI Status"/></a>
-  <a href="https://skillhub.cn/enterprise-zone"><img src="https://img.shields.io/badge/腾讯_SkillHub-蓝V认证企业_120_Skills_+_19_专家团-1B365D?style=for-the-badge" alt="Tencent SkillHub Verified"/></a>
-  <a href="./docs/DOUBAO-VOLCENGINE-GUIDE.md"><img src="https://img.shields.io/badge/字节_豆包工作-120_Skills_安全扫描通过-0066FF?style=for-the-badge" alt="Doubao Work Verified"/></a>
+  <a href="https://skillhub.cn/enterprise-zone"><img src="https://img.shields.io/badge/腾讯_SkillHub-蓝V认证企业_156_Skills_+_25_专家团-1B365D?style=for-the-badge" alt="Tencent SkillHub Verified"/></a>
+  <a href="./docs/DOUBAO-VOLCENGINE-GUIDE.md"><img src="https://img.shields.io/badge/字节_豆包工作-156_Skills_安全扫描通过-0066FF?style=for-the-badge" alt="Doubao Work Verified"/></a>
   <a href="https://www.skills.sh/kosmoray/dayan-enterprise-ai-skills"><img src="https://img.shields.io/badge/skills.sh-Global_Indexed-0F766E?style=for-the-badge" alt="skills.sh"/></a>
   <a href="./pyproject.toml"><img src="https://img.shields.io/badge/Python_CLI-Zero_Dependency-3776AB?style=for-the-badge" alt="Python Zero-Dep CLI"/></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-265592?style=for-the-badge" alt="MIT License"/></a>
@@ -67,9 +67,9 @@ cd dayan-enterprise-ai-skills && python3 installers/install_skills.py --agent wo
 
 ---
 
-## 🛠️ 开箱即跑：内置 9 大零依赖 Python 命令行急救神器（无需 API Key！）
+## 🛠️ 开箱即跑：内置 12 大零依赖 Python 命令行急救神器（无需 API Key！）
 
-除了 **120 枚**挂载进智能体的深度 `SKILL.md` 专家系统与 **19 大 WorkBuddy 多智能体行业专家团**，本仓库在 [`scripts/`](./scripts/) 中内置了 **9 把纯标准库、零第三方依赖、离线毫秒级响应的 Python CLI 武器**（4 把通用高管武器 + 5 把暴利垂直行业精算器，均支持本地直跑或 `uvx` 免克隆调用）：
+除了 **156 枚**挂载进智能体的深度 `SKILL.md` 专家系统与 **25 大 WorkBuddy 多智能体行业专家团**，本仓库在 [`scripts/`](./scripts/) 中内置了 **12 把纯标准库、零第三方依赖、离线毫秒级响应的 Python CLI 武器**（4 把通用高管武器 + 8 把高增速/暴利富矿行业精算器，均支持本地直跑或 `uvx` 免克隆调用）：
 
 ```bash
 # 1️⃣ 【乙方法务保命】1秒扫描合同里的「背靠背付款/无限连带赔偿/源码归甲方/默认不验收」等致命霸王条款
@@ -81,15 +81,18 @@ python3 scripts/dayan_humanize_lint.py examples/sample_ai_slop.md --fail-under 5
 # 3️⃣ 【老板拍板呈现】1秒把任意 Markdown 报告编译成 #1B365D 深蓝政商风单文件 HTML 高管看板（微信点开即看）
 python3 scripts/dayan_html_compiler.py examples/sample_ai_slop.md /tmp/executive_brief.html
 
-# 4️⃣ 【痛点秒搜武器】输入任意经营卡点词（如：重卡 / 宠物 / 军工 / 食品 / 合同），从 120 枚武器中按相关度秒搜
-python3 scripts/dayan_skill_finder.py 重卡
+# 4️⃣ 【痛点秒搜武器】输入任意经营卡点词（如：液冷 / 变压器 / 泳池 / 重卡 / 宠物 / 军工），从 156 枚武器秒搜
+python3 scripts/dayan_skill_finder.py 液冷
 
-# 5️⃣–9️⃣ 【五大细分行业离线精算/核查器】（均支持 --demo 一键跑出行业实测报表！）
-python3 scripts/industry/ev_station_tco_calc.py --demo       # 电动重卡超充站国网容量vs需量电费临界点与TCO回本测算
-python3 scripts/industry/vet_dose_compliance_check.py --demo # 宠物专科医院犬猫BSA体表面积剂量红线与人药兽用合规核查
-python3 scripts/industry/gjb_kit_shortage_audit.py --demo    # 航空军工多工序特种外协齐套与断网不出域大模型显存精算
-python3 scripts/industry/gb7718_oem_quote_guard.py --demo    # 川调食品GB7718-2025防职业打假扫描与炒制损耗三档核价
-python3 scripts/industry/cis_export_doc_checker.py --demo    # 二手车工程机械中亚俄语出口17位VIN模11校验与SMGS核单
+# 5️⃣–1️⃣2️⃣ 【八大暴利富矿离线精算/核查器】（均支持 --demo 一键跑出行业实测报表！）
+python3 scripts/industry/liquid_cooling_uqd_calc.py --demo     # AI算力机柜液冷流量、UQD快接头压降Cv与露点防凝露精算
+python3 scripts/industry/pool_pump_filter_roi_calc.py --demo   # 欧美变频泳池泵DOE节能回本与SPA替换滤芯尺寸毛利核验
+python3 scripts/industry/transformer_bom_quote_guard.py --demo # 出海变压器硅钢铜重联动与IEC/IEEE超耗罚金TOC精算
+python3 scripts/industry/ev_station_tco_calc.py --demo         # 电动重卡超充站国网容量vs需量电费临界点与TCO回本测算
+python3 scripts/industry/vet_dose_compliance_check.py --demo   # 宠物专科医院犬猫BSA体表面积剂量红线与人药兽用合规核查
+python3 scripts/industry/gjb_kit_shortage_audit.py --demo      # 航空军工多工序特种外协齐套与断网不出域大模型显存精算
+python3 scripts/industry/gb7718_oem_quote_guard.py --demo      # 川调食品GB7718-2025防职业打假扫描与炒制损耗三档核价
+python3 scripts/industry/cis_export_doc_checker.py --demo      # 二手车工程机械中亚俄语出口17位VIN模11校验与SMGS核单
 ```
 
 ---

@@ -1,6 +1,6 @@
 {
   "name": "dayan-humanize-chief",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Three-pass Chinese editorial master stripping AI buzzwords, hollow transitions, and robotic cadence into crisp executive prose.",
   "author": {
     "name": "成都大衍千机科技有限公司（雷可扬）",
@@ -28,8 +28,8 @@
     "zh": "大衍去AI味总编"
   },
   "profession": {
-    "en": "Dayan Humanize Chief",
-    "zh": "大衍去AI味总编"
+    "en": "Executive Chinese Chief Editor",
+    "zh": "中文人话精修总编"
   },
   "displayDescription": {
     "en": "Eliminates Chinese AI-slop buzzwords and robotic phrasing via a 3-pass draft, adversarial critique, and clean polish loop.",
