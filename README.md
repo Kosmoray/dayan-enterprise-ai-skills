@@ -24,6 +24,8 @@
 
 [查看完整技能目录](./docs/DOUBAO-VOLCENGINE-GUIDE.md#技能目录) · [下载 v1.6.0](https://github.com/Kosmoray/dayan-enterprise-ai-skills/releases/tag/v1.6.0)
 
+制造企业已有 ERP、想从企业微信接入客户改单，可用[订单变更验收样例](./examples/erp-wecom-order-change-acceptance.md)核对审批、重复提交和超时恢复。
+
 ---
 
 ## 💬 为什么我把公司吃饭的 66 套内部 AI 武器全掀桌子开源了？
