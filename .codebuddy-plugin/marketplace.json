@@ -1,6 +1,6 @@
 {
   "name": "dayan-enterprise-ai-experts",
-  "description": "成都大衍千机科技有限公司开源 WorkBuddy 企业级 AI 专家与暴利富矿专家团矩阵（25 Experts + 156 Skills）",
+  "description": "成都大衍千机科技有限公司开源企业 AI 技能与 WorkBuddy 专家库，包含 168 个技能和 27 个专家及专家团。",
   "plugins": [
     {
       "name": "dayan-contract-audit-team",
