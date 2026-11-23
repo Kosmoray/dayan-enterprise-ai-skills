@@ -5,6 +5,7 @@ Unit tests for Dayan Qianji Batch-01 Five Zero-Dependency Industry Calculators &
 Run: python3 -m unittest discover -s tests -v
 """
 
+import copy
 import json
 import pathlib
 import subprocess
@@ -22,6 +23,8 @@ from scripts.industry import (  # noqa: E402
     gjb_kit_shortage_audit,
     liquid_cooling_uqd_calc,
     pool_pump_filter_roi_calc,
+    semi_fab_coa_yield_calc,
+    ship_cii_drydock_calc,
     transformer_bom_quote_guard,
     vet_dose_compliance_check,
 )
@@ -245,6 +248,28 @@ class TestBatch01IndustryCalculators(unittest.TestCase):
         clean_rep = transformer_bom_quote_guard.evaluate_transformer_bid(clean_bid)
         self.assertEqual(clean_rep["status"], "GREEN")
         self.assertEqual(clean_rep["toc_and_iec_audit"]["loss_penalty_usd"], 0.0)
+
+
+class TestWave6IndustryCalculators(unittest.TestCase):
+    def test_missing_coa_reading_cannot_pass(self):
+        sample = copy.deepcopy(semi_fab_coa_yield_calc.DEMO_SEMI_LOT)
+        coa = sample["coa_trace_metals_ppb"]
+        coa["measured_ppb"] = {"Fe": 1.0}
+        result = semi_fab_coa_yield_calc.evaluate_semi_coa_and_yield(sample)
+        self.assertFalse(result["coa_audit"]["is_coa_clean"])
+        self.assertIn("UNVERIFIED", {row["status"] for row in result["coa_audit"]["elements"]})
+        self.assertIn("未核验", semi_fab_coa_yield_calc.render_cli_report(result))
+
+    def test_cii_uses_the_selected_year(self):
+        sample = copy.deepcopy(ship_cii_drydock_calc.DEMO_SHIP_DRYDOCK)
+        cii = sample["cii_input"]
+        del cii["reduction_factor_pct"]
+        result_2026 = ship_cii_drydock_calc.evaluate_ship_cii_and_drydock(sample)
+        cii["eval_year"] = 2027
+        result_2027 = ship_cii_drydock_calc.evaluate_ship_cii_and_drydock(sample)
+        required_2026 = result_2026["imo_cii_audit"]["required_aer"]
+        required_2027 = result_2027["imo_cii_audit"]["required_aer"]
+        self.assertAlmostEqual(required_2027 / required_2026, (1 - 0.13625) / (1 - 0.11), places=3)
 
 
 if __name__ == "__main__":

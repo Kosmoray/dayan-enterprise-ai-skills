@@ -22,7 +22,7 @@
 
   <!-- Main Copy -->
   <text x="232" y="92" fill="#E5B968" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700" letter-spacing="2">CHENGDU DAYAN QIANJI · 成都大衍千机科技（天府长岛首家入驻 OPC）开源出品</text>
-  <text x="232" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="40" font-weight="800">大衍千机 · 66 枚企业级 AI 实战技能军火库</text>
+  <text x="232" y="148" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="40" font-weight="800">大衍千机 · 168 个企业 AI 开源技能</text>
   <rect x="232" y="168" width="680" height="3" fill="url(#goldline)"/>
   <text x="232" y="206" fill="rgba(255,255,255,0.88)" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18">不玩概念玩具，全是真刀真枪给企业做首诊、审合同、写标书、搭兜错知识库打出来的吃饭家伙。</text>
   <text x="232" y="236" fill="rgba(255,255,255,0.68)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">Works with: Claude Code · Cursor · Codex CLI · 腾讯 WorkBuddy / SkillHub (蓝V认证企业 #1) · Open Agent Skills</text>

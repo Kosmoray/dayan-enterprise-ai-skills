@@ -13,4 +13,6 @@ __all__ = [
     "liquid_cooling_uqd_calc",
     "pool_pump_filter_roi_calc",
     "transformer_bom_quote_guard",
+    "ship_cii_drydock_calc",
+    "semi_fab_coa_yield_calc",
 ]

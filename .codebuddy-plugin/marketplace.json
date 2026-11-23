@@ -126,6 +126,16 @@
       "name": "dayan-offgrid-microgrid-epc-team",
       "source": "./plugins/dayan-offgrid-microgrid-epc-team",
       "description": "Off-grid mining & industrial diesel-solar-storage microgrid EPC export: crusher inrush PCS sizing, diesel anti-wet-stacking ROI, 50C heat derating, UN3536 DG shipping, and full-pay release team."
+    },
+    {
+      "name": "dayan-ship-drydock-team",
+      "source": "./plugins/dayan-ship-drydock-team",
+      "description": "Ship repair English drydock specification audit, Variation Order steel renewal pricing, IMO CII/scrubber retrofit ROI, and DNV/ABS/CCS class certificate check team."
+    },
+    {
+      "name": "dayan-semi-quartz-parts-team",
+      "source": "./plugins/dayan-semi-quartz-parts-team",
+      "description": "Semiconductor high-purity quartz & SiC parts yield-loss quoting, fab ppb metal impurity CoA traceability, SEMI S2/F47 compliance, and Qual wafer liability cap team."
     }
   ]
 }

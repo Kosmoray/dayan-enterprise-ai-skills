@@ -1,0 +1,142 @@
+{
+  "name": "dayan-ship-drydock-team",
+  "version": "1.3.0",
+  "description": "Ship repair English drydock specification audit, Variation Order steel renewal pricing, IMO CII/scrubber retrofit ROI, and DNV/ABS/CCS class certificate check team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "02-engineering"
+  ],
+  "agents": [
+    "./agents/ship-drydock-lead.md",
+    "./agents/drydock-vo-estimator.md",
+    "./agents/imo-class-survey-guard.md",
+    "./agents/maritime-contract-impa-officer.md"
+  ],
+  "skills": [
+    "./skills/dayan-ship-drydock-spec-auditor",
+    "./skills/dayan-ship-imo-cii-scrubber-roi",
+    "./skills/dayan-ship-class-cert-matcher",
+    "./skills/dayan-ship-demurrage-force-majeure",
+    "./skills/dayan-ship-offshore-ndt-weld-log",
+    "./skills/dayan-ship-spares-impa-quoter"
+  ],
+  "expertType": "team",
+  "agentName": "ship-drydock-lead",
+  "teamInfo": {
+    "leadAgent": "ship-drydock-lead",
+    "memberAgents": [
+      "drydock-vo-estimator",
+      "imo-class-survey-guard",
+      "maritime-contract-impa-officer"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Ship Drydock & Retrofit Team",
+    "zh": "大衍船舶坞修与脱硫改装团"
+  },
+  "profession": {
+    "en": "Dayan Ship Drydock & Retrofit Team",
+    "zh": "大衍船舶坞修与脱硫改装团"
+  },
+  "displayDescription": {
+    "en": "Audit 1000-line English drydock repair specs, price VO steel renewals, model IMO CII retrofits, and verify class certificates.",
+    "zh": "筛查船东英文坞修工程单千项漏报与追加变更计价，核算IMO碳排评级及船级社备件证书合规。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "Audit an overseas shipowner's English Drydock Repair Spec for hidden scope traps and calculate steel renewal Variation Order pricing",
+    "zh": "帮我审查海外船东发来的英文坞修工程单Repair-Spec漏项陷阱，并核算船底换板超标吨重与VO追加工程单加价"
+  },
+  "plugin": "dayan-ship-drydock-team",
+  "tags": [
+    {
+      "en": "Ship Repair & Drydock",
+      "zh": "船舶坞修与海工"
+    },
+    {
+      "en": "IMO CII & Scrubber",
+      "zh": "脱硫与双燃料改装"
+    },
+    {
+      "en": "DNV ABS CCS Class",
+      "zh": "船级社证书核验"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Audit an overseas shipowner's English Drydock Repair Spec for hidden scope traps and calculate steel renewal Variation Order pricing",
+      "zh": "帮我审查海外船东发来的英文坞修工程单Repair-Spec漏项陷阱，并核算船底换板超标吨重与VO追加工程单加价"
+    },
+    {
+      "en": "Calculate our bulk carrier's IMO CII carbon intensity rating (A-E) and compare scrubber or methanol retrofit payback",
+      "zh": "测算散货船年度IMO碳强度指标CII当前评级与降级风险，对比加装脱硫塔或节能风帆导流罩改装回本周期"
+    },
+    {
+      "en": "Cross-check marine valve & hull steel mill certificates against DNV/ABS/CCS 3.1/3.2 class rules and cap demurrage liquidated damages",
+      "zh": "核验船用高强钢板与阀门的DNV/CCS船检3.2证书炉批号一致性，并审查修船合同船期延误日罚金封顶条款"
+    }
+  ],
+  "members": [
+    {
+      "id": "ship-drydock-lead",
+      "displayName": {
+        "en": "Shipyard Commercial & Technical Lead",
+        "zh": "船舶坞修与海工总管"
+      },
+      "profession": {
+        "en": "Drydock Estimating & Retrofit Lead",
+        "zh": "英文坞修报价与改装工程统筹"
+      },
+      "avatar": "avatars/ship-drydock-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "drydock-vo-estimator",
+      "displayName": {
+        "en": "Drydock & VO Cost Estimator",
+        "zh": "坞修核价与VO结算总师"
+      },
+      "profession": {
+        "en": "Repair Spec & Steel Renewal Specialist",
+        "zh": "英文工程单排雷与换板计重"
+      },
+      "avatar": "avatars/drydock-vo-estimator.png",
+      "role": "member"
+    },
+    {
+      "id": "imo-class-survey-guard",
+      "displayName": {
+        "en": "Class Rules & IMO Decarb Engineer",
+        "zh": "船级社规范与碳排总工"
+      },
+      "profession": {
+        "en": "DNV/ABS/CCS & IMO CII Specialist",
+        "zh": "CII评级精算与3.2船检证核验"
+      },
+      "avatar": "avatars/imo-class-survey-guard.png",
+      "role": "member"
+    },
+    {
+      "id": "maritime-contract-impa-officer",
+      "displayName": {
+        "en": "Maritime Contract & Spares Officer",
+        "zh": "海事合同与IMPA备件官"
+      },
+      "profession": {
+        "en": "BIMCO Repaircon & IMPA Quoter",
+        "zh": "船期罚金封顶与IMPA编码报价"
+      },
+      "avatar": "avatars/maritime-contract-impa-officer.png",
+      "role": "member"
+    }
+  ]
+}

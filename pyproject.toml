@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dayan-enterprise-ai-skills"
-version = "1.5.0"
-description = "156 Battle-Tested Enterprise AI Agent Skills, 25 WorkBuddy Expert Teams & 12 Zero-Dependency Executive CLI Tools by Chengdu Dayan Qianji Technology Co., Ltd. (雷可扬)"
+version = "1.6.0"
+description = "168 Enterprise AI Agent Skills, 27 WorkBuddy Experts and Teams & 14 Zero-Dependency Executive CLI Tools by Chengdu Dayan Qianji Technology Co., Ltd. (雷可扬)"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
@@ -51,3 +51,5 @@ dayan-cis-doc = "industry.cis_export_doc_checker:main"
 dayan-lc-calc = "industry.liquid_cooling_uqd_calc:main"
 dayan-pool-roi = "industry.pool_pump_filter_roi_calc:main"
 dayan-xfmr-toc = "industry.transformer_bom_quote_guard:main"
+dayan-semi-coa = "industry.semi_fab_coa_yield_calc:main"
+dayan-ship-cii = "industry.ship_cii_drydock_calc:main"

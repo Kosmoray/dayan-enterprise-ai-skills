@@ -1,0 +1,142 @@
+{
+  "name": "dayan-semi-quartz-parts-team",
+  "version": "1.3.0",
+  "description": "Semiconductor high-purity quartz & SiC parts yield-loss quoting, fab ppb metal impurity CoA traceability, SEMI S2/F47 compliance, and Qual wafer liability cap team.",
+  "author": {
+    "name": "成都大衍千机科技有限公司（雷可扬）",
+    "email": "dayanqianji@163.com"
+  },
+  "homepage": "https://dayanqianji.com/",
+  "license": "MIT",
+  "keywords": [
+    "dayanqianji",
+    "enterprise-ai",
+    "expert-team",
+    "02-engineering"
+  ],
+  "agents": [
+    "./agents/semi-parts-lead.md",
+    "./agents/quartz-sic-process-estimator.md",
+    "./agents/fab-coa-cleanroom-qe.md",
+    "./agents/semi-ehs-qual-counsel.md"
+  ],
+  "skills": [
+    "./skills/dayan-semi-quartz-sic-yield-quoter",
+    "./skills/dayan-semi-coa-trace-impurity",
+    "./skills/dayan-semi-s2-f47-compliance",
+    "./skills/dayan-semi-qual-wafer-liability",
+    "./skills/dayan-semi-cleanroom-pack-sop",
+    "./skills/dayan-semi-cylinder-consign-recon"
+  ],
+  "expertType": "team",
+  "agentName": "semi-parts-lead",
+  "teamInfo": {
+    "leadAgent": "semi-parts-lead",
+    "memberAgents": [
+      "quartz-sic-process-estimator",
+      "fab-coa-cleanroom-qe",
+      "semi-ehs-qual-counsel"
+    ]
+  },
+  "displayName": {
+    "en": "Dayan Semi Quartz & Parts Team",
+    "zh": "大衍半导体耗材国产导入团"
+  },
+  "profession": {
+    "en": "Dayan Semi Quartz & Parts Team",
+    "zh": "大衍半导体耗材国产导入团"
+  },
+  "displayDescription": {
+    "en": "Price brittle quartz/SiC machining yield loss, audit ppb-level CoA traceability, check SEMI S2/F47, and cap Qual wafer liability.",
+    "zh": "精算高纯石英碳化硅脆硬加工崩边良率报价，严守晶圆厂CoA痕量杂质防混批与验证赔付上限。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "en": "Calculate compound yield (RTY) pricing for a micro-drilled high-purity quartz showerhead and verify ICP-MS ppb metal CoA limits",
+    "zh": "帮我核算高纯石英喷淋头微孔超声加工复合直通率保本报价，并核查出货CoA铁钠铜镍ppb级杂质是否踩晶圆厂红线"
+  },
+  "plugin": "dayan-semi-quartz-parts-team",
+  "tags": [
+    {
+      "en": "High-Purity Quartz & SiC",
+      "zh": "高纯石英与碳化硅"
+    },
+    {
+      "en": "Fab CoA & Cleanroom",
+      "zh": "CoA溯源与百级超净"
+    },
+    {
+      "en": "SEMI S2 F47 & Qual",
+      "zh": "晶圆厂导入与免责"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Calculate compound yield (RTY) pricing for a micro-drilled high-purity quartz showerhead and verify ICP-MS ppb metal CoA limits",
+      "zh": "帮我核算高纯石英喷淋头微孔超声加工复合直通率保本报价，并核查出货CoA铁钠铜镍ppb级杂质是否踩晶圆厂红线"
+    },
+    {
+      "en": "Audit our domestic replacement part Qualification Run agreement with a 12-inch Fab to cap scrapped wafer consequential damages",
+      "zh": "审查我们送进12寸晶圆厂做国产替代Qual验证的协议，锁死在制Wafer报废与产线停机连带赔偿上限"
+    },
+    {
+      "en": "Check SEMI S2 interlock & SEMI F47 voltage-sag readiness for our vacuum valve sub-system and review VMI cylinder deposit terms",
+      "zh": "对照SEMI-S2与F47标准排查半导体真空子系统进厂EHS卡点，并梳理电子特气钢瓶与VMI寄售超期周转对账规则"
+    }
+  ],
+  "members": [
+    {
+      "id": "semi-parts-lead",
+      "displayName": {
+        "en": "Semiconductor Parts Qualification Lead",
+        "zh": "半导体耗材导入主理人"
+      },
+      "profession": {
+        "en": "Fab Qualification & Cost Lead",
+        "zh": "精密耗材核价与Fab导入统筹"
+      },
+      "avatar": "avatars/semi-parts-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "quartz-sic-process-estimator",
+      "displayName": {
+        "en": "Quartz & SiC Machining Estimator",
+        "zh": "脆硬加工与良率核价师"
+      },
+      "profession": {
+        "en": "Precision Non-Metal Cost Engineer",
+        "zh": "微孔崩边损耗与NRE切分"
+      },
+      "avatar": "avatars/quartz-sic-process-estimator.png",
+      "role": "member"
+    },
+    {
+      "id": "fab-coa-cleanroom-qe",
+      "displayName": {
+        "en": "Fab Quality & Cleanroom Specialist",
+        "zh": "晶圆厂CoA与超净品质官"
+      },
+      "profession": {
+        "en": "ICP-MS CoA & Class-100 QE",
+        "zh": "ppb杂质卡位与百级双袋充氮"
+      },
+      "avatar": "avatars/fab-coa-cleanroom-qe.png",
+      "role": "member"
+    },
+    {
+      "id": "semi-ehs-qual-counsel",
+      "displayName": {
+        "en": "SEMI Compliance & Qual Counsel",
+        "zh": "SEMI安规与验证法务官"
+      },
+      "profession": {
+        "en": "SEMI S2/F47 & Fab Contract Guard",
+        "zh": "S2/F47偏离整改与赔付封顶"
+      },
+      "avatar": "avatars/semi-ehs-qual-counsel.png",
+      "role": "member"
+    }
+  ]
+}
