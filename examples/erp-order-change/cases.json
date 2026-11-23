@@ -1,0 +1,35 @@
+{
+  "data_type": "演示数据",
+  "order": {
+    "id": "A-0245",
+    "version": 7,
+    "quantity": 500,
+    "delivery": "2026-12-18"
+  },
+  "request": {
+    "id": "DEMO-A-0245-01",
+    "quantity": 600,
+    "delivery": "2026-12-15",
+    "expected_version": 7,
+    "extra_stock": 60
+  },
+  "defaults": {
+    "planned_extra": 40,
+    "approval": "approved",
+    "approval_matches": true,
+    "has_write_role": true,
+    "observed_version": 7,
+    "delivery_confirmed": true,
+    "readback": "none"
+  },
+  "cases": [
+    {"id": "A01", "title": "主管尚未审批", "input": {"approval": "pending", "planned_extra": 0}, "expected": "pending_approval", "new_writes": 0},
+    {"id": "A02", "title": "审批与排产确认齐备", "input": {}, "expected": "simulated_accepted", "new_writes": 1},
+    {"id": "A03", "title": "同一请求已完成，回调重放", "input": {"readback": "matched", "observed_version": 8}, "expected": "already_recorded", "new_writes": 0},
+    {"id": "A04", "title": "审批期间 ERP 已并发更新", "input": {"observed_version": 8}, "expected": "version_conflict", "new_writes": 0},
+    {"id": "A05", "title": "写入结果超时且无法核实", "input": {"readback": "unknown"}, "expected": "needs_reconciliation", "new_writes": 0},
+    {"id": "A06", "title": "回读显示同编号但数量不一致", "input": {"readback": "mismatch"}, "expected": "needs_reconciliation", "new_writes": 0},
+    {"id": "A07", "title": "审批记录未绑定本版改单", "input": {"approval_matches": false}, "expected": "approval_mismatch", "new_writes": 0},
+    {"id": "A08", "title": "缺少 40 件排产确认", "input": {"planned_extra": 0}, "expected": "capacity_unconfirmed", "new_writes": 0}
+  ]
+}

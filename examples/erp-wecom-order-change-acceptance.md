@@ -25,3 +25,5 @@
 建议现场保存一张验收表，记录每项的实际行为、是否通过和改动责任人。正式试点前，再补两类常见难例，例如一个订单改多行商品、客户撤回已发出的改单。
 
 [订单变更流程拆解](https://dayanqianji.com/insights/order-change-ai-erp/) · [订单变更核对技能](../skills/dayan-order-change-erp-guard/SKILL.md) · [大衍千机企业 AI ERP 与 CRM 服务](https://dayanqianji.com/services/ai-erp/)
+
+[运行八项离线验收并导出 CSV](./erp-order-change/README.md)
